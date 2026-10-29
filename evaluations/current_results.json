@@ -1,0 +1,485 @@
+{
+  "version": "0.7.0",
+  "evaluated_at": "2026-10-20T12:55:08.365703+00:00",
+  "data": "authored stress cases + synthetic-v1",
+  "retrieval": {
+    "cases": 12,
+    "prefix_1800_recall": 0.3333333333333333,
+    "fts_recall_at_3": 1.0,
+    "exact_original_windows": true,
+    "mean_local_latency_ms": 1.679,
+    "mean_context_characters": 147,
+    "new_external_requests": 0,
+    "new_model_calls": 0
+  },
+  "ranking": {
+    "cases": 36,
+    "hard_violations": 0,
+    "citation_locatable_rate": 1.0,
+    "new_model_calls": 0,
+    "new_external_requests": 0
+  },
+  "common_fixture_investigation": {
+    "tool_calls": 13,
+    "external_requests": 0,
+    "llm_calls": 10,
+    "planning_rounds": 4,
+    "active_seconds": 1.7824717109979247
+  },
+  "human_semantic_support_rate": null,
+  "real_game_relevance": null,
+  "limitations": [
+    "手工构造的双语与长文位置压力样本，并非真实评论随机样本。",
+    "逐字可定位不等于语义正确；语义流程由契约测试验证，真实人工支持率尚未测量。",
+    "排序检查只证明当前合成案例遵守规则，不估计真实市场召回率或个人喜好准确率。",
+    "本地延迟是当前环境单次测量，不代表大规模数据或真实模型延迟。"
+  ],
+  "retrieval_cases": [
+    {
+      "id": 1,
+      "query": "弹反",
+      "gold_quote": "Timed parry can stagger enemies.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 2.483,
+      "characters_sent": 194,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 2,
+      "query": "牌组构筑",
+      "gold_quote": "Deckbuilding is central to each run.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.676,
+      "characters_sent": 198,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 3,
+      "query": "中途存档",
+      "gold_quote": "Mid-run save lets you continue another day.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.714,
+      "characters_sent": 205,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 4,
+      "query": "策略深度",
+      "gold_quote": "Strategic depth comes from choosing between competing objectives.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.304,
+      "characters_sent": 227,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 5,
+      "query": "半小时",
+      "gold_quote": "The session length is about thirty minutes.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.462,
+      "characters_sent": 205,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 6,
+      "query": "刷装备",
+      "gold_quote": "The endgame requires repeated grind for equipment.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.277,
+      "characters_sent": 212,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 7,
+      "query": "闪避",
+      "gold_quote": "A timed dodge avoids the incoming attack.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.78,
+      "characters_sent": 203,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 8,
+      "query": "捡尸",
+      "gold_quote": "Corpse recovery requires returning to where you died.",
+      "gold_start": 3520,
+      "prefix_1800_recalled": false,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 2.047,
+      "characters_sent": 215,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 9,
+      "query": "parry",
+      "gold_quote": "精准弹反会让敌人的防御露出破绽。",
+      "gold_start": 0,
+      "prefix_1800_recalled": true,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.767,
+      "characters_sent": 26,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 10,
+      "query": "deckbuilding",
+      "gold_quote": "每一局都围绕牌组构筑与选牌展开。",
+      "gold_start": 0,
+      "prefix_1800_recalled": true,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.487,
+      "characters_sent": 26,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 11,
+      "query": "dodge",
+      "gold_quote": "闪避时机决定能否躲开攻击。",
+      "gold_start": 0,
+      "prefix_1800_recalled": true,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.507,
+      "characters_sent": 23,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    },
+    {
+      "id": 12,
+      "query": "mid-run save",
+      "gold_quote": "支持局中保存，退出后可以继续这一局。",
+      "gold_start": 0,
+      "prefix_1800_recalled": true,
+      "fts_recalled_at_3": true,
+      "exact_original_windows": true,
+      "latency_ms": 1.646,
+      "characters_sent": 28,
+      "new_model_calls": 0,
+      "new_external_requests": 0
+    }
+  ],
+  "ranking_cases": [
+    {
+      "id": "text-01",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-02",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-03",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-04",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-05",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-06",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-07",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-08",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-09",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-10",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-11",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-12",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-13",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-14",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-15",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-16",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-17",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-18",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-19",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-20",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-21",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-22",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-23",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-24",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-25",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-26",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-27",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-28",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-29",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-30",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-31",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-32",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-33",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-34",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-35",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    },
+    {
+      "id": "text-36",
+      "hard_violations": 0,
+      "citations": 66,
+      "located_citations": 66,
+      "model_calls": 0,
+      "external_requests": 0
+    }
+  ]
+}

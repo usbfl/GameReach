@@ -1,0 +1,30 @@
+........................................................................ [ 25%]
+.....................................................................F.. [ 51%]
+........................................................................ [ 77%]
+...............................................................          [100%]
+=================================== FAILURES ===================================
+______ test_less_than_three_games_does_not_call_model_or_count_duplicates ______
+
+stack = (Settings(data_mode='fixtures', llm_mode='live', llm_base_url='', llm_api_key=SecretStr(''), llm_model='', llm_use_too...object at 0x7f360de43aa0>, <app.tools.Registry object at 0x7f360d03cb30>, <app.engine.Engine object at 0x7f360d0677a0>)
+
+    def test_less_than_three_games_does_not_call_model_or_count_duplicates(stack):
+        s, db, _, _ = stack
+        s.llm_mode = "live"
+        with TestClient(create_app(s, db, False)) as c:
+            import_games(c, db, ("fx-02", "fx-04"))
+            c.post("/api/shortlist", json={"game_id": "fx-02"})
+            r = c.post("/api/interests/generate", json={"text": "构筑"})
+            assert r.status_code == 200 and not r.json()["cards"]
+>           assert r.json()["budget"]["llm_calls"] == 0 and "不足3款" in r.json()["message"]
+E           AssertionError: assert (0 == 0 and '不足3款' in '每类需要3–7款相关游戏；目前资料不足。请导入有代表性的游戏或添加感兴趣的游戏。')
+
+tests/test_interests.py:188: AssertionError
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/starlette/testclient.py:37
+  /workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_interests.py::test_less_than_three_games_does_not_call_model_or_count_duplicates
+1 failed, 278 passed, 1 warning in 35.34s

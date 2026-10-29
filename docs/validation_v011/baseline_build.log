@@ -1,0 +1,16 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> gamereach-workbench@0.10.2 build
+> tsc --noEmit && vite build
+
+vite v6.3.5 building for production...
+transforming...
+✓ 1641 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                            0.42 kB │ gzip:  0.33 kB
+dist/assets/noto-sans-sc-chinese-simplified-400-normal-DS5SpWNO.woff2  1,141.54 kB
+dist/assets/noto-sans-sc-chinese-simplified-400-normal-Dhd15R90.woff   1,563.69 kB
+dist/assets/index-DmdOFQEL.css                                            47.78 kB │ gzip: 11.49 kB
+dist/assets/index-31xf3l7J.js                                            270.84 kB │ gzip: 84.76 kB
+✓ built in 2.27s

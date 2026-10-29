@@ -1,0 +1,32 @@
+{
+  "mode": "original_091_replay",
+  "model": "deepseek-flash",
+  "review_count": 12,
+  "characters": 5611,
+  "attempts": [
+    {
+      "seconds": 20.9,
+      "usage": {
+        "prompt_tokens": 9944,
+        "completion_tokens": 2710,
+        "total_tokens": 12654,
+        "prompt_tokens_details": {
+          "cached_tokens": 3328
+        },
+        "prompt_cache_hit_tokens": 3328,
+        "prompt_cache_miss_tokens": 6616
+      },
+      "finish_reason": "tool_calls"
+    }
+  ],
+  "outcome": {
+    "accepted": 16
+  },
+  "budget": {
+    "tool_calls": 0,
+    "external_requests": 1,
+    "llm_calls": 1,
+    "planning_rounds": 0,
+    "active_seconds": 0
+  }
+}

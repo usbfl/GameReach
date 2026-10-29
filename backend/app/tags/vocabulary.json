@@ -1,0 +1,4199 @@
+{
+  "version": "player-tags-1",
+  "updated_at": "2026-10-21",
+  "method": "目的性跨社区质性编码；不是全网词频统计、人口代表性样本或训练后的模型。",
+  "tags": [
+    {
+      "id": "action_combat",
+      "family": "玩法类型",
+      "label": "实时动作战斗",
+      "definition": "需要实时操控角色的攻击或移动，而非仅下回合指令。",
+      "aliases": [
+        "动作",
+        "即时战斗",
+        "action combat"
+      ],
+      "confusions": "动作类型不等于高难或必须读招；仍需评论说明。",
+      "research_sources": [
+        "S02",
+        "S04"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "cooperative_roles",
+      "family": "合作与社交",
+      "label": "合作分工",
+      "definition": "玩家之间以职业、能力或资源互补完成目标。",
+      "aliases": [
+        "合作",
+        "联机",
+        "组队",
+        "分工",
+        "co-op",
+        "cooperative"
+      ],
+      "confusions": "联网或多人标签不能证明合作深度，竞技另查。",
+      "research_sources": [
+        "S21"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Co-op",
+            "PvE",
+            "Class-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P12"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          5
+        ],
+        "keywords": [
+          "co-operative",
+          "cooperative",
+          "co-op"
+        ]
+      }
+    },
+    {
+      "id": "solo_viability",
+      "family": "合作与社交",
+      "label": "单人游玩可行",
+      "definition": "独自游玩时仍有可完成的流程与合适的辅助。",
+      "aliases": [
+        "单人",
+        "独狼",
+        "solo",
+        "singleplayer"
+      ],
+      "confusions": "有单人按钮不代表体验等价；必须保留难度与模式。",
+      "research_sources": [
+        "S21"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "communication_load",
+      "family": "合作与社交",
+      "label": "沟通与社交负担",
+      "definition": "完成目标需要多大程度的语音、文字或默契协调。",
+      "aliases": [
+        "开麦",
+        "语音",
+        "社交压力",
+        "沟通",
+        "voice chat"
+      ],
+      "confusions": "联机不自动等于强社交；陌生人踢人和配合成本分开。",
+      "research_sources": [
+        "S21"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Co-op",
+            "PvE",
+            "Class-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P12"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          5
+        ],
+        "keywords": [
+          "co-operative",
+          "cooperative",
+          "co-op"
+        ]
+      }
+    },
+    {
+      "id": "survival_needs",
+      "family": "生存与建造",
+      "label": "生存维护",
+      "definition": "氧气、饥饿或其他环境约束需要持续管理。",
+      "aliases": [
+        "生存",
+        "氧气",
+        "饥饿",
+        "survival"
+      ],
+      "confusions": "生存类型不等于高战斗难度或必须刷材料。",
+      "research_sources": [
+        "S22",
+        "S23"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Survival",
+            "Crafting",
+            "Base Building"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P13"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Survival",
+            "Base Building"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S23"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13,
+          31
+        ],
+        "keywords": [
+          "survival",
+          "crafting"
+        ]
+      }
+    },
+    {
+      "id": "base_building",
+      "family": "生存与建造",
+      "label": "基地建造",
+      "definition": "建造、布置和扩张持续使用的据点。",
+      "aliases": [
+        "建家",
+        "基地",
+        "建造",
+        "base building"
+      ],
+      "confusions": "搭建功能不等于自由美观布置；需具体评论。",
+      "research_sources": [
+        "S22",
+        "S23"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Survival",
+            "Crafting",
+            "Base Building"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P13"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Survival",
+            "Base Building"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S23"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13,
+          31
+        ],
+        "keywords": [
+          "survival",
+          "crafting"
+        ]
+      }
+    },
+    {
+      "id": "emergent_stories",
+      "family": "经营与资源",
+      "label": "系统涌现故事",
+      "definition": "角色关系与系统事件相互作用形成玩家自己的故事。",
+      "aliases": [
+        "涌现",
+        "故事生成",
+        "殖民者",
+        "emergent",
+        "story generator"
+      ],
+      "confusions": "预设剧情丰富不是同一概念；坏结果也可能有趣。",
+      "research_sources": [
+        "S23"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Sandbox"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P13"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Sandbox",
+            "Management",
+            "Simulation"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S23"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13,
+          15
+        ],
+        "keywords": [
+          "sandbox",
+          "management"
+        ]
+      }
+    },
+    {
+      "id": "mod_flexibility",
+      "family": "运行体验",
+      "label": "模组扩展",
+      "definition": "模组提供玩法调整或内容扩展的空间。",
+      "aliases": [
+        "模组",
+        "mod",
+        "modding"
+      ],
+      "confusions": "模组体验不等于原版，需标明mode。",
+      "research_sources": [
+        "S23",
+        "S24"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "horror_tension",
+      "family": "叙事与氛围",
+      "label": "持续恐惧与压迫",
+      "definition": "通过未知、环境或追踪形成持续的紧张感。",
+      "aliases": [
+        "恐怖",
+        "压迫",
+        "害怕",
+        "恐惧",
+        "horror",
+        "dread"
+      ],
+      "confusions": "是主观体验，不能用平均星级否认某位玩家的恐惧。",
+      "research_sources": [
+        "S22",
+        "S24"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Horror",
+            "Survival Horror"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P13"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31
+        ],
+        "keywords": [
+          "horror",
+          "survival horror"
+        ]
+      }
+    },
+    {
+      "id": "jump_scares",
+      "family": "叙事与氛围",
+      "label": "突发惊吓",
+      "definition": "突然的画面、声音或事件造成惊吓。",
+      "aliases": [
+        "跳吓",
+        "突脸",
+        "突然吓人",
+        "jumpscare",
+        "jump scare"
+      ],
+      "confusions": "持续氛围恐怖与突发惊吓不同，没提到不能当没有。",
+      "research_sources": [
+        "S22"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Horror",
+            "Survival Horror"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P13"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31
+        ],
+        "keywords": [
+          "horror",
+          "survival horror"
+        ]
+      }
+    },
+    {
+      "id": "stealth_waiting",
+      "family": "战斗与操作",
+      "label": "潜行与躲藏等待",
+      "definition": "通过隐蔽、观察巡逻或等待时机推进。",
+      "aliases": [
+        "潜行",
+        "躲柜子",
+        "躲藏",
+        "stealth",
+        "hiding"
+      ],
+      "confusions": "安静氛围不是潜行；等待时间与紧张感可同时存在。",
+      "research_sources": [
+        "S24"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "read_patterns",
+      "family": "战斗与操作",
+      "label": "读招抓时机",
+      "definition": "观察敌人前摇、攻击节奏，选择反击窗口。",
+      "aliases": [
+        "读招",
+        "战斗技巧",
+        "抓时机",
+        "看破招式",
+        "learn patterns",
+        "timing windows"
+      ],
+      "confusions": "难或高伤害本身不能证明读招；策略思考不等于反应。",
+      "research_sources": [
+        "S04",
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "precise_dodge",
+      "family": "战斗与操作",
+      "label": "走位与精确闪避",
+      "definition": "通过位置、方向或闪避时机规避攻击。",
+      "aliases": [
+        "走位",
+        "闪避",
+        "躲招",
+        "dodge",
+        "positioning"
+      ],
+      "confusions": "有闪避键不等于操作精确；不能仅凭类型推断。",
+      "research_sources": [
+        "S02",
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "parry_counter",
+      "family": "战斗与操作",
+      "label": "弹反与反击",
+      "definition": "在敌人攻击窗口用格挡或反击改变攻防。",
+      "aliases": [
+        "弹反",
+        "招架",
+        "妖反",
+        "parry",
+        "deflect",
+        "counter"
+      ],
+      "confusions": "自动格挡与时机反击不同。",
+      "research_sources": [
+        "S04"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "combo_expression",
+      "family": "战斗与操作",
+      "label": "连段与招式衔接",
+      "definition": "通过取消、派生、切换招式表达熟练操作。",
+      "aliases": [
+        "连段",
+        "连招",
+        "派生",
+        "残心",
+        "取消后摇",
+        "combo",
+        "cancel"
+      ],
+      "confusions": "按钮多不必然自由；按键复杂与选择丰富分开。",
+      "research_sources": [
+        "S04"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "stamina_management",
+      "family": "战斗与操作",
+      "label": "战斗资源管理",
+      "definition": "攻击防御与移动之间需要管理体力等资源。",
+      "aliases": [
+        "精力管理",
+        "体力条",
+        "stamina",
+        "ki pulse"
+      ],
+      "confusions": "局外材料刷取与战斗内资源不是一回事。",
+      "research_sources": [
+        "S04"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "responsive_movement",
+      "family": "战斗与操作",
+      "label": "移动响应与操控感",
+      "definition": "输入反馈及时，移动或跳跃能稳定按意图执行。",
+      "aliases": [
+        "手感",
+        "操作流畅",
+        "响应",
+        "snappy",
+        "responsive"
+      ],
+      "confusions": "好评里的手感只是主观判断，不能泛化到所有设备。",
+      "research_sources": [
+        "S10",
+        "S12"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Platformer"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Platformer"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          8
+        ],
+        "keywords": [
+          "platformer"
+        ]
+      }
+    },
+    {
+      "id": "boss_practice",
+      "family": "战斗与操作",
+      "label": "练习攻克Boss",
+      "definition": "通过重复挑战学习对手并获得熟练收益。",
+      "aliases": [
+        "Boss",
+        "boss",
+        "反复挑战",
+        "练习",
+        "背板"
+      ],
+      "confusions": "练Boss不等于刷装备；练习次数不是客观难度。",
+      "research_sources": [
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "combat_readability",
+      "family": "战斗与操作",
+      "label": "战斗信息清晰",
+      "definition": "能辨认敌人动作、危险范围和自己的状态。",
+      "aliases": [
+        "光污染",
+        "看不清",
+        "特效",
+        "readability",
+        "visual clutter"
+      ],
+      "confusions": "画面精美与战斗可读性可以相反。",
+      "research_sources": [
+        "S04",
+        "S12"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "soulslike",
+      "family": "玩法类型",
+      "label": "魂类体验",
+      "definition": "玩家明确描述本作具有类魂的动作挑战体验。",
+      "aliases": [
+        "魂类",
+        "类魂",
+        "魂",
+        "Soulslike",
+        "souls-like"
+      ],
+      "confusions": "不继承刷取、惩罚或地图复杂等未提及特征。",
+      "research_sources": [
+        "S03",
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Souls-like"
+          ],
+          "relation": "exact_label",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Souls-like"
+          ],
+          "relation": "exact_label",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          25
+        ],
+        "keywords": [
+          "soulslike",
+          "souls-like"
+        ]
+      }
+    },
+    {
+      "id": "build_variety",
+      "family": "构筑与成长",
+      "label": "构筑改变打法",
+      "definition": "不同技能、装备或组合导致有意义的操作或策略变化。",
+      "aliases": [
+        "构筑",
+        "多构筑",
+        "流派",
+        "配装",
+        "不同打法",
+        "build variety",
+        "buildcraft"
+      ],
+      "confusions": "不把只换伤害颜色、纯数值更高当作打法多样。",
+      "research_sources": [
+        "S02",
+        "S04",
+        "S06",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action RPG",
+            "Deckbuilding"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05",
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Role-playing",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Role Playing"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15
+        ],
+        "keywords": [
+          "build",
+          "character customization",
+          "deckbuilding"
+        ]
+      }
+    },
+    {
+      "id": "synergy",
+      "family": "构筑与成长",
+      "label": "组件联动",
+      "definition": "技能、道具、遗物或卡牌之间有可解释的相互作用。",
+      "aliases": [
+        "联动",
+        "组合技",
+        "协同",
+        "synergy",
+        "combo pieces"
+      ],
+      "confusions": "物品多或属性相加不自动等于协同。",
+      "research_sources": [
+        "S06"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action RPG",
+            "Deckbuilding"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05",
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Role-playing",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Role Playing"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15
+        ],
+        "keywords": [
+          "build",
+          "character customization",
+          "deckbuilding"
+        ]
+      }
+    },
+    {
+      "id": "adaptive_builds",
+      "family": "构筑与成长",
+      "label": "临场构筑",
+      "definition": "根据本局奖励、敌人和资源改变方案。",
+      "aliases": [
+        "临场构筑",
+        "随机应变",
+        "现抓现组",
+        "adapt",
+        "improvised build"
+      ],
+      "confusions": "不等同于预先规划固定毕业配装。",
+      "research_sources": [
+        "S02",
+        "S06",
+        "S19"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    },
+    {
+      "id": "deckbuilding",
+      "family": "构筑与成长",
+      "label": "牌组构筑",
+      "definition": "通过选择、删除或升级卡牌改变牌组结构。",
+      "aliases": [
+        "卡牌构筑",
+        "牌组构筑",
+        "卡组",
+        "deckbuilding",
+        "deckbuilder"
+      ],
+      "confusions": "抽角色养卡与对局中构筑牌组不同。",
+      "research_sources": [
+        "S06",
+        "S19"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Deckbuilding",
+            "Roguelike Deckbuilder"
+          ],
+          "relation": "exact_label",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Strategy",
+            "Turn-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          15,
+          16
+        ],
+        "keywords": [
+          "deckbuilding",
+          "deck-building",
+          "deckbuilder"
+        ]
+      }
+    },
+    {
+      "id": "weapon_styles",
+      "family": "构筑与成长",
+      "label": "武器与角色玩法差异",
+      "definition": "更换武器、架势或角色会改变可用动作和决策。",
+      "aliases": [
+        "武器差异",
+        "架势",
+        "职业差异",
+        "weapon",
+        "stance",
+        "loadout"
+      ],
+      "confusions": "外观换皮不能独立证明。",
+      "research_sources": [
+        "S02",
+        "S04"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action",
+            "Action RPG",
+            "Hack and Slash"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action",
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          25,
+          12
+        ],
+        "keywords": [
+          "action-rpg",
+          "character action"
+        ]
+      }
+    },
+    {
+      "id": "meta_progression",
+      "family": "构筑与成长",
+      "label": "局外成长",
+      "definition": "一次尝试结束后保留升级或解锁以影响后续尝试。",
+      "aliases": [
+        "局外成长",
+        "永久升级",
+        "meta progression",
+        "permanent upgrades"
+      ],
+      "confusions": "局外成长不等于必须大量刷资源。",
+      "research_sources": [
+        "S02"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    },
+    {
+      "id": "build_balance",
+      "family": "构筑与成长",
+      "label": "流派平衡与自由",
+      "definition": "多种打法有可行空间，不被单一强势套路明显挤压。",
+      "aliases": [
+        "流派平衡",
+        "套路单一",
+        "最优解",
+        "build balance",
+        "overpowered"
+      ],
+      "confusions": "存在多种组件不能证明每种都有效。",
+      "research_sources": [
+        "S02"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action RPG",
+            "Deckbuilding"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05",
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Role-playing",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Role Playing"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15
+        ],
+        "keywords": [
+          "build",
+          "character customization",
+          "deckbuilding"
+        ]
+      }
+    },
+    {
+      "id": "learning_curve",
+      "family": "学习与挑战",
+      "label": "系统学习成本",
+      "definition": "理解规则、组合和操作需要多大投入。",
+      "aliases": [
+        "上手",
+        "学习成本",
+        "教程",
+        "复杂系统",
+        "learning curve"
+      ],
+      "confusions": "熟练后顺手不代表新手容易；脑力与手速分开。",
+      "research_sources": [
+        "S04",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "configurable_difficulty",
+      "family": "学习与挑战",
+      "label": "难度辅助选项",
+      "definition": "有能改变游玩负担的难度或辅助模式。",
+      "aliases": [
+        "难度可调",
+        "辅助模式",
+        "上帝模式",
+        "god mode",
+        "assist mode"
+      ],
+      "confusions": "特殊模式的结论必须标明模式。",
+      "research_sources": [
+        "S02"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "resource_grind",
+      "family": "重复与刷取",
+      "label": "装备资源刷取",
+      "definition": "为装备、材料、经验反复重复已掌握内容。",
+      "aliases": [
+        "刷装备",
+        "刷材料",
+        "刷级",
+        "肝",
+        "grind",
+        "farming"
+      ],
+      "confusions": "重复挑战、重开和新剧情不自动属于刷装备；区分可选和必需。",
+      "research_sources": [
+        "S01",
+        "S03",
+        "S11",
+        "S14"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "mandatory_grind",
+      "family": "重复与刷取",
+      "label": "推进依赖刷取",
+      "definition": "正常推进在某阶段需要重复刷取资源或等级。",
+      "aliases": [
+        "必须刷",
+        "不刷过不去",
+        "卡资源",
+        "required grind",
+        "mandatory farming"
+      ],
+      "confusions": "必须有推进依赖证据，不能由存在刷取系统推出。",
+      "research_sources": [
+        "S03",
+        "S11",
+        "S14"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "loot_rng",
+      "family": "重复与刷取",
+      "label": "随机掉落与洗练",
+      "definition": "获得目标装备或词条依赖概率并可能反复尝试。",
+      "aliases": [
+        "随机掉落",
+        "洗词条",
+        "看脸",
+        "drop rate",
+        "loot rng",
+        "reroll"
+      ],
+      "confusions": "局面随机和掉落随机不同；低概率需具体描述。",
+      "research_sources": [
+        "S14",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "repeated_content",
+      "family": "重复与刷取",
+      "label": "关卡内容重复",
+      "definition": "场景、敌人、任务或流程反复出现。",
+      "aliases": [
+        "重复内容",
+        "重复关卡",
+        "同一张图",
+        "repetitive",
+        "same rooms"
+      ],
+      "confusions": "重复场景不等于构筑不变；主观厌烦不能替代内容描述。",
+      "research_sources": [
+        "S01",
+        "S02",
+        "S14"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    },
+    {
+      "id": "optional_endgame",
+      "family": "重复与刷取",
+      "label": "可选后期追求",
+      "definition": "主线之外的毕业装备、极限挑战或成就目标。",
+      "aliases": [
+        "毕业",
+        "多周目",
+        "后期",
+        "endgame",
+        "ng+"
+      ],
+      "confusions": "不能把后期负担回填一周目，也不能反向推断。",
+      "research_sources": [
+        "S03",
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "death_loss",
+      "family": "失败与重试",
+      "label": "死亡损失",
+      "definition": "失败带来货币、物品或进度损失及其恢复条件。",
+      "aliases": [
+        "死亡惩罚",
+        "死亡损失",
+        "掉钱",
+        "捡尸",
+        "death penalty",
+        "corpse run"
+      ],
+      "confusions": "重走距离、重新开局和资源损失分别判断。",
+      "research_sources": [
+        "S03",
+        "S07",
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "runback",
+      "family": "失败与重试",
+      "label": "失败后重走",
+      "definition": "重试同一挑战前需重复移动或清理的路程。",
+      "aliases": [
+        "跑尸",
+        "回Boss",
+        "重走",
+        "runback",
+        "walk back"
+      ],
+      "confusions": "不要把跑图简单直接解释成短跑尸。",
+      "research_sources": [
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "quick_retry",
+      "family": "失败与重试",
+      "label": "快速重试",
+      "definition": "失败后能较快回到核心挑战。",
+      "aliases": [
+        "秒重开",
+        "快速重试",
+        "就近复活",
+        "quick retry",
+        "checkpoint"
+      ],
+      "confusions": "死亡没有损失不等于重试方便；未提跑尸不能算快速。",
+      "research_sources": [
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "run_restart",
+      "family": "失败与重试",
+      "label": "失败后重开一局",
+      "definition": "一次失败结束当前运行，需要新的流程尝试。",
+      "aliases": [
+        "重开",
+        "重新开局",
+        "permadeath",
+        "restart run"
+      ],
+      "confusions": "不等于删除全部长期进度。",
+      "research_sources": [
+        "S01",
+        "S02",
+        "S07"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    },
+    {
+      "id": "navigation",
+      "family": "探索与空间",
+      "label": "寻路负担",
+      "definition": "辨认地图、路线、目标位置的认知负担。",
+      "aliases": [
+        "跑图",
+        "寻路",
+        "迷路",
+        "导航",
+        "navigation",
+        "getting lost"
+      ],
+      "confusions": "地图大不等于难找路；旅途长与认路难不同。",
+      "research_sources": [
+        "S10",
+        "S15"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          9,
+          8
+        ],
+        "keywords": [
+          "exploration",
+          "metroidvania"
+        ]
+      }
+    },
+    {
+      "id": "interconnected_world",
+      "family": "探索与空间",
+      "label": "互联地图",
+      "definition": "区域之间通过捷径和可回访连接形成空间关系。",
+      "aliases": [
+        "箱庭",
+        "互联地图",
+        "捷径",
+        "interconnected",
+        "shortcuts"
+      ],
+      "confusions": "开放世界标签不能证明关卡互联质量。",
+      "research_sources": [
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          9,
+          8
+        ],
+        "keywords": [
+          "exploration",
+          "metroidvania"
+        ]
+      }
+    },
+    {
+      "id": "exploration_discovery",
+      "family": "探索与空间",
+      "label": "自主探索与发现",
+      "definition": "偏离明确路线能发现地点、秘密或新信息。",
+      "aliases": [
+        "探索",
+        "发现秘密",
+        "闲逛",
+        "exploration",
+        "discovery"
+      ],
+      "confusions": "问号清单数量不能直接等同发现感。",
+      "research_sources": [
+        "S07",
+        "S10",
+        "S15"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          9,
+          8
+        ],
+        "keywords": [
+          "exploration",
+          "metroidvania"
+        ]
+      }
+    },
+    {
+      "id": "knowledge_progression",
+      "family": "探索与空间",
+      "label": "知识驱动进展",
+      "definition": "理解线索或规则本身让玩家能够抵达新目标。",
+      "aliases": [
+        "知识驱动",
+        "信息解锁",
+        "knowledge",
+        "learn the rules"
+      ],
+      "confusions": "知识不是可永久升级的能力值，注意剧透。",
+      "research_sources": [
+        "S07"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          9
+        ],
+        "keywords": [
+          "puzzle",
+          "logic"
+        ]
+      }
+    },
+    {
+      "id": "precision_platforming",
+      "family": "探索与空间",
+      "label": "精确跳跃与移动挑战",
+      "definition": "关卡要求控制跳跃、冲刺或连续移动。",
+      "aliases": [
+        "跳跳乐",
+        "平台跳跃",
+        "跑酷",
+        "platforming",
+        "wall jump"
+      ],
+      "confusions": "战斗难度与跳跃难度分开。",
+      "research_sources": [
+        "S10"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Platformer"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Platformer"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Action"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          8
+        ],
+        "keywords": [
+          "platformer"
+        ]
+      }
+    },
+    {
+      "id": "logical_puzzles",
+      "family": "思考与随机",
+      "label": "逻辑解谜",
+      "definition": "通过推理规则或关系求出解法。",
+      "aliases": [
+        "解谜",
+        "谜题",
+        "逻辑",
+        "推理",
+        "puzzle",
+        "logic"
+      ],
+      "confusions": "搜索隐藏物品与推理不等价；版本需明确。",
+      "research_sources": [
+        "S13"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          9
+        ],
+        "keywords": [
+          "puzzle",
+          "logic"
+        ]
+      }
+    },
+    {
+      "id": "turn_based_tactics",
+      "family": "思考与随机",
+      "label": "回合与战术决策",
+      "definition": "行动前可思考，决策涉及位置、顺序或资源。",
+      "aliases": [
+        "回合制",
+        "战术",
+        "策略",
+        "turn-based",
+        "tactics"
+      ],
+      "confusions": "不是一切策略游戏都有回合制。",
+      "research_sources": [
+        "S05",
+        "S06",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Turn-Based",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Tactical",
+            "Turn-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          15,
+          16,
+          24
+        ],
+        "keywords": [
+          "tactical",
+          "turn-based"
+        ]
+      }
+    },
+    {
+      "id": "positioning_tactics",
+      "family": "思考与随机",
+      "label": "位移与环境解题",
+      "definition": "利用推拉、地形或站位改变局面。",
+      "aliases": [
+        "位移解题",
+        "地形",
+        "推拉",
+        "positioning",
+        "terrain"
+      ],
+      "confusions": "战棋外观不能证明位移机制。",
+      "research_sources": [
+        "S05"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Turn-Based",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Tactical",
+            "Turn-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          15,
+          16,
+          24
+        ],
+        "keywords": [
+          "tactical",
+          "turn-based"
+        ]
+      }
+    },
+    {
+      "id": "input_randomness",
+      "family": "思考与随机",
+      "label": "随机局面下决策",
+      "definition": "先生成随机局面，再由玩家选择应对。",
+      "aliases": [
+        "随机地图",
+        "随机奖励",
+        "input randomness",
+        "procedural"
+      ],
+      "confusions": "不自动意味着行动结果靠运气。",
+      "research_sources": [
+        "S05",
+        "S06"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    },
+    {
+      "id": "outcome_randomness",
+      "family": "思考与随机",
+      "label": "行动结果依赖概率",
+      "definition": "作出选择后命中、效果或胜负仍受随机影响。",
+      "aliases": [
+        "命中率",
+        "看运气",
+        "概率判定",
+        "output randomness",
+        "rng"
+      ],
+      "confusions": "不要把所有随机机制混为一个随机性分数。",
+      "research_sources": [
+        "S05",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "risk_reward",
+      "family": "思考与随机",
+      "label": "风险收益取舍",
+      "definition": "选择额外收益时需要承担可说明的代价。",
+      "aliases": [
+        "风险收益",
+        "资源取舍",
+        "risk reward",
+        "trade-off"
+      ],
+      "confusions": "单纯高难或奖励多不足以支持。",
+      "research_sources": [
+        "S02",
+        "S06"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Turn-Based",
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Tactical",
+            "Turn-Based"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          15,
+          16,
+          24
+        ],
+        "keywords": [
+          "tactical",
+          "turn-based"
+        ]
+      }
+    },
+    {
+      "id": "narrative_focus",
+      "family": "叙事与氛围",
+      "label": "剧情与角色驱动",
+      "definition": "故事、对白或角色关系构成主要吸引力。",
+      "aliases": [
+        "剧情",
+        "角色",
+        "叙事",
+        "story",
+        "narrative",
+        "dialogue"
+      ],
+      "confusions": "商店Story Rich不能证明用户会喜欢该故事。",
+      "research_sources": [
+        "S01",
+        "S08",
+        "S15"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Story Rich"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Story Rich",
+            "Visual Novel"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Visual Novel",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          12
+        ],
+        "keywords": [
+          "story rich",
+          "narrative"
+        ]
+      }
+    },
+    {
+      "id": "reading_load",
+      "family": "叙事与氛围",
+      "label": "文字阅读负担",
+      "definition": "理解体验需要连续阅读大量对白或说明。",
+      "aliases": [
+        "大量文字",
+        "阅读",
+        "长对话",
+        "reading",
+        "dialogue heavy"
+      ],
+      "confusions": "对白质量好不等于阅读量适合所有人。",
+      "research_sources": [
+        "S08"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Story Rich"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Story Rich",
+            "Visual Novel"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [
+            "RPG"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [
+            "Visual Novel",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          12
+        ],
+        "keywords": [
+          "story rich",
+          "narrative"
+        ]
+      }
+    },
+    {
+      "id": "atmosphere",
+      "family": "叙事与氛围",
+      "label": "世界氛围与沉浸",
+      "definition": "场景、声音和叙事共同塑造明确的氛围体验。",
+      "aliases": [
+        "氛围",
+        "沉浸",
+        "世界观",
+        "atmosphere",
+        "immersive"
+      ],
+      "confusions": "精美截图不能代替玩家体验依据。",
+      "research_sources": [
+        "S10",
+        "S15"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P07"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Exploration",
+            "Metroidvania",
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P08"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [
+            "Adventure"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P10"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          31,
+          9,
+          8
+        ],
+        "keywords": [
+          "exploration",
+          "metroidvania"
+        ]
+      }
+    },
+    {
+      "id": "art_style",
+      "family": "叙事与氛围",
+      "label": "画风与视觉审美",
+      "definition": "玩家对美术风格和场景表现的偏好。",
+      "aliases": [
+        "画风",
+        "美术",
+        "手绘",
+        "像素",
+        "art style",
+        "visuals"
+      ],
+      "confusions": "画面偏好不推出玩法偏好；不要用主观审美填事实。",
+      "research_sources": [
+        "S02",
+        "S09",
+        "S15"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "time_pressure",
+      "family": "节奏与日常",
+      "label": "时间与效率压力",
+      "definition": "计时、日程或资源损耗使玩家感到赶进度。",
+      "aliases": [
+        "时间压力",
+        "赶时间",
+        "日夜",
+        "体力限制",
+        "time pressure",
+        "energy bar"
+      ],
+      "confusions": "可爱或休闲标签不保证无压力。",
+      "research_sources": [
+        "S09"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "daily_chores",
+      "family": "节奏与日常",
+      "label": "日常维护与上线负担",
+      "definition": "为了进展或收益需重复每日任务或定时上线。",
+      "aliases": [
+        "每日任务",
+        "打卡",
+        "日常",
+        "上线",
+        "daily chores",
+        "daily quest"
+      ],
+      "confusions": "短日常与低总投入不等同。",
+      "research_sources": [
+        "S16",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "relaxed_pace",
+      "family": "节奏与日常",
+      "label": "自主节奏",
+      "definition": "能按自己的节奏推进，不被明确日程或竞争催促。",
+      "aliases": [
+        "轻松",
+        "慢节奏",
+        "休闲",
+        "不赶时间",
+        "relaxing",
+        "own pace"
+      ],
+      "confusions": "特定玩家感觉放松不能证明所有玩法无压力。",
+      "research_sources": [
+        "S09",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Casual"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13
+        ],
+        "keywords": [
+          "life simulation",
+          "farming"
+        ]
+      }
+    },
+    {
+      "id": "idle_progress",
+      "family": "节奏与日常",
+      "label": "挂机成长",
+      "definition": "离线或低操作情况下获得持续成长。",
+      "aliases": [
+        "放置",
+        "挂机",
+        "收菜",
+        "idle",
+        "afk"
+      ],
+      "confusions": "挂机不代表不氪、无日常或短时间完成。",
+      "research_sources": [
+        "S16",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "session_flexibility",
+      "family": "节奏与日常",
+      "label": "分段游玩便利",
+      "definition": "短时游玩、暂离或回归仍可推进和理解目标。",
+      "aliases": [
+        "碎片时间",
+        "短局",
+        "随时停",
+        "短时间",
+        "short sessions"
+      ],
+      "confusions": "单局短不代表可中途保存；需逐项核实。",
+      "research_sources": [
+        "S08",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "automation",
+      "family": "经营与资源",
+      "label": "生产自动化",
+      "definition": "设计生产和物流系统以替代重复手工劳动。",
+      "aliases": [
+        "自动化",
+        "流水线",
+        "生产链",
+        "automation",
+        "factory"
+      ],
+      "confusions": "与挂机收菜、自动战斗不同。",
+      "research_sources": [
+        "S18"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13,
+          15
+        ],
+        "keywords": [
+          "automation",
+          "resource management"
+        ]
+      }
+    },
+    {
+      "id": "resource_planning",
+      "family": "经营与资源",
+      "label": "资源规划与经营",
+      "definition": "分配有限资源，在扩张、效率和风险之间选择。",
+      "aliases": [
+        "经营",
+        "资源管理",
+        "规划",
+        "management",
+        "resource planning"
+      ],
+      "confusions": "资源稀缺不自动等于有策略深度。",
+      "research_sources": [
+        "S06",
+        "S09",
+        "S18"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "P06"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [
+            "Strategy"
+          ],
+          "relation": "broad_recall",
+          "source_ids": [
+            "S11"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          13,
+          15
+        ],
+        "keywords": [
+          "automation",
+          "resource management"
+        ]
+      }
+    },
+    {
+      "id": "pay_power",
+      "family": "付费与体验",
+      "label": "付费影响实力",
+      "definition": "付费影响强度、成长速度或竞争条件。",
+      "aliases": [
+        "氪金",
+        "逼氪",
+        "pay to win",
+        "p2w"
+      ],
+      "confusions": "不付费能玩不代表与付费者处境相同。",
+      "research_sources": [
+        "S11",
+        "S16",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "gacha_dependency",
+      "family": "付费与体验",
+      "label": "抽取与收集门槛",
+      "definition": "获得角色、技能或关键组件依赖抽取及保底机制。",
+      "aliases": [
+        "抽卡",
+        "保底",
+        "限定",
+        "gacha",
+        "pity"
+      ],
+      "confusions": "付费与时间两种成本独立记录。",
+      "research_sources": [
+        "S14",
+        "S16",
+        "S17"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "performance_stability",
+      "family": "运行体验",
+      "label": "性能与稳定性",
+      "definition": "卡顿、崩溃或影响推进的错误。",
+      "aliases": [
+        "卡顿",
+        "崩溃",
+        "掉帧",
+        "bug",
+        "stutter",
+        "crash"
+      ],
+      "confusions": "必须保留平台与补丁日期，不把旧问题自动当现状。",
+      "research_sources": [
+        "S04",
+        "S13",
+        "S14"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [],
+        "keywords": []
+      }
+    },
+    {
+      "id": "roguelite",
+      "family": "玩法类型",
+      "label": "单局循环与变化",
+      "definition": "玩家明确描述多次运行与局间或局内变化。",
+      "aliases": [
+        "肉鸽",
+        "肉鸽类",
+        "roguelike",
+        "roguelite",
+        "rogue-lite"
+      ],
+      "confusions": "只提重玩不足以证明类型，局外成长另查。",
+      "research_sources": [
+        "S01",
+        "S02",
+        "S06"
+      ],
+      "status": "seed_researched",
+      "platform_mappings": {
+        "steam": {
+          "labels": [
+            "Action Roguelike",
+            "Roguelite"
+          ],
+          "relation": "exact_label",
+          "source_ids": [
+            "P05"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "gog": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        },
+        "epic": {
+          "labels": [
+            "Rogue-Lite"
+          ],
+          "relation": "exact_label",
+          "source_ids": [
+            "P09"
+          ],
+          "runtime": "igdb_catalog_proxy",
+          "note": "只作召回；不证明体验。原生标签未被实时抓取。"
+        },
+        "itch": {
+          "labels": [],
+          "relation": "no_direct_mapping",
+          "source_ids": [],
+          "runtime": "igdb_catalog_proxy",
+          "note": "无已核对直接标签；使用其他正向标签召回并查评论。"
+        }
+      },
+      "igdb": {
+        "genre_ids": [
+          12,
+          15,
+          32
+        ],
+        "keywords": [
+          "roguelike",
+          "roguelite",
+          "rogue-lite"
+        ]
+      }
+    }
+  ]
+}

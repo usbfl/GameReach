@@ -1,0 +1,2903 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "GameReach",
+    "version": "0.11.0"
+  },
+  "paths": {
+    "/api/tags": {
+      "get": {
+        "summary": "Vocabulary",
+        "operationId": "vocabulary_api_tags_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tag-intent-preview": {
+      "post": {
+        "summary": "Preview",
+        "operationId": "preview_api_tag_intent_preview_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tag-research": {
+      "post": {
+        "summary": "Create",
+        "operationId": "create_api_tag_research_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tag-research/{tid}/rerank": {
+      "post": {
+        "summary": "Rerank",
+        "operationId": "rerank_api_tag_research__tid__rerank_post",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Reorder"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/healthz": {
+      "get": {
+        "summary": "Health",
+        "operationId": "health_healthz_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/settings/public": {
+      "get": {
+        "summary": "Public Settings",
+        "operationId": "public_settings_api_settings_public_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research": {
+      "post": {
+        "summary": "Create Research",
+        "operationId": "create_research_api_research_post",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResearchRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "202": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "get": {
+        "summary": "Tasks",
+        "operationId": "tasks_api_research_get",
+        "parameters": [
+          {
+            "name": "offset",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "Offset"
+            }
+          },
+          {
+            "name": "limit",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "maximum": 100,
+              "minimum": 1,
+              "default": 50,
+              "title": "Limit"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}": {
+      "get": {
+        "summary": "Task",
+        "operationId": "task_api_research__tid__get",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/events": {
+      "get": {
+        "summary": "Events",
+        "operationId": "events_api_research__tid__events_get",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          },
+          {
+            "name": "after",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer",
+              "minimum": 0,
+              "default": 0,
+              "title": "After"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/cancel": {
+      "post": {
+        "summary": "Cancel",
+        "operationId": "cancel_api_research__tid__cancel_post",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/pause": {
+      "post": {
+        "summary": "Pause",
+        "operationId": "pause_api_research__tid__pause_post",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/resume": {
+      "post": {
+        "summary": "Resume",
+        "operationId": "resume_api_research__tid__resume_post",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/role-modes": {
+      "patch": {
+        "summary": "Modes",
+        "operationId": "modes_api_research__tid__role_modes_patch",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RoleModes"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/human-actions": {
+      "post": {
+        "summary": "Human",
+        "operationId": "human_api_research__tid__human_actions_post",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/HumanInput"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/research/{tid}/report": {
+      "get": {
+        "summary": "Report",
+        "operationId": "report_api_research__tid__report_get",
+        "parameters": [
+          {
+            "name": "tid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Tid"
+            }
+          },
+          {
+            "name": "format",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(json|markdown)$",
+              "default": "json",
+              "title": "Format"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dna/ontology": {
+      "get": {
+        "summary": "Ontology",
+        "operationId": "ontology_api_dna_ontology_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dna/references": {
+      "get": {
+        "summary": "References",
+        "operationId": "references_api_dna_references_get",
+        "parameters": [
+          {
+            "name": "dataset_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "enum": [
+                "live",
+                "synthetic-v1"
+              ],
+              "type": "string",
+              "title": "Dataset Id"
+            }
+          },
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 100,
+              "default": "",
+              "title": "Q"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dna/parse": {
+      "post": {
+        "summary": "Parse",
+        "operationId": "parse_api_dna_parse_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ParseBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/games/{gid}/dna": {
+      "get": {
+        "summary": "Dna",
+        "operationId": "dna_api_games__gid__dna_get",
+        "parameters": [
+          {
+            "name": "gid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Gid"
+            }
+          },
+          {
+            "name": "dataset_id",
+            "in": "query",
+            "required": true,
+            "schema": {
+              "enum": [
+                "live",
+                "synthetic-v1"
+              ],
+              "type": "string",
+              "title": "Dataset Id"
+            }
+          },
+          {
+            "name": "snapshot_id",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "title": "Snapshot Id"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dna/reference": {
+      "post": {
+        "summary": "Reference",
+        "operationId": "reference_api_dna_reference_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ReferenceBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/dna/rerank": {
+      "post": {
+        "summary": "Reorder",
+        "operationId": "reorder_api_dna_rerank_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/RankBody"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/import/file": {
+      "post": {
+        "summary": "File Import",
+        "operationId": "file_import_api_player_import_file_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FileImport"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/import/steam": {
+      "post": {
+        "summary": "Import Steam",
+        "operationId": "import_steam_api_player_import_steam_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/SteamImport"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/imports": {
+      "get": {
+        "summary": "Imports",
+        "operationId": "imports_api_player_imports_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/imports/{iid}": {
+      "get": {
+        "summary": "Read Import",
+        "operationId": "read_import_api_player_imports__iid__get",
+        "parameters": [
+          {
+            "name": "iid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete Import",
+        "operationId": "delete_import_api_player_imports__iid__delete",
+        "parameters": [
+          {
+            "name": "iid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/imports/{iid}/analyze": {
+      "post": {
+        "summary": "Analyze",
+        "operationId": "analyze_api_player_imports__iid__analyze_post",
+        "parameters": [
+          {
+            "name": "iid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Iid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Selection"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/player/drafts/{did}/confirm": {
+      "post": {
+        "summary": "Confirm",
+        "operationId": "confirm_api_player_drafts__did__confirm_post",
+        "parameters": [
+          {
+            "name": "did",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Did"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ConfirmDraft"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/interests": {
+      "get": {
+        "summary": "Read",
+        "operationId": "read_api_interests_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/interests/generate": {
+      "post": {
+        "summary": "Generate",
+        "operationId": "generate_api_interests_generate_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenerateInterests"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/interests/{cid}": {
+      "patch": {
+        "summary": "Edit",
+        "operationId": "edit_api_interests__cid__patch",
+        "parameters": [
+          {
+            "name": "cid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Cid"
+            }
+          }
+        ],
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/EditInterest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete",
+        "operationId": "delete_api_interests__cid__delete",
+        "parameters": [
+          {
+            "name": "cid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Cid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/discovery": {
+      "post": {
+        "summary": "Discover",
+        "operationId": "discover_api_discovery_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ResearchRequest"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/games/search": {
+      "get": {
+        "summary": "Search",
+        "operationId": "search_api_games_search_get",
+        "parameters": [
+          {
+            "name": "q",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "maxLength": 120,
+              "default": "",
+              "title": "Q"
+            }
+          },
+          {
+            "name": "store",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(all|steam|gog|epic|itch)$",
+              "default": "all",
+              "title": "Store"
+            }
+          },
+          {
+            "name": "platform",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "string",
+              "pattern": "^(all|pc|switch|ps5|xbox_series)$",
+              "default": "all",
+              "title": "Platform"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/games/local": {
+      "get": {
+        "summary": "Local Games",
+        "operationId": "local_games_api_games_local_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/games/{gid}": {
+      "get": {
+        "summary": "Game",
+        "operationId": "game_api_games__gid__get",
+        "parameters": [
+          {
+            "name": "gid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Gid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/evidence/{eid}": {
+      "get": {
+        "summary": "Evidence",
+        "operationId": "evidence_api_evidence__eid__get",
+        "parameters": [
+          {
+            "name": "eid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Eid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/profile": {
+      "get": {
+        "summary": "Profile",
+        "operationId": "profile_api_profile_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      },
+      "patch": {
+        "summary": "Edit Profile",
+        "operationId": "edit_profile_api_profile_patch",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ProfileInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/profile/feedback": {
+      "post": {
+        "summary": "Feedback",
+        "operationId": "feedback_api_profile_feedback_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/FeedbackInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/profile/revisions/{rid}/confirm": {
+      "post": {
+        "summary": "Confirm Revision",
+        "operationId": "confirm_revision_api_profile_revisions__rid__confirm_post",
+        "parameters": [
+          {
+            "name": "rid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Rid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/profile/revisions/{rid}/revert": {
+      "post": {
+        "summary": "Revert Revision",
+        "operationId": "revert_revision_api_profile_revisions__rid__revert_post",
+        "parameters": [
+          {
+            "name": "rid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Rid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/shortlist": {
+      "get": {
+        "summary": "Interest Games",
+        "operationId": "interest_games_api_shortlist_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add Interest Game",
+        "operationId": "add_interest_game_api_shortlist_post",
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ShortlistInput"
+              }
+            }
+          },
+          "required": true
+        },
+        "responses": {
+          "201": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/shortlist/{wid}": {
+      "delete": {
+        "summary": "Remove Interest Game",
+        "operationId": "remove_interest_game_api_shortlist__wid__delete",
+        "parameters": [
+          {
+            "name": "wid",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Wid"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tools/health": {
+      "get": {
+        "summary": "Tools Health",
+        "operationId": "tools_health_api_tools_health_get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/tools/{name}/check": {
+      "post": {
+        "summary": "Check Tool",
+        "operationId": "check_tool_api_tools__name__check_post",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "title": "Name"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          },
+          "422": {
+            "description": "Validation Error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/HTTPValidationError"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/": {
+      "get": {
+        "summary": "Home",
+        "operationId": "home__get",
+        "responses": {
+          "200": {
+            "description": "Successful Response",
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CardAttachment": {
+        "properties": {
+          "id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 1,
+            "title": "Id"
+          },
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "id",
+          "version"
+        ],
+        "title": "CardAttachment"
+      },
+      "ConfirmDraft": {
+        "properties": {
+          "interest_cards": {
+            "items": {
+              "$ref": "#/components/schemas/InterestText"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Interest Cards"
+          },
+          "preference_keys": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Preference Keys"
+          },
+          "topic_names": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Topic Names"
+          },
+          "style": {
+            "type": "string",
+            "enum": [
+              "plain",
+              "analytical",
+              "vivid"
+            ],
+            "title": "Style",
+            "default": "plain"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ConfirmDraft"
+      },
+      "ConfirmedConditions": {
+        "properties": {
+          "intents": {
+            "items": {
+              "$ref": "#/components/schemas/Intent"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Intents"
+          },
+          "custom": {
+            "items": {
+              "$ref": "#/components/schemas/CustomRequirement"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Custom"
+          },
+          "constraints": {
+            "$ref": "#/components/schemas/Constraints"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ConfirmedConditions"
+      },
+      "Constraints": {
+        "properties": {
+          "platform": {
+            "type": "string",
+            "maxLength": 50,
+            "title": "Platform",
+            "default": "PC"
+          },
+          "released_only": {
+            "type": "boolean",
+            "title": "Released Only",
+            "default": true
+          },
+          "language": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 50
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Language"
+          },
+          "max_price": {
+            "anyOf": [
+              {
+                "type": "number",
+                "minimum": 0.0
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Max Price"
+          },
+          "currency": {
+            "type": "string",
+            "maxLength": 10,
+            "title": "Currency",
+            "default": "CNY"
+          },
+          "region": {
+            "type": "string",
+            "maxLength": 10,
+            "title": "Region",
+            "default": "CN"
+          },
+          "played": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 200,
+            "title": "Played"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Constraints"
+      },
+      "CustomRequirement": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Text"
+          },
+          "polarity": {
+            "type": "string",
+            "enum": [
+              "want",
+              "avoid"
+            ],
+            "title": "Polarity",
+            "default": "want"
+          },
+          "priority": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "title": "Priority",
+            "default": 2
+          },
+          "explicit_redline": {
+            "type": "boolean",
+            "title": "Explicit Redline",
+            "default": false
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "unmapped",
+              "confirmed",
+              "ignored"
+            ],
+            "title": "Status",
+            "default": "unmapped"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "text"
+        ],
+        "title": "CustomRequirement"
+      },
+      "DiscoveryScope": {
+        "properties": {
+          "stores": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "steam",
+                "gog",
+                "epic",
+                "itch"
+              ]
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Stores"
+          },
+          "platforms": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "pc",
+                "switch",
+                "ps5",
+                "xbox_series"
+              ]
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Platforms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "DiscoveryScope"
+      },
+      "DnaQuery": {
+        "properties": {
+          "ontology_version": {
+            "type": "string",
+            "const": "dna-2",
+            "title": "Ontology Version",
+            "default": "dna-2"
+          },
+          "discovery_scope": {
+            "$ref": "#/components/schemas/Scope"
+          },
+          "must": {
+            "items": {
+              "$ref": "#/components/schemas/Predicate"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Must"
+          },
+          "must_not": {
+            "items": {
+              "$ref": "#/components/schemas/Predicate"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Must Not"
+          },
+          "soft_preferences": {
+            "items": {
+              "$ref": "#/components/schemas/Soft"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Soft Preferences"
+          },
+          "reference_game_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 3,
+            "title": "Reference Game Ids"
+          },
+          "selected_features": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Selected Features"
+          },
+          "unparsed_fragments": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 30,
+            "title": "Unparsed Fragments"
+          },
+          "query_hash": {
+            "type": "string",
+            "title": "Query Hash",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "DnaQuery"
+      },
+      "EditInterest": {
+        "properties": {
+          "version": {
+            "type": "integer",
+            "minimum": 1.0,
+            "title": "Version"
+          },
+          "title": {
+            "type": "string",
+            "maxLength": 24,
+            "minLength": 1,
+            "title": "Title"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 900,
+            "minLength": 12,
+            "title": "Text"
+          },
+          "confirm": {
+            "type": "boolean",
+            "title": "Confirm",
+            "default": false
+          },
+          "game_keys": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "string"
+                },
+                "type": "array",
+                "maxItems": 12,
+                "minItems": 2
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Game Keys"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "version",
+          "title",
+          "text"
+        ],
+        "title": "EditInterest"
+      },
+      "FeedbackInput": {
+        "properties": {
+          "game_id": {
+            "type": "string",
+            "title": "Game Id"
+          },
+          "reaction": {
+            "type": "string",
+            "enum": [
+              "like",
+              "dislike",
+              "played",
+              "later"
+            ],
+            "title": "Reaction"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 1000,
+            "title": "Reason",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "game_id",
+          "reaction"
+        ],
+        "title": "FeedbackInput"
+      },
+      "FileImport": {
+        "properties": {
+          "format": {
+            "type": "string",
+            "enum": [
+              "json",
+              "csv"
+            ],
+            "title": "Format"
+          },
+          "content": {
+            "type": "string",
+            "maxLength": 500000,
+            "title": "Content"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "format",
+          "content"
+        ],
+        "title": "FileImport"
+      },
+      "GenerateInterests": {
+        "properties": {
+          "regroup": {
+            "type": "boolean",
+            "title": "Regroup",
+            "default": false
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 3000,
+            "title": "Text",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "GenerateInterests"
+      },
+      "HTTPValidationError": {
+        "properties": {
+          "detail": {
+            "items": {
+              "$ref": "#/components/schemas/ValidationError"
+            },
+            "type": "array",
+            "title": "Detail"
+          }
+        },
+        "type": "object",
+        "title": "HTTPValidationError"
+      },
+      "HumanInput": {
+        "properties": {
+          "action_id": {
+            "type": "string",
+            "maxLength": 100,
+            "minLength": 8,
+            "title": "Action Id"
+          },
+          "state_version": {
+            "type": "integer",
+            "title": "State Version"
+          },
+          "decision": {
+            "type": "string",
+            "enum": [
+              "accept",
+              "reject",
+              "submit"
+            ],
+            "title": "Decision",
+            "default": "accept"
+          },
+          "note": {
+            "type": "string",
+            "maxLength": 3000,
+            "title": "Note",
+            "default": ""
+          },
+          "game_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 5,
+            "title": "Game Ids"
+          },
+          "claim_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 100,
+            "title": "Claim Ids"
+          },
+          "source_title": {
+            "type": "string",
+            "maxLength": 200,
+            "title": "Source Title",
+            "default": ""
+          },
+          "source_text": {
+            "type": "string",
+            "maxLength": 5000,
+            "title": "Source Text",
+            "default": ""
+          },
+          "source_url": {
+            "type": "string",
+            "maxLength": 1000,
+            "title": "Source Url",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "action_id",
+          "state_version"
+        ],
+        "title": "HumanInput"
+      },
+      "Intent": {
+        "properties": {
+          "tag_id": {
+            "type": "string",
+            "title": "Tag Id"
+          },
+          "polarity": {
+            "type": "string",
+            "enum": [
+              "want",
+              "avoid"
+            ],
+            "title": "Polarity",
+            "default": "want"
+          },
+          "priority": {
+            "type": "integer",
+            "enum": [
+              1,
+              2,
+              3
+            ],
+            "title": "Priority",
+            "default": 2
+          },
+          "source_id": {
+            "type": "string",
+            "title": "Source Id",
+            "default": "current"
+          },
+          "source_quote": {
+            "type": "string",
+            "maxLength": 500,
+            "minLength": 1,
+            "title": "Source Quote"
+          },
+          "scope": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "maxProperties": 5,
+            "title": "Scope"
+          },
+          "explicit_redline": {
+            "type": "boolean",
+            "title": "Explicit Redline",
+            "default": false
+          },
+          "confirmed_by_user": {
+            "type": "boolean",
+            "title": "Confirmed By User",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "tag_id",
+          "source_quote"
+        ],
+        "title": "Intent"
+      },
+      "InterestText": {
+        "properties": {
+          "title": {
+            "type": "string",
+            "maxLength": 24,
+            "minLength": 1,
+            "title": "Title"
+          },
+          "text": {
+            "type": "string",
+            "maxLength": 900,
+            "minLength": 12,
+            "title": "Text"
+          },
+          "source_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 24,
+            "minItems": 1,
+            "title": "Source Ids"
+          },
+          "theme_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 6,
+            "title": "Theme Ids"
+          },
+          "game_keys": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "minItems": 2,
+            "title": "Game Keys"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "title",
+          "text",
+          "source_ids"
+        ],
+        "title": "InterestText"
+      },
+      "ParseBody": {
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 3000,
+            "title": "Text",
+            "default": ""
+          },
+          "preferences": {
+            "items": {
+              "additionalProperties": true,
+              "type": "object"
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Preferences"
+          },
+          "discovery": {
+            "additionalProperties": true,
+            "type": "object",
+            "title": "Discovery"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ParseBody"
+      },
+      "Predicate": {
+        "properties": {
+          "kind": {
+            "type": "string",
+            "enum": [
+              "leaf",
+              "all",
+              "any",
+              "not"
+            ],
+            "title": "Kind",
+            "default": "leaf"
+          },
+          "feature_key": {
+            "anyOf": [
+              {
+                "type": "string"
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Feature Key"
+          },
+          "operator": {
+            "type": "string",
+            "enum": [
+              "eq",
+              "ne",
+              "gte",
+              "lte",
+              "in",
+              "overlap"
+            ],
+            "title": "Operator",
+            "default": "eq"
+          },
+          "target": {
+            "title": "Target"
+          },
+          "children": {
+            "items": {
+              "$ref": "#/components/schemas/Predicate"
+            },
+            "type": "array",
+            "maxItems": 12,
+            "title": "Children"
+          },
+          "origin": {
+            "type": "string",
+            "enum": [
+              "text",
+              "ui",
+              "legacy",
+              "reference",
+              "model"
+            ],
+            "title": "Origin",
+            "default": "ui"
+          },
+          "source_text_span": {
+            "anyOf": [
+              {
+                "items": {
+                  "type": "integer"
+                },
+                "type": "array",
+                "maxItems": 2
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Source Text Span"
+          },
+          "scope": {
+            "additionalProperties": {
+              "type": "string"
+            },
+            "type": "object",
+            "maxProperties": 4,
+            "title": "Scope"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Predicate"
+      },
+      "Preference": {
+        "properties": {
+          "feature_key": {
+            "type": "string",
+            "title": "Feature Key"
+          },
+          "target": {
+            "title": "Target"
+          },
+          "weight": {
+            "type": "number",
+            "maximum": 10.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Weight",
+            "default": 1
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "feature_key",
+          "target"
+        ],
+        "title": "Preference"
+      },
+      "ProfileInput": {
+        "properties": {
+          "preferences": {
+            "items": {
+              "$ref": "#/components/schemas/Preference"
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Preferences"
+          },
+          "constraints": {
+            "$ref": "#/components/schemas/Constraints"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ProfileInput"
+      },
+      "RankBody": {
+        "properties": {
+          "candidate_snapshot_id": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Candidate Snapshot Id"
+          },
+          "dataset_id": {
+            "type": "string",
+            "enum": [
+              "live",
+              "synthetic-v1"
+            ],
+            "title": "Dataset Id"
+          },
+          "query": {
+            "$ref": "#/components/schemas/DnaQuery"
+          },
+          "confirm_relaxation": {
+            "type": "boolean",
+            "title": "Confirm Relaxation",
+            "default": false
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "candidate_snapshot_id",
+          "dataset_id",
+          "query"
+        ],
+        "title": "RankBody"
+      },
+      "ReferenceBody": {
+        "properties": {
+          "dataset_id": {
+            "type": "string",
+            "enum": [
+              "live",
+              "synthetic-v1"
+            ],
+            "title": "Dataset Id"
+          },
+          "query": {
+            "$ref": "#/components/schemas/DnaQuery"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "dataset_id",
+          "query"
+        ],
+        "title": "ReferenceBody"
+      },
+      "Reorder": {
+        "properties": {
+          "priorities": {
+            "additionalProperties": {
+              "type": "integer",
+              "enum": [
+                1,
+                2,
+                3
+              ]
+            },
+            "type": "object",
+            "maxProperties": 12,
+            "title": "Priorities"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Reorder"
+      },
+      "ResearchRequest": {
+        "properties": {
+          "confirmed_conditions": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/ConfirmedConditions"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "intent_preview_id": {
+            "anyOf": [
+              {
+                "type": "string",
+                "maxLength": 100
+              },
+              {
+                "type": "null"
+              }
+            ],
+            "title": "Intent Preview Id"
+          },
+          "research_strategy": {
+            "type": "string",
+            "enum": [
+              "quick",
+              "balanced",
+              "thorough"
+            ],
+            "title": "Research Strategy",
+            "default": "balanced"
+          },
+          "recommendation_count": {
+            "type": "integer",
+            "maximum": 10.0,
+            "minimum": 1.0,
+            "title": "Recommendation Count",
+            "default": 5
+          },
+          "recommendation_mode": {
+            "type": "string",
+            "enum": [
+              "legacy_dna",
+              "player_tags"
+            ],
+            "title": "Recommendation Mode",
+            "default": "legacy_dna"
+          },
+          "attachments": {
+            "items": {
+              "$ref": "#/components/schemas/CardAttachment"
+            },
+            "type": "array",
+            "maxItems": 6,
+            "title": "Attachments"
+          },
+          "dna_query": {
+            "anyOf": [
+              {
+                "$ref": "#/components/schemas/DnaQuery"
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "discovery": {
+            "$ref": "#/components/schemas/DiscoveryScope"
+          },
+          "query": {
+            "type": "string",
+            "maxLength": 3000,
+            "title": "Query",
+            "default": ""
+          },
+          "kind": {
+            "type": "string",
+            "const": "scout",
+            "title": "Kind",
+            "default": "scout"
+          },
+          "game_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Game Ids"
+          },
+          "preferences": {
+            "items": {
+              "$ref": "#/components/schemas/Preference"
+            },
+            "type": "array",
+            "maxItems": 16,
+            "title": "Preferences"
+          },
+          "constraints": {
+            "$ref": "#/components/schemas/Constraints"
+          },
+          "role_modes": {
+            "$ref": "#/components/schemas/RoleModes"
+          },
+          "demo_fault": {
+            "type": "string",
+            "enum": [
+              "none",
+              "rate_limited",
+              "timeout"
+            ],
+            "title": "Demo Fault",
+            "default": "none"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "ResearchRequest"
+      },
+      "RoleModes": {
+        "properties": {
+          "planner": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "human"
+            ],
+            "title": "Planner",
+            "default": "ai"
+          },
+          "researcher": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "human"
+            ],
+            "title": "Researcher",
+            "default": "ai"
+          },
+          "verifier": {
+            "type": "string",
+            "enum": [
+              "ai",
+              "human"
+            ],
+            "title": "Verifier",
+            "default": "ai"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "RoleModes"
+      },
+      "Scope": {
+        "properties": {
+          "stores": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "steam",
+                "gog",
+                "epic",
+                "itch"
+              ]
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Stores"
+          },
+          "platforms": {
+            "items": {
+              "type": "string",
+              "enum": [
+                "pc",
+                "switch",
+                "ps5",
+                "xbox_series"
+              ]
+            },
+            "type": "array",
+            "maxItems": 4,
+            "title": "Platforms"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "title": "Scope"
+      },
+      "Selection": {
+        "properties": {
+          "selected_ids": {
+            "items": {
+              "type": "string"
+            },
+            "type": "array",
+            "maxItems": 2000,
+            "title": "Selected Ids"
+          },
+          "reactions": {
+            "additionalProperties": {
+              "type": "string",
+              "enum": [
+                "neutral",
+                "like",
+                "dislike",
+                "exclude"
+              ]
+            },
+            "type": "object",
+            "title": "Reactions"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "selected_ids"
+        ],
+        "title": "Selection"
+      },
+      "ShortlistInput": {
+        "properties": {
+          "game_id": {
+            "type": "string",
+            "maxLength": 100,
+            "title": "Game Id"
+          },
+          "reason": {
+            "type": "string",
+            "maxLength": 500,
+            "title": "Reason",
+            "default": ""
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "game_id"
+        ],
+        "title": "ShortlistInput"
+      },
+      "Soft": {
+        "properties": {
+          "condition": {
+            "$ref": "#/components/schemas/Predicate"
+          },
+          "weight": {
+            "type": "number",
+            "maximum": 10.0,
+            "exclusiveMinimum": 0.0,
+            "title": "Weight",
+            "default": 1.0
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "condition"
+        ],
+        "title": "Soft"
+      },
+      "SteamImport": {
+        "properties": {
+          "steam_id": {
+            "type": "string",
+            "maxLength": 150,
+            "title": "Steam Id"
+          }
+        },
+        "additionalProperties": false,
+        "type": "object",
+        "required": [
+          "steam_id"
+        ],
+        "title": "SteamImport"
+      },
+      "ValidationError": {
+        "properties": {
+          "loc": {
+            "items": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "integer"
+                }
+              ]
+            },
+            "type": "array",
+            "title": "Location"
+          },
+          "msg": {
+            "type": "string",
+            "title": "Message"
+          },
+          "type": {
+            "type": "string",
+            "title": "Error Type"
+          }
+        },
+        "type": "object",
+        "required": [
+          "loc",
+          "msg",
+          "type"
+        ],
+        "title": "ValidationError"
+      }
+    }
+  }
+}

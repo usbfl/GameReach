@@ -1,0 +1,2 @@
+platform,external_id,name,playtime_minutes,recent_minutes,favorite,collections,reaction
+steam,填写AppID,填写游戏名称,120,30,true,周末|喜欢的游戏,like

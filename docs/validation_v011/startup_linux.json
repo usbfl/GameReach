@@ -1,0 +1,17 @@
+{
+  "command": "bash scripts/run_demo.sh",
+  "modes": [
+    "fixtures",
+    "mock"
+  ],
+  "checks": {
+    "bash_syntax": true,
+    "health_v011": true,
+    "serves_built_frontend": true,
+    "sqlite_created": true
+  },
+  "passed": 4,
+  "failed": 0,
+  "platform": "Linux",
+  "windows_macos": "not_run"
+}

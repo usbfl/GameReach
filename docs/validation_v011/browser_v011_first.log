@@ -1,0 +1,283 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> gamereach-workbench@0.10.2 test:e2e
+> node run-e2e.cjs
+
+[2m[WebServer] [22mINFO:     Started server process [42]
+[2m[WebServer] [22mINFO:     Waiting for application startup.
+[2m[WebServer] [22mINFO:     Application startup complete.
+[2m[WebServer] [22mINFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+Running 30 tests using 1 worker
+
+(node:43) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/player.e2e.cjs:5:16 › Library selection, preference draft, explicit confirmation and undo (1.2s)
+  ✓  2 [desktop] › tests/player.e2e.cjs:30:16 › File imports give actionable errors and recommendations show readable evidence (5.3s)
+  ✓  3 [desktop] › tests/player.e2e.cjs:46:16 › Steam import shows inline progress, failure and empty-library success (736ms)
+  ✓  4 [desktop] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (3.7s)
+  ✓  5 [desktop] › tests/tags.e2e.cjs:5:16 › Keyboard priority changes rerank frozen evidence without calls (5.0s)
+  ✓  6 [desktop] › tests/v011.e2e.cjs:5:16 › v0.11 editable final conditions persist, partial matches and local reorder (3.3s)
+  ✓  7 [desktop] › tests/v011.e2e.cjs:36:16 › v0.11 overlap cards permit actual member editing and persist confirmation (1.1s)
+  ✓  8 [desktop] › tests/v011.e2e.cjs:69:16 › v0.11 custom hard expression stays unknown and cannot qualify a candidate (3.8s)
+  ✘  9 [desktop] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history (24.8s)
+(node:219) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  10 [desktop] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation (25.1s)
+(node:294) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  11 [desktop] › tests/workbench.e2e.cjs:55:16 › Human verifier decisions persist without blanket acceptance (4.7s)
+  ✓  12 [desktop] › tests/workbench.e2e.cjs:70:16 › Source rate limit remains an honest partial result (4.5s)
+  ✓  13 [desktop] › tests/workbench.e2e.cjs:81:16 › Interest shortlist still supports local add and remove (677ms)
+  ✘  14 [desktop] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt (1.0m)
+(node:407) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [desktop] › tests/workbench.e2e.cjs:118:16 › Home layout has no overflow or browser errors (782ms)
+(node:478) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [mobile] › tests/player.e2e.cjs:5:16 › Library selection, preference draft, explicit confirmation and undo (1.6s)
+  ✓  17 [mobile] › tests/player.e2e.cjs:30:16 › File imports give actionable errors and recommendations show readable evidence (5.2s)
+  ✓  18 [mobile] › tests/player.e2e.cjs:46:16 › Steam import shows inline progress, failure and empty-library success (648ms)
+  ✓  19 [mobile] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (2.9s)
+  ✓  20 [mobile] › tests/tags.e2e.cjs:5:16 › Keyboard priority changes rerank frozen evidence without calls (5.2s)
+  ✓  21 [mobile] › tests/v011.e2e.cjs:5:16 › v0.11 editable final conditions persist, partial matches and local reorder (3.3s)
+  ✓  22 [mobile] › tests/v011.e2e.cjs:36:16 › v0.11 overlap cards permit actual member editing and persist confirmation (1.2s)
+  ✓  23 [mobile] › tests/v011.e2e.cjs:69:16 › v0.11 custom hard expression stays unknown and cannot qualify a candidate (4.8s)
+  ✘  24 [mobile] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history (479ms)
+(node:652) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  25 [mobile] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation (26.2s)
+(node:727) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  26 [mobile] › tests/workbench.e2e.cjs:55:16 › Human verifier decisions persist without blanket acceptance (4.0s)
+  ✓  27 [mobile] › tests/workbench.e2e.cjs:70:16 › Source rate limit remains an honest partial result (4.3s)
+  ✓  28 [mobile] › tests/workbench.e2e.cjs:81:16 › Interest shortlist still supports local add and remove (550ms)
+  ✘  29 [mobile] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt (1.0m)
+(node:837) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  30 [mobile] › tests/workbench.e2e.cjs:118:16 › Home layout has no overflow or browser errors (483ms)
+
+
+  1) [desktop] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByRole('dialog', { name: '证据详情' }).locator('.source-text')
+    Expected: visible
+    Received: hidden
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByRole('dialog', { name: '证据详情' }).locator('.source-text')[22m
+    [2m    24 × locator resolved to <pre class="source-text">虚构演示：以下规则仅属于该合成游戏的标准主流程。↵体力管理（stamina_management）…</pre>[22m
+    [2m       - unexpected value "hidden"[22m
+
+
+      14 |     const dialog = page.getByRole('dialog', { name: '证据详情' });
+      15 |     await (0, test_1.expect)(dialog).toContainText('虚构');
+    > 16 |     await (0, test_1.expect)(dialog.locator('.source-text')).toBeVisible();
+         |                                                              ^
+      17 |     await (0, test_1.expect)(dialog.locator('.source-text')).toContainText('这份感受仅供演示');
+      18 |     await page.getByRole('button', { name: '关闭证据' }).click();
+      19 |     const download = page.waitForEvent('download');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:16:62
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.pending-candidate').first()
+    Expected string: [32m"本轮未安排调查"[39m
+    Received string: [31m"骰火工坊任务预算耗尽，尚未完成任务预算耗尽，尚未完成查看停止原因；缩小候选范围，或在设置中调整相应预算后重新研究。获取 0 篇 → 全文分析 0 篇 → 提取 0 条 → 核验支持 0 条。调查安排：没有能够补充当前缺口的可读独立全文；保留未知项；复用 0 批。停止原因：tool_calls 预算耗尽"[39m
+    Call log:
+    [2m  - expect.toContainText with timeout 20000ms[22m
+    [2m  - waiting for locator('.pending-candidate').first()[22m
+    [2m    24 × locator resolved to <details class="pending-candidate">…</details>[22m
+    [2m       - unexpected value "骰火工坊任务预算耗尽，尚未完成任务预算耗尽，尚未完成查看停止原因；缩小候选范围，或在设置中调整相应预算后重新研究。获取 0 篇 → 全文分析 0 篇 → 提取 0 条 → 核验支持 0 条。调查安排：没有能够补充当前缺口的可读独立全文；保留未知项；复用 0 批。停止原因：tool_calls 预算耗尽"[22m
+
+
+      51 |     await (0, test_1.expect)(page.locator('.tag-result-card')).toHaveCount(t.report.recommendation_ids.length);
+      52 |     await page.locator('.pending-candidates>summary').click();
+    > 53 |     await (0, test_1.expect)(page.locator('.pending-candidate').first()).toContainText('本轮未安排调查');
+         |                                                                          ^
+      54 | });
+      55 | (0, test_1.test)('Human verifier decisions persist without blanket acceptance', async ({ page }) => {
+      56 |     await page.goto('/');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:53:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: locator.fill: Test timeout of 60000ms exceeded.
+    Call log:
+    [2m  - waiting for getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first().getByLabel('分类标题')[22m
+
+
+      104 |     await (0, test_1.expect)(card).toBeVisible();
+      105 |     await card.getByRole('button', { name: '编辑', exact: true }).click();
+    > 106 |     await card.getByLabel('分类标题').fill('读招与变化');
+          |                                   ^
+      107 |     await card.getByLabel('概括').fill('我享受观察敌人、把握弹反时机的战斗，也希望构筑能带来变化。');
+      108 |     await card.getByRole('button', { name: '保存卡片', exact: true }).click();
+      109 |     await card.getByRole('button', { name: '确认这张卡片', exact: true }).click();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:106:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [mobile] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history 
+
+    Error: [2mexpect([22m[31mreceived[39m[2m).[22mtoBeTruthy[2m()[22m
+
+    Received: [31mnull[39m
+
+       at outcome.cjs:9
+
+       7 | async function expectOutcome(page) {
+       8 |     const tid = await page.evaluate(() => localStorage.getItem('gamereach-task'));
+    >  9 |     (0, test_1.expect)(tid).toBeTruthy();
+         |                             ^
+      10 |     await test_1.expect.poll(async () => { const t = await (await page.request.get('/api/research/' + tid)).json(); return Boolean(t.report); }).toBe(true);
+      11 |     const task = await (await page.request.get('/api/research/' + tid)).json();
+      12 |     (0, test_1.expect)(task.report.target.achieved).toBe(task.report.recommendation_ids.length);
+        at expectOutcome (/workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/outcome.cjs:9:29)
+        at scout (/workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:5:123)
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:9:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [mobile] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoContainText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.pending-candidate').first()
+    Expected string: [32m"本轮未安排调查"[39m
+    Received string: [31m"骰火工坊任务预算耗尽，尚未完成任务预算耗尽，尚未完成查看停止原因；缩小候选范围，或在设置中调整相应预算后重新研究。获取 0 篇 → 全文分析 0 篇 → 提取 0 条 → 核验支持 0 条。调查安排：没有能够补充当前缺口的可读独立全文；保留未知项；复用 0 批。停止原因：tool_calls 预算耗尽"[39m
+    Call log:
+    [2m  - expect.toContainText with timeout 20000ms[22m
+    [2m  - waiting for locator('.pending-candidate').first()[22m
+    [2m    24 × locator resolved to <details class="pending-candidate">…</details>[22m
+    [2m       - unexpected value "骰火工坊任务预算耗尽，尚未完成任务预算耗尽，尚未完成查看停止原因；缩小候选范围，或在设置中调整相应预算后重新研究。获取 0 篇 → 全文分析 0 篇 → 提取 0 条 → 核验支持 0 条。调查安排：没有能够补充当前缺口的可读独立全文；保留未知项；复用 0 批。停止原因：tool_calls 预算耗尽"[22m
+
+
+      51 |     await (0, test_1.expect)(page.locator('.tag-result-card')).toHaveCount(t.report.recommendation_ids.length);
+      52 |     await page.locator('.pending-candidates>summary').click();
+    > 53 |     await (0, test_1.expect)(page.locator('.pending-candidate').first()).toContainText('本轮未安排调查');
+         |                                                                          ^
+      54 | });
+      55 | (0, test_1.test)('Human verifier decisions persist without blanket acceptance', async ({ page }) => {
+      56 |     await page.goto('/');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:53:74
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [mobile] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: tracing.stopChunk: ENOENT: no such file or directory, copyfile '/workspace/scratch/fced74019bc6/work/GameReach/frontend/test-results/.playwright-artifacts-6/traces/c041a83e9b079536ca06-1d40fac8d878504e2eb4-recording4.network' -> '/workspace/scratch/fced74019bc6/work/GameReach/frontend/test-results/.playwright-artifacts-6/traces/c041a83e9b079536ca06-1d40fac8d878504e2eb4-recording4-pwnetcopy-1.network'
+
+    Error: browserContext._wrapApiCall: ENOENT: no such file or directory, copyfile '/workspace/scratch/fced74019bc6/work/GameReach/frontend/test-results/.playwright-artifacts-6/traces/c041a83e9b079536ca06-1d40fac8d878504e2eb4-recording3.network' -> '/workspace/scratch/fced74019bc6/work/GameReach/frontend/test-results/.playwright-artifacts-6/traces/c041a83e9b079536ca06-1d40fac8d878504e2eb4-recording3-pwnetcopy-1.network'
+
+    Error: locator.fill: Test ended.
+    Call log:
+    [2m  - waiting for getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first().getByLabel('分类标题')[22m
+
+
+      104 |     if (await more.count())
+      105 |         await more.click();
+    > 106 |     const candidate = panel.locator('.memory-card').filter({ has: page.getByRole('button', { name: '确认这张卡片', exact: true }) }).first();
+          |                                   ^
+      107 |     await (0, test_1.expect)(candidate).toBeVisible();
+      108 |     const card = panel.locator(`[data-card-id="${await candidate.getAttribute('data-card-id')}"]`);
+      109 |     await card.getByRole('button', { name: '编辑', exact: true }).click();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:106:35
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6 failed
+    [desktop] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history 
+    [desktop] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation 
+    [desktop] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt 
+    [mobile] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history 
+    [mobile] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation 
+    [mobile] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt 
+  24 passed (4.6m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

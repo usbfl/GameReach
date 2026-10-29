@@ -1,0 +1,18 @@
+.env
+.venv/
+node_modules/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+data/*.db*
+artifacts/*.db*
+frontend/test-results/
+frontend/playwright-report/
+
+# Local credentials and runtime outputs
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+.DS_Store

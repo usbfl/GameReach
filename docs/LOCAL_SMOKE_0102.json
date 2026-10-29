@@ -1,0 +1,199 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "0.10.2"
+  },
+  "frontend_status": 200,
+  "interest_reuse": {
+    "hit": true,
+    "reused_cards": 1,
+    "processed_games": 0
+  },
+  "reports": [
+    {
+      "strategy": {
+        "version": "budget-strategy-1",
+        "name": "balanced",
+        "label": "均衡精选",
+        "scan_limit": 500,
+        "shortlist_limit": 30,
+        "initial_games": 5,
+        "investigation_limit": 5,
+        "max_batches": 3,
+        "reserve_next_game": true
+      },
+      "target": {
+        "requested": 1,
+        "achieved": 1,
+        "met": true,
+        "stop_reason": "target_reached"
+      },
+      "diagnostics": {
+        "recalled": 1,
+        "selected": 1,
+        "with_reviews": 1,
+        "full_read": 1,
+        "with_findings": 1,
+        "verified": 1,
+        "with_matches": 1
+      },
+      "savings": {},
+      "budget": {
+        "tool_calls": 2,
+        "external_requests": 0,
+        "llm_calls": 0,
+        "planning_rounds": 0,
+        "active_seconds": 0.09509360799984279
+      },
+      "strategy_decisions": [
+        {
+          "game_id": "fx-02",
+          "action": "stop_game",
+          "reason": "卡片及主要证据已足够，保留次要未知项"
+        }
+      ]
+    },
+    {
+      "strategy": {
+        "version": "budget-strategy-1",
+        "name": "balanced",
+        "label": "均衡精选",
+        "scan_limit": 500,
+        "shortlist_limit": 30,
+        "initial_games": 5,
+        "investigation_limit": 5,
+        "max_batches": 3,
+        "reserve_next_game": true
+      },
+      "target": {
+        "requested": 1,
+        "achieved": 1,
+        "met": true,
+        "stop_reason": "target_reached"
+      },
+      "diagnostics": {
+        "recalled": 1,
+        "selected": 1,
+        "with_reviews": 1,
+        "full_read": 1,
+        "with_findings": 1,
+        "verified": 1,
+        "with_matches": 1
+      },
+      "savings": {
+        "source_cache_hits": 2,
+        "verified_batches_reused": 1,
+        "reused_documents": 3
+      },
+      "budget": {
+        "tool_calls": 2,
+        "external_requests": 0,
+        "llm_calls": 0,
+        "planning_rounds": 0,
+        "active_seconds": 0.06271866200040677
+      },
+      "strategy_decisions": [
+        {
+          "game_id": "fx-02",
+          "action": "stop_game",
+          "reason": "卡片及主要证据已足够，保留次要未知项"
+        }
+      ]
+    },
+    {
+      "strategy": {
+        "version": "budget-strategy-1",
+        "name": "quick",
+        "label": "快速探索",
+        "scan_limit": 150,
+        "shortlist_limit": 20,
+        "initial_games": 3,
+        "investigation_limit": 3,
+        "max_batches": 1,
+        "reserve_next_game": true
+      },
+      "target": {
+        "requested": 1,
+        "achieved": 1,
+        "met": true,
+        "stop_reason": "target_reached"
+      },
+      "diagnostics": {
+        "recalled": 1,
+        "selected": 1,
+        "with_reviews": 1,
+        "full_read": 1,
+        "with_findings": 1,
+        "verified": 1,
+        "with_matches": 1
+      },
+      "savings": {
+        "source_cache_hits": 2,
+        "verified_batches_reused": 1,
+        "reused_documents": 3
+      },
+      "budget": {
+        "tool_calls": 2,
+        "external_requests": 0,
+        "llm_calls": 0,
+        "planning_rounds": 0,
+        "active_seconds": 0.054831840999213455
+      },
+      "strategy_decisions": [
+        {
+          "game_id": "fx-02",
+          "action": "stop_game",
+          "reason": "卡片及主要证据已足够，保留次要未知项"
+        }
+      ]
+    },
+    {
+      "strategy": {
+        "version": "budget-strategy-1",
+        "name": "thorough",
+        "label": "扩大调查",
+        "scan_limit": 500,
+        "shortlist_limit": 80,
+        "initial_games": 5,
+        "investigation_limit": 20,
+        "max_batches": 3,
+        "reserve_next_game": false
+      },
+      "target": {
+        "requested": 1,
+        "achieved": 1,
+        "met": true,
+        "stop_reason": "target_reached"
+      },
+      "diagnostics": {
+        "recalled": 1,
+        "selected": 1,
+        "with_reviews": 1,
+        "full_read": 1,
+        "with_findings": 1,
+        "verified": 1,
+        "with_matches": 1
+      },
+      "savings": {
+        "source_cache_hits": 2,
+        "verified_batches_reused": 1,
+        "reused_documents": 3
+      },
+      "budget": {
+        "tool_calls": 2,
+        "external_requests": 0,
+        "llm_calls": 0,
+        "planning_rounds": 0,
+        "active_seconds": 0.07032996300131344
+      },
+      "strategy_decisions": [
+        {
+          "game_id": "fx-02",
+          "action": "stop_game",
+          "reason": "卡片及主要证据已足够，保留次要未知项"
+        }
+      ]
+    }
+  ],
+  "data": "authored fixtures only; no external requests or paid model calls"
+}

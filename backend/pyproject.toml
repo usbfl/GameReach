@@ -1,0 +1,18 @@
+[project]
+name = "gamereach"
+version = "0.11.0"
+description = "Understand player interests and find games with traceable evidence"
+requires-python = ">=3.11"
+dependencies = ["fastapi==0.115.12", "uvicorn==0.34.3", "pydantic==2.11.5", "pydantic-settings==2.9.1", "httpx[socks]==0.28.1", "sqlalchemy==2.0.41", "alembic==1.16.1", "beautifulsoup4==4.13.4"]
+
+[dependency-groups]
+dev = ["pytest==8.3.5", "pytest-asyncio==0.26.0", "respx==0.22.0", "ruff==0.11.13"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"
+asyncio_default_fixture_loop_scope = "function"
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 120

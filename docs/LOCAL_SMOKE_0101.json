@@ -1,0 +1,34 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "0.10.1"
+  },
+  "frontend_status": 200,
+  "task_status": "completed",
+  "target": {
+    "requested": 1,
+    "achieved": 1,
+    "met": true,
+    "stop_reason": "target_reached"
+  },
+  "diagnostics": {
+    "recalled": 22,
+    "selected": 20,
+    "with_reviews": 1,
+    "full_read": 1,
+    "with_findings": 1,
+    "verified": 1,
+    "with_matches": 1
+  },
+  "budget": {
+    "tool_calls": 5,
+    "external_requests": 0,
+    "llm_calls": 0,
+    "planning_rounds": 0,
+    "active_seconds": 0.25191725699960443
+  },
+  "errors": [],
+  "card_title": "构筑",
+  "related_game_count": 3,
+  "card_format": "game_group_v1"
+}

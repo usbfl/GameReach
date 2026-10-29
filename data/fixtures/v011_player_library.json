@@ -1,0 +1,66 @@
+{
+  "games": [
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏A",
+      "collections": [
+        "构筑",
+        "反复挑战"
+      ],
+      "playtime_minutes": null,
+      "favorite": false,
+      "reaction": "neutral"
+    },
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏B",
+      "collections": [
+        "构筑"
+      ],
+      "playtime_minutes": 120,
+      "favorite": true,
+      "reaction": "neutral"
+    },
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏C",
+      "collections": [
+        "构筑"
+      ],
+      "playtime_minutes": null,
+      "favorite": false,
+      "reaction": "neutral"
+    },
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏D",
+      "collections": [
+        "反复挑战"
+      ],
+      "playtime_minutes": 120,
+      "favorite": false,
+      "reaction": "neutral"
+    },
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏E",
+      "collections": [
+        "反复挑战"
+      ],
+      "playtime_minutes": 120,
+      "favorite": false,
+      "reaction": "like"
+    },
+    {
+      "platform": "manual",
+      "name": "v0.11合成游戏F",
+      "collections": [
+        "构筑",
+        "反复挑战"
+      ],
+      "playtime_minutes": 60000,
+      "favorite": true,
+      "reaction": "exclude"
+    }
+  ]
+}

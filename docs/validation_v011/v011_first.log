@@ -1,0 +1,44 @@
+......................F                                                  [100%]
+=================================== FAILURES ===================================
+__________ test_draft_confirm_allows_overlap_and_deduplicates_members __________
+
+stack = (Settings(data_mode='fixtures', llm_mode='mock', llm_base_url='', llm_api_key=SecretStr(''), llm_model='', llm_use_too...object at 0x7f2fb1b11130>, <app.tools.Registry object at 0x7f2fb1b11f10>, <app.engine.Engine object at 0x7f2fb1b60ad0>)
+
+    def test_draft_confirm_allows_overlap_and_deduplicates_members(stack):
+        s, db, _, _ = stack
+        src = sources()
+        games = []
+        for n, row in enumerate(src, 1):
+            gid = f'fx-{n:02}'
+            g = db.get('game', gid)
+            db.put('game', gid, g | {'tags': row['tags']})
+            games.append(dict(platform='fixture', game_id=gid, name=g['name']))
+        with TestClient(create_app(s, db, False)) as c:
+            imp = c.post('/api/player/import/file', json={'format': 'json', 'content': json.dumps({'games': games})}).json()
+            draft = c.post('/api/player/imports/'+imp['id']+'/analyze', json={'selected_ids': [f'entry-{i}' for i in range(5)]}).json()
+            cards = draft['interest_summary']['cards']
+            assert len(cards) == 2
+            result = c.post('/api/player/drafts/'+draft['id']+'/confirm', json={'interest_cards': [{k: v for k, v in x.items() if k in {'title', 'text', 'source_ids', 'game_keys', 'theme_ids'}} for x in cards]})
+            assert result.status_code == 200
+            stored = c.get('/api/interests').json()['items']
+            assert len(stored) == 2 and all(len(c['related_games']) == 3 for c in stored)
+>           assert set(stored[0]['game_keys']) & set(stored[1]['game_keys']) == {'fx-01'}
+E           AssertionError: assert {'fx-02', 'fx-04'} == {'fx-01'}
+E             
+E             Extra items in the left set:
+E             'fx-04'
+E             'fx-02'
+E             Extra items in the right set:
+E             'fx-01'
+E             Use -v to get more diff
+
+tests/test_v011.py:295: AssertionError
+=============================== warnings summary ===============================
+.venv/lib/python3.12/site-packages/starlette/testclient.py:37
+  /workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/testclient.py:37: DeprecationWarning: The anyio.abc.BlockingPortal alias is deprecated, use anyio.from_thread.BlockingPortal instead.
+    _PortalFactoryType = typing.Callable[[], typing.ContextManager[anyio.abc.BlockingPortal]]
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+=========================== short test summary info ============================
+FAILED tests/test_v011.py::test_draft_confirm_allows_overlap_and_deduplicates_members
+1 failed, 22 passed, 1 warning in 3.04s

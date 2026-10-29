@@ -1,0 +1,32 @@
+{
+  "version": "0.11.0",
+  "date": "2026-10-23",
+  "baseline": "GameReach_v0.10.2_Budget_Savings.zip",
+  "verification": {
+    "backend_passed": 279,
+    "frontend_passed": 10,
+    "typescript": "passed",
+    "production_build": "passed",
+    "ruff": "passed",
+    "chromium_e2e_passed": 30,
+    "offline_assertions_passed": 19,
+    "http_assertions_passed": 16,
+    "upgrade_checks_passed": 8,
+    "linux_startup_checks_passed": 4,
+    "fresh_archive_http_passed": 16,
+    "fresh_archive_experiments_passed": 19,
+    "live_services": "not_run",
+    "windows_macos_docker": "not_run"
+  },
+  "report": "docs/TEST_REPORT_011.md",
+  "schema_migration": "none; additive JSON fields, backup/restore script provided",
+  "excluded": [
+    "real .env and credentials",
+    "user databases",
+    "installed dependencies",
+    "git metadata",
+    "generated browser screenshots/traces/reports",
+    "temporary transpiled CJS"
+  ],
+  "note": "Original versioned live reports are historical, not v0.11 live validation."
+}

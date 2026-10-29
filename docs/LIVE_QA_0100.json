@@ -1,0 +1,572 @@
+{
+  "target": {
+    "requested": 1,
+    "achieved": 1,
+    "met": true,
+    "stop_reason": "target_reached"
+  },
+  "diagnostics": {
+    "recalled": 80,
+    "selected": 20,
+    "with_reviews": 1,
+    "full_read": 1,
+    "with_findings": 1,
+    "verified": 1,
+    "with_matches": 1
+  },
+  "budget": {
+    "tool_calls": 7,
+    "external_requests": 19,
+    "llm_calls": 8,
+    "planning_rounds": 0,
+    "active_seconds": 95.24409292199925
+  },
+  "stop_reason": null,
+  "errors": [],
+  "model_protocol_errors": [
+    {
+      "stage": "extract",
+      "attempt": 1,
+      "kind": "JSONDecodeError",
+      "game_id": "igdb-2369",
+      "finish_reason": "tool_calls",
+      "fields": [
+        {
+          "path": [],
+          "type": "invalid_json",
+          "rule": "valid_json_required",
+          "line": 1,
+          "column": 3132
+        }
+      ]
+    }
+  ],
+  "request_failures": [],
+  "model_usage": [
+    {
+      "stage": "interpret",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 7523,
+        "completion_tokens": 264,
+        "total_tokens": 7787,
+        "prompt_tokens_details": {
+          "cached_tokens": 7296
+        },
+        "prompt_cache_hit_tokens": 7296,
+        "prompt_cache_miss_tokens": 227
+      },
+      "game_id": null
+    },
+    {
+      "stage": "extract",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 5339,
+        "completion_tokens": 1330,
+        "total_tokens": 6669,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "prompt_cache_hit_tokens": 0,
+        "prompt_cache_miss_tokens": 5339
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "verify",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 6217,
+        "completion_tokens": 860,
+        "total_tokens": 7077,
+        "prompt_tokens_details": {
+          "cached_tokens": 128
+        },
+        "prompt_cache_hit_tokens": 128,
+        "prompt_cache_miss_tokens": 6089
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "extract",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 5298,
+        "completion_tokens": 1229,
+        "total_tokens": 6527,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 2994
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "verify",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 3720,
+        "completion_tokens": 362,
+        "total_tokens": 4082,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 2312
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "extract",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 4892,
+        "completion_tokens": 1158,
+        "total_tokens": 6050,
+        "prompt_tokens_details": {
+          "cached_tokens": 2304
+        },
+        "prompt_cache_hit_tokens": 2304,
+        "prompt_cache_miss_tokens": 2588
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "extract",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 4128,
+        "completion_tokens": 1063,
+        "total_tokens": 5191,
+        "prompt_tokens_details": {
+          "cached_tokens": 1280
+        },
+        "prompt_cache_hit_tokens": 1280,
+        "prompt_cache_miss_tokens": 2848
+      },
+      "game_id": "igdb-2369"
+    },
+    {
+      "stage": "verify",
+      "model": "deepseek-flash",
+      "protocol": "player-tag-review-3",
+      "usage": {
+        "prompt_tokens": 5112,
+        "completion_tokens": 708,
+        "total_tokens": 5820,
+        "prompt_tokens_details": {
+          "cached_tokens": 1408
+        },
+        "prompt_cache_hit_tokens": 1408,
+        "prompt_cache_miss_tokens": 3704
+      },
+      "game_id": "igdb-2369"
+    }
+  ],
+  "unmet": [
+    "部分模型返回项未通过结构校验，已保留合法项并记录具体路径；未通过项不参与推荐。"
+  ],
+  "interpretation": {
+    "summary": "用户想要 PC 上重视战斗技巧与构筑变化的游戏，并明确不需要大量刷装备。战斗技巧映射为读招抓时机与走位闪避；构筑变化映射为构筑改变打法。刷装备为明确避开项，但未构成硬性红线（表述为\"不需要\"而非绝不能接受）。未限定具体阶段、难度或模式。",
+    "intents": [
+      {
+        "tag_id": "read_patterns",
+        "polarity": "want",
+        "priority": 3,
+        "source_id": "current",
+        "source_quote": "重视战斗技巧",
+        "scope": {},
+        "explicit_redline": false
+      },
+      {
+        "tag_id": "precise_dodge",
+        "polarity": "want",
+        "priority": 2,
+        "source_id": "current",
+        "source_quote": "重视战斗技巧",
+        "scope": {},
+        "explicit_redline": false
+      },
+      {
+        "tag_id": "build_variety",
+        "polarity": "want",
+        "priority": 3,
+        "source_id": "current",
+        "source_quote": "构筑变化",
+        "scope": {},
+        "explicit_redline": false
+      },
+      {
+        "tag_id": "resource_grind",
+        "polarity": "avoid",
+        "priority": 3,
+        "source_id": "current",
+        "source_quote": "不需要大量刷装备",
+        "scope": {},
+        "explicit_redline": false
+      }
+    ],
+    "unmapped": [
+      "PC 游戏（全局目录范围，不作为体验限定）"
+    ]
+  },
+  "catalog_scan": {
+    "rows": 500,
+    "pages": [
+      {
+        "arguments": {
+          "discover": true,
+          "q": "",
+          "stores": [],
+          "platforms": [
+            "pc"
+          ],
+          "genre_ids": [
+            25,
+            12
+          ],
+          "tag_keywords": [
+            "action-rpg",
+            "character action",
+            "action rpg",
+            "action role-playing",
+            "soulslike",
+            "souls-like",
+            "boss fight",
+            "parry"
+          ],
+          "tag_recall": true,
+          "catalog_page_size": 100
+        },
+        "returned": 92,
+        "from_cache": false
+      },
+      {
+        "arguments": {
+          "discover": true,
+          "q": "",
+          "stores": [],
+          "platforms": [
+            "pc"
+          ],
+          "genre_ids": [
+            12,
+            15
+          ],
+          "tag_keywords": [
+            "build",
+            "character customization",
+            "deckbuilding",
+            "character customisation",
+            "skill tree",
+            "loadout",
+            "deck building"
+          ],
+          "tag_recall": true,
+          "catalog_page_size": 100
+        },
+        "returned": 93,
+        "from_cache": false
+      },
+      {
+        "arguments": {
+          "discover": true,
+          "q": "",
+          "stores": [],
+          "platforms": [
+            "pc"
+          ],
+          "genre_ids": [
+            25,
+            12,
+            15
+          ],
+          "tag_keywords": [],
+          "tag_recall": true,
+          "catalog_page_size": 100
+        },
+        "returned": 97,
+        "from_cache": false
+      },
+      {
+        "arguments": {
+          "discover": true,
+          "q": "",
+          "stores": [],
+          "platforms": [
+            "pc"
+          ],
+          "genre_ids": [
+            25,
+            12
+          ],
+          "tag_keywords": [
+            "action-rpg",
+            "character action",
+            "action rpg",
+            "action role-playing",
+            "soulslike",
+            "souls-like",
+            "boss fight",
+            "parry"
+          ],
+          "tag_recall": true,
+          "catalog_page_size": 100,
+          "catalog_offset": 100
+        },
+        "returned": 82,
+        "from_cache": false
+      },
+      {
+        "arguments": {
+          "discover": true,
+          "q": "",
+          "stores": [],
+          "platforms": [
+            "pc"
+          ],
+          "genre_ids": [
+            12,
+            15
+          ],
+          "tag_keywords": [
+            "build",
+            "character customization",
+            "deckbuilding",
+            "character customisation",
+            "skill tree",
+            "loadout",
+            "deck building"
+          ],
+          "tag_recall": true,
+          "catalog_page_size": 100,
+          "catalog_offset": 100
+        },
+        "returned": 91,
+        "from_cache": false
+      }
+    ]
+  },
+  "games": [
+    {
+      "id": "igdb-2369",
+      "name": "Dark Messiah of Might and Magic",
+      "group": "tradeoffs",
+      "card_complete": true,
+      "card_missing": [],
+      "intro_count": 2,
+      "strength_count": 4,
+      "tradeoff_count": 8,
+      "reading": {
+        "fetched": 36,
+        "full_read": 12,
+        "deferred": 24,
+        "sampling": {
+          "sample_size": 36,
+          "limit": 36,
+          "filter": "stratified_positive_negative_recent",
+          "strata": [
+            {
+              "stratum": "recent",
+              "received": 10,
+              "day_range_used": null
+            },
+            {
+              "stratum": "positive_helpful",
+              "received": 13,
+              "day_range_used": 365
+            },
+            {
+              "stratum": "negative_helpful",
+              "received": 13,
+              "day_range_used": 365
+            }
+          ],
+          "languages": [
+            "all"
+          ],
+          "after": null,
+          "representative": false,
+          "errors": []
+        }
+      },
+      "supporting_reviews": 1,
+      "coverage": 0.5454545454545454,
+      "rating_present": true,
+      "diagnosis": {
+        "code": "matched",
+        "label": "已形成可追溯的标签证据",
+        "next_step": "可展开支持与反对意见，查看完整评价和适用场景。",
+        "stage": "finished",
+        "selected": true,
+        "extracted": 18,
+        "verified": 15,
+        "rejected": 1,
+        "insufficient": 2,
+        "contextual": 1,
+        "errors": [],
+        "stop_reason": null,
+        "extraction_rejections": [],
+        "source_warnings": [],
+        "review_fetch": {
+          "status": "available",
+          "error_code": null,
+          "from_cache": false
+        }
+      }
+    }
+  ],
+  "claims_summary": [
+    {
+      "game_id": "igdb-2369",
+      "aspect": "core_loop",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "strength",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {
+        "difficulty": "Hard"
+      },
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "strength",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {
+        "difficulty": "hardcore"
+      },
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "build_variety",
+      "scope": {
+        "difficulty": "lower difficulties"
+      },
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "read_patterns",
+      "scope": {},
+      "evidence_status": "rejected"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "read_patterns",
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "read_patterns",
+      "scope": {},
+      "evidence_status": "insufficient"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "strength",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "build_variety",
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "core_loop",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tradeoff",
+      "tag_id": null,
+      "scope": {},
+      "evidence_status": "supported"
+    },
+    {
+      "game_id": "igdb-2369",
+      "aspect": "tag",
+      "tag_id": "precise_dodge",
+      "scope": {},
+      "evidence_status": "insufficient"
+    }
+  ],
+  "catalog_unique_games": 364,
+  "test_conditions": {
+    "target": 1,
+    "attachments": false,
+    "original_credentials_and_provider": true,
+    "original_budget_limits": true,
+    "raw_reviews_not_distributed": true,
+    "note": "最后一次真实测试后仅补充了恢复状态标记、缺项提示和日志归因；对应回归已通过。"
+  },
+  "recovered_protocol_error_count": 1
+}

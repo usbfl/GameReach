@@ -1,0 +1,1325 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> gamereach-workbench@0.10.2 test:e2e
+> node run-e2e.cjs
+
+[2m[WebServer] [22mINFO:     Started server process [42]
+[2m[WebServer] [22mINFO:     Waiting for application startup.
+[2m[WebServer] [22mINFO:     Application startup complete.
+[2m[WebServer] [22mINFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+Running 24 tests using 1 worker
+
+(node:43) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22mERROR:    Exception in ASGI application
+[2m[WebServer] [22m  + Exception Group Traceback (most recent call last):
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[2m[WebServer] [22m  |     yield
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+[2m[WebServer] [22m  |     async with anyio.create_task_group() as task_group:
+[2m[WebServer] [22m  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+[2m[WebServer] [22m  |     raise BaseExceptionGroup(
+[2m[WebServer] [22m  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[2m[WebServer] [22m  +-+---------------- 1 ----------------
+[2m[WebServer] [22m    | Traceback (most recent call last):
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    |     result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    |     return await self.app(scope, receive, send)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    |     await super().__call__(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, _send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    |     with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m    |                                    ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    |     self.gen.throw(value)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    |     response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    |     response = await call_next(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    |     raise app_exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    |     await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    |     await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    |     await route.handle(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    |     response = await f(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    |     raw_response = await run_endpoint_function(
+[2m[WebServer] [22m    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    |     return await dependant.call(**values)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/player.py", line 385, in analyze
+[2m[WebServer] [22m    |     draft["interest_summary"] = await summarize(settings, registry.http, sources, gate=gate, db=db)
+[2m[WebServer] [22m    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    |     result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    |     result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                                                                      ^^^^^^^^^^^
+[2m[WebServer] [22m    | AttributeError: 'dict' object has no attribute 'game_keys'
+[2m[WebServer] [22m    +------------------------------------
+[2m[WebServer] [22m
+[2m[WebServer] [22mDuring handling of the above exception, another exception occurred:
+[2m[WebServer] [22m
+[2m[WebServer] [22mTraceback (most recent call last):
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    return await self.app(scope, receive, send)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    await super().__call__(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, _send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m                                   ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    self.gen.throw(value)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    response = await call_next(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    raise app_exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    await route.handle(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    response = await f(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    raw_response = await run_endpoint_function(
+[2m[WebServer] [22m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    return await dependant.call(**values)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/player.py", line 385, in analyze
+[2m[WebServer] [22m    draft["interest_summary"] = await summarize(settings, registry.http, sources, gate=gate, db=db)
+[2m[WebServer] [22m                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                                                                     ^^^^^^^^^^^
+[2m[WebServer] [22mAttributeError: 'dict' object has no attribute 'game_keys'
+  ✘  1 [desktop] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo (21.1s)
+(node:117) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  2 [desktop] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence (20.8s)
+(node:192) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  3 [desktop] › tests/player.e2e.cjs:45:16 › Steam import shows inline progress, failure and empty-library success (766ms)
+  ✓  4 [desktop] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (4.5s)
+  ✘  5 [desktop] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls (20.6s)
+(node:286) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  6 [desktop] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history (20.8s)
+(node:358) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  7 [desktop] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation (20.9s)
+(node:432) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  8 [desktop] › tests/workbench.e2e.cjs:54:16 › Human verifier decisions persist without blanket acceptance (4.8s)
+  ✘  9 [desktop] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result (4.5s)
+(node:519) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  10 [desktop] › tests/workbench.e2e.cjs:80:16 › Interest shortlist still supports local add and remove (688ms)
+[2m[WebServer] [22mERROR:    Exception in ASGI application
+[2m[WebServer] [22m  + Exception Group Traceback (most recent call last):
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[2m[WebServer] [22m  |     yield
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+[2m[WebServer] [22m  |     async with anyio.create_task_group() as task_group:
+[2m[WebServer] [22m  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+[2m[WebServer] [22m  |     raise BaseExceptionGroup(
+[2m[WebServer] [22m  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[2m[WebServer] [22m  +-+---------------- 1 ----------------
+[2m[WebServer] [22m    | Traceback (most recent call last):
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    |     result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    |     return await self.app(scope, receive, send)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    |     await super().__call__(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, _send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    |     with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m    |                                    ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    |     self.gen.throw(value)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    |     response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    |     response = await call_next(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    |     raise app_exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    |     await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    |     await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    |     await route.handle(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    |     response = await f(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    |     raw_response = await run_endpoint_function(
+[2m[WebServer] [22m    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    |     return await dependant.call(**values)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 483, in generate
+[2m[WebServer] [22m    |     result = await summarize(settings, registry.http, sources, db=db, regroup=body.regroup)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    |     result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    |     result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                                                                      ^^^^^^^^^^^
+[2m[WebServer] [22m    | AttributeError: 'dict' object has no attribute 'game_keys'
+[2m[WebServer] [22m    +------------------------------------
+[2m[WebServer] [22m
+[2m[WebServer] [22mDuring handling of the above exception, another exception occurred:
+[2m[WebServer] [22m
+[2m[WebServer] [22mTraceback (most recent call last):
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    return await self.app(scope, receive, send)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    await super().__call__(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, _send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m                                   ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    self.gen.throw(value)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    response = await call_next(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    raise app_exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    await route.handle(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    response = await f(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    raw_response = await run_endpoint_function(
+[2m[WebServer] [22m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    return await dependant.call(**values)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 483, in generate
+[2m[WebServer] [22m    result = await summarize(settings, registry.http, sources, db=db, regroup=body.regroup)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                                                                     ^^^^^^^^^^^
+[2m[WebServer] [22mAttributeError: 'dict' object has no attribute 'game_keys'
+  ✘  11 [desktop] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt (20.5s)
+(node:604) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  12 [desktop] › tests/workbench.e2e.cjs:115:16 › Home layout has no overflow or browser errors (640ms)
+(node:676) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[2m[WebServer] [22mERROR:    Exception in ASGI application
+[2m[WebServer] [22m  + Exception Group Traceback (most recent call last):
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[2m[WebServer] [22m  |     yield
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+[2m[WebServer] [22m  |     async with anyio.create_task_group() as task_group:
+[2m[WebServer] [22m  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+[2m[WebServer] [22m  |     raise BaseExceptionGroup(
+[2m[WebServer] [22m  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[2m[WebServer] [22m  +-+---------------- 1 ----------------
+[2m[WebServer] [22m    | Traceback (most recent call last):
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    |     result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    |     return await self.app(scope, receive, send)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    |     await super().__call__(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, _send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    |     with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m    |                                    ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    |     self.gen.throw(value)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    |     response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    |     response = await call_next(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    |     raise app_exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    |     await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    |     await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    |     await route.handle(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    |     response = await f(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    |     raw_response = await run_endpoint_function(
+[2m[WebServer] [22m    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    |     return await dependant.call(**values)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/player.py", line 385, in analyze
+[2m[WebServer] [22m    |     draft["interest_summary"] = await summarize(settings, registry.http, sources, gate=gate, db=db)
+[2m[WebServer] [22m    |                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    |     result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    |     result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                                                                      ^^^^^^^^^^^
+[2m[WebServer] [22m    | AttributeError: 'dict' object has no attribute 'game_keys'
+[2m[WebServer] [22m    +------------------------------------
+[2m[WebServer] [22m
+[2m[WebServer] [22mDuring handling of the above exception, another exception occurred:
+[2m[WebServer] [22m
+[2m[WebServer] [22mTraceback (most recent call last):
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    return await self.app(scope, receive, send)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    await super().__call__(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, _send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m                                   ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    self.gen.throw(value)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    response = await call_next(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    raise app_exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    await route.handle(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    response = await f(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    raw_response = await run_endpoint_function(
+[2m[WebServer] [22m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    return await dependant.call(**values)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/player.py", line 385, in analyze
+[2m[WebServer] [22m    draft["interest_summary"] = await summarize(settings, registry.http, sources, gate=gate, db=db)
+[2m[WebServer] [22m                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c.game_keys)) / max(1, len(set(g['key'] for g in available) | set(c.game_keys))) >= .85 for c in cards):
+[2m[WebServer] [22m                                                                                     ^^^^^^^^^^^
+[2m[WebServer] [22mAttributeError: 'dict' object has no attribute 'game_keys'
+  ✘  13 [mobile] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo (20.8s)
+(node:748) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  14 [mobile] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence (20.7s)
+(node:822) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  15 [mobile] › tests/player.e2e.cjs:45:16 › Steam import shows inline progress, failure and empty-library success (753ms)
+  ✓  16 [mobile] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (2.9s)
+  ✘  17 [mobile] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls (20.6s)
+(node:918) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  18 [mobile] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history (20.6s)
+(node:993) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✘  19 [mobile] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation (20.8s)
+(node:1068) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  20 [mobile] › tests/workbench.e2e.cjs:54:16 › Human verifier decisions persist without blanket acceptance (4.5s)
+  ✘  21 [mobile] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result (4.5s)
+(node:1154) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  22 [mobile] › tests/workbench.e2e.cjs:80:16 › Interest shortlist still supports local add and remove (622ms)
+[2m[WebServer] [22mERROR:    Exception in ASGI application
+[2m[WebServer] [22m  + Exception Group Traceback (most recent call last):
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 76, in collapse_excgroups
+[2m[WebServer] [22m  |     yield
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 177, in __call__
+[2m[WebServer] [22m  |     async with anyio.create_task_group() as task_group:
+[2m[WebServer] [22m  |                ^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/anyio/_backends/_asyncio.py", line 847, in __aexit__
+[2m[WebServer] [22m  |     raise BaseExceptionGroup(
+[2m[WebServer] [22m  | ExceptionGroup: unhandled errors in a TaskGroup (1 sub-exception)
+[2m[WebServer] [22m  +-+---------------- 1 ----------------
+[2m[WebServer] [22m    | Traceback (most recent call last):
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    |     result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    |     return await self.app(scope, receive, send)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    |     await super().__call__(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, _send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    |     with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m    |                                    ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    |     self.gen.throw(value)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    |     response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    |     response = await call_next(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    |     raise app_exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    |     await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    |     await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    |     await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    |     await route.handle(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    |     await self.app(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    |     await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    |     raise exc
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    |     await app(scope, receive, sender)
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    |     response = await f(request)
+[2m[WebServer] [22m    |                ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    |     raw_response = await run_endpoint_function(
+[2m[WebServer] [22m    |                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    |     return await dependant.call(**values)
+[2m[WebServer] [22m    |            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 483, in generate
+[2m[WebServer] [22m    |     result = await summarize(settings, registry.http, sources, db=db, regroup=body.regroup)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    |     result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    |     result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m    |              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c["game_keys"])) / max(1, len(set(g['key'] for g in available) | set(c["game_keys"]))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m    |   File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    |     if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c["game_keys"])) / max(1, len(set(g['key'] for g in available) | set(c["game_keys"]))) >= .85 for c in cards):
+[2m[WebServer] [22m    |                                                                                      ^^^^^^^^^^^
+[2m[WebServer] [22m    | AttributeError: 'dict' object has no attribute 'game_keys'
+[2m[WebServer] [22m    +------------------------------------
+[2m[WebServer] [22m
+[2m[WebServer] [22mDuring handling of the above exception, another exception occurred:
+[2m[WebServer] [22m
+[2m[WebServer] [22mTraceback (most recent call last):
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/protocols/http/h11_impl.py", line 403, in run_asgi
+[2m[WebServer] [22m    result = await app(  # type: ignore[func-returns-value]
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/uvicorn/middleware/proxy_headers.py", line 60, in __call__
+[2m[WebServer] [22m    return await self.app(scope, receive, send)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/applications.py", line 1054, in __call__
+[2m[WebServer] [22m    await super().__call__(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/applications.py", line 112, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 187, in __call__
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/errors.py", line 165, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, _send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 176, in __call__
+[2m[WebServer] [22m    with recv_stream, send_stream, collapse_excgroups():
+[2m[WebServer] [22m                                   ^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/lib/python3.12/contextlib.py", line 158, in __exit__
+[2m[WebServer] [22m    self.gen.throw(value)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_utils.py", line 82, in collapse_excgroups
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 178, in __call__
+[2m[WebServer] [22m    response = await self.dispatch_func(request, call_next)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/main.py", line 82, in local_only
+[2m[WebServer] [22m    response = await call_next(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 156, in call_next
+[2m[WebServer] [22m    raise app_exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/base.py", line 141, in coro
+[2m[WebServer] [22m    await self.app(scope, receive_or_disconnect, send_no_error)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 93, in __call__
+[2m[WebServer] [22m    await self.simple_response(scope, receive, send, request_headers=headers)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/cors.py", line 144, in simple_response
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/trustedhost.py", line 51, in __call__
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/middleware/exceptions.py", line 62, in __call__
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(self.app, conn)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 714, in __call__
+[2m[WebServer] [22m    await self.middleware_stack(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 734, in app
+[2m[WebServer] [22m    await route.handle(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 288, in handle
+[2m[WebServer] [22m    await self.app(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 76, in app
+[2m[WebServer] [22m    await wrap_app_handling_exceptions(app, request)(scope, receive, send)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 53, in wrapped_app
+[2m[WebServer] [22m    raise exc
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/_exception_handler.py", line 42, in wrapped_app
+[2m[WebServer] [22m    await app(scope, receive, sender)
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/starlette/routing.py", line 73, in app
+[2m[WebServer] [22m    response = await f(request)
+[2m[WebServer] [22m               ^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 301, in app
+[2m[WebServer] [22m    raw_response = await run_endpoint_function(
+[2m[WebServer] [22m                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/.venv/lib/python3.12/site-packages/fastapi/routing.py", line 212, in run_endpoint_function
+[2m[WebServer] [22m    return await dependant.call(**values)
+[2m[WebServer] [22m           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 483, in generate
+[2m[WebServer] [22m    result = await summarize(settings, registry.http, sources, db=db, regroup=body.regroup)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 289, in summarize
+[2m[WebServer] [22m    result = await _summarize(settings, http, remaining, gate, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 316, in _summarize
+[2m[WebServer] [22m    result = rule_summary(sources, settings, retained)
+[2m[WebServer] [22m             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in rule_summary
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c["game_keys"])) / max(1, len(set(g['key'] for g in available) | set(c["game_keys"]))) >= .85 for c in cards):
+[2m[WebServer] [22m                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[2m[WebServer] [22m  File "/workspace/scratch/fced74019bc6/work/GameReach/backend/app/interests.py", line 249, in <genexpr>
+[2m[WebServer] [22m    if key.startswith('catalog:') and any(len(set(g['key'] for g in available) & set(c["game_keys"])) / max(1, len(set(g['key'] for g in available) | set(c["game_keys"]))) >= .85 for c in cards):
+[2m[WebServer] [22m                                                                                     ^^^^^^^^^^^
+[2m[WebServer] [22mAttributeError: 'dict' object has no attribute 'game_keys'
+  ✘  23 [mobile] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt (20.4s)
+(node:1240) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  24 [mobile] › tests/workbench.e2e.cjs:115:16 › Home layout has no overflow or browser errors (496ms)
+
+
+  1) [desktop] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByRole('heading', { name: '我们眼中的你的游戏口味' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByRole('heading', { name: '我们眼中的你的游戏口味' })[22m
+
+
+      14 |     const before = (await (await request.get('/api/profile')).json()).version;
+      15 |     await page.getByRole('button', { name: '分析所选游戏，生成兴趣草稿', exact: true }).click();
+    > 16 |     await (0, test_1.expect)(page.getByRole('heading', { name: '我们眼中的你的游戏口味' })).toBeVisible();
+         |                                                                                  ^
+      17 |     (0, test_1.expect)((await (await request.get('/api/profile')).json()).version).toBe(before);
+      18 |     await page.getByLabel('介绍风格', { exact: true }).selectOption('vivid');
+      19 |     await page.screenshot({ path: `../artifacts/player-import-${testInfo.project.name}.png`, fullPage: true });
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/player.e2e.cjs:16:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  2) [desktop] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByText('研究完成', { exact: true })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByText('研究完成', { exact: true })[22m
+
+
+      35 |     await page.getByLabel('游戏需求', { exact: true }).fill('重视策略和构筑，喜欢回合制');
+      36 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+    > 37 |     await (0, test_1.expect)(page.getByText('研究完成', { exact: true })).toBeVisible();
+         |                                                                       ^
+      38 |     await (0, test_1.expect)(page.locator('.tag-result-card').first()).toBeVisible();
+      39 |     await page.locator('.tag-result-card .citation').first().click();
+      40 |     await (0, test_1.expect)(page.getByRole('dialog', { name: '证据详情' })).toBeVisible();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/player.e2e.cjs:37:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  3) [desktop] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    5 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    3 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    16 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+       8 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+       9 |     const tid = (await (await created).json()).task_id;
+    > 10 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成');
+         |                                                                    ^
+      11 |     const task = await (await request.get('/api/research/' + tid)).json();
+      12 |     await page.getByText('调整标签重要度，在已有证据上重排', { exact: true }).click();
+      13 |     const priority = page.getByLabel('重要度 build_variety', { exact: true });
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/tags.e2e.cjs:10:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  4) [desktop] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    5 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    3 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    16 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+      2 | Object.defineProperty(exports, "__esModule", { value: true });
+      3 | const test_1 = require("@playwright/test");
+    > 4 | async function scout(page) { await page.goto('/'); await page.getByRole('button', { name: '开始探索', exact: true }).click(); await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成'); }
+        |                                                                                                                                                                                          ^
+      5 | (0, test_1.test)('Tag research, full review evidence, export and history', async ({ page }, info) => {
+      6 |     const errors = [];
+      7 |     page.on('pageerror', e => errors.push(e.message));
+        at scout (/workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:4:186)
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:8:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  5) [desktop] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    5 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    2 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    17 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+      42 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+      43 |     const tid = (await (await response).json()).task_id;
+    > 44 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成');
+         |                                                                    ^
+      45 |     const t = await (await request.get('/api/research/' + tid)).json();
+      46 |     (0, test_1.expect)(t.request.discovery).toEqual({ stores: ['steam', 'gog'], platforms: ['pc'] });
+      47 |     (0, test_1.expect)(t.report.mode).toBe('player_tags');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:44:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  6) [desktop] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result 
+
+    Error: expect.toContainText: Error: strict mode violation: locator('.tag-results>.warning') resolved to 2 elements:
+        1) <p class="warning">期望 5 款，当前有完整证据卡片 0 款；原因：tool_calls 预算耗尽。</p> aka getByText('期望 5 款，当前有完整证据卡片 0 款；原因：')
+        2) <p class="warning">部分调查未完成：fx-01 / get_game_details: rate_limited；fx…</p> aka getByText('部分调查未完成：fx-01 /')
+
+    Call log:
+    [2m  - expect.toContainText with timeout 20000ms[22m
+    [2m  - waiting for locator('.tag-results>.warning')[22m
+
+
+      73 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+      74 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('部分完成');
+    > 75 |     await (0, test_1.expect)(page.locator('.tag-results>.warning')).toContainText('rate_limited');
+         |                                                                     ^
+      76 |     await (0, test_1.expect)(page.getByText('本轮尚未形成可推荐结论', { exact: true })).toBeVisible();
+      77 |     await (0, test_1.expect)(page.locator('.tag-result-card')).toHaveCount(0);
+      78 |     await (0, test_1.expect)(page.locator('.pending-candidate').filter({ hasText: '评价获取失败' }).first()).toBeVisible();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:75:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  7) [desktop] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first()[22m
+
+
+       99 |     await panel.getByRole('button', { name: '整理我的兴趣', exact: true }).click();
+      100 |     const card = panel.locator('.memory-card').filter({ has: page.getByRole('button', { name: '确认这张卡片', exact: true }) }).first();
+    > 101 |     await (0, test_1.expect)(card).toBeVisible();
+          |                                    ^
+      102 |     await card.getByRole('button', { name: '编辑', exact: true }).click();
+      103 |     await card.getByLabel('分类标题').fill('读招与变化');
+      104 |     await card.getByLabel('兴趣描述').fill('我享受观察敌人、把握弹反时机的战斗，也希望构筑能带来变化。');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:101:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-desktop/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  8) [mobile] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByRole('heading', { name: '我们眼中的你的游戏口味' })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByRole('heading', { name: '我们眼中的你的游戏口味' })[22m
+
+
+      14 |     const before = (await (await request.get('/api/profile')).json()).version;
+      15 |     await page.getByRole('button', { name: '分析所选游戏，生成兴趣草稿', exact: true }).click();
+    > 16 |     await (0, test_1.expect)(page.getByRole('heading', { name: '我们眼中的你的游戏口味' })).toBeVisible();
+         |                                                                                  ^
+      17 |     (0, test_1.expect)((await (await request.get('/api/profile')).json()).version).toBe(before);
+      18 |     await page.getByLabel('介绍风格', { exact: true }).selectOption('vivid');
+      19 |     await page.screenshot({ path: `../artifacts/player-import-${testInfo.project.name}.png`, fullPage: true });
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/player.e2e.cjs:16:82
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/player.e2e.cjs-Library-sel-74dc7-licit-confirmation-and-undo-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  9) [mobile] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByText('研究完成', { exact: true })
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByText('研究完成', { exact: true })[22m
+
+
+      35 |     await page.getByLabel('游戏需求', { exact: true }).fill('重视策略和构筑，喜欢回合制');
+      36 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+    > 37 |     await (0, test_1.expect)(page.getByText('研究完成', { exact: true })).toBeVisible();
+         |                                                                       ^
+      38 |     await (0, test_1.expect)(page.locator('.tag-result-card').first()).toBeVisible();
+      39 |     await page.locator('.tag-result-card .citation').first().click();
+      40 |     await (0, test_1.expect)(page.getByRole('dialog', { name: '证据详情' })).toBeVisible();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/player.e2e.cjs:37:71
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/player.e2e.cjs-File-import-d415b-ions-show-readable-evidence-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  10) [mobile] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    5 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    2 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    17 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+       8 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+       9 |     const tid = (await (await created).json()).task_id;
+    > 10 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成');
+         |                                                                    ^
+      11 |     const task = await (await request.get('/api/research/' + tid)).json();
+      12 |     await page.getByText('调整标签重要度，在已有证据上重排', { exact: true }).click();
+      13 |     const priority = page.getByLabel('重要度 build_variety', { exact: true });
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/tags.e2e.cjs:10:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/tags.e2e.cjs-Keyboard-prio-41808-ozen-evidence-without-calls-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  11) [mobile] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    3 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    3 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    16 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+      2 | Object.defineProperty(exports, "__esModule", { value: true });
+      3 | const test_1 = require("@playwright/test");
+    > 4 | async function scout(page) { await page.goto('/'); await page.getByRole('button', { name: '开始探索', exact: true }).click(); await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成'); }
+        |                                                                                                                                                                                          ^
+      5 | (0, test_1.test)('Tag research, full review evidence, export and history', async ({ page }, info) => {
+      6 |     const errors = [];
+      7 |     page.on('pageerror', e => errors.push(e.message));
+        at scout (/workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:4:186)
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:8:5
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Tag-rese-c8e8b-evidence-export-and-history-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  12) [mobile] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoHaveText[2m([22m[32mexpected[39m[2m)[22m
+
+    Locator: locator('.task-header .status')
+    Expected string: [32m"[7m研究[27m完成"[39m
+    Received string: [31m"[7m部分[27m完成"[39m
+    Call log:
+    [2m  - expect.toHaveText with timeout 20000ms[22m
+    [2m  - waiting for locator('.task-header .status')[22m
+    [2m    3 × locator resolved to <span class="status queued">排队中</span>[22m
+    [2m      - unexpected value "排队中"[22m
+    [2m    2 × locator resolved to <span class="status running">调查中</span>[22m
+    [2m      - unexpected value "调查中"[22m
+    [2m    17 × locator resolved to <span class="status partial">部分完成</span>[22m
+    [2m       - unexpected value "部分完成"[22m
+
+
+      42 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+      43 |     const tid = (await (await response).json()).task_id;
+    > 44 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('研究完成');
+         |                                                                    ^
+      45 |     const t = await (await request.get('/api/research/' + tid)).json();
+      46 |     (0, test_1.expect)(t.request.discovery).toEqual({ stores: ['steam', 'gog'], platforms: ['pc'] });
+      47 |     (0, test_1.expect)(t.report.mode).toBe('player_tags');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:44:68
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-New-comp-71d47-earch-before-interpretation-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  13) [mobile] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result 
+
+    Error: expect.toContainText: Error: strict mode violation: locator('.tag-results>.warning') resolved to 2 elements:
+        1) <p class="warning">期望 5 款，当前有完整证据卡片 0 款；原因：tool_calls 预算耗尽。</p> aka getByText('期望 5 款，当前有完整证据卡片 0 款；原因：')
+        2) <p class="warning">部分调查未完成：fx-01 / get_game_details: rate_limited；fx…</p> aka getByText('部分调查未完成：fx-01 /')
+
+    Call log:
+    [2m  - expect.toContainText with timeout 20000ms[22m
+    [2m  - waiting for locator('.tag-results>.warning')[22m
+
+
+      73 |     await page.getByRole('button', { name: '开始探索', exact: true }).click();
+      74 |     await (0, test_1.expect)(page.locator('.task-header .status')).toHaveText('部分完成');
+    > 75 |     await (0, test_1.expect)(page.locator('.tag-results>.warning')).toContainText('rate_limited');
+         |                                                                     ^
+      76 |     await (0, test_1.expect)(page.getByText('本轮尚未形成可推荐结论', { exact: true })).toBeVisible();
+      77 |     await (0, test_1.expect)(page.locator('.tag-result-card')).toHaveCount(0);
+      78 |     await (0, test_1.expect)(page.locator('.pending-candidate').filter({ hasText: '评价获取失败' }).first()).toBeVisible();
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:75:69
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Source-r-a126b-ns-an-honest-partial-result-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14) [mobile] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt 
+
+    Error: [31mTimed out 20000ms waiting for [39m[2mexpect([22m[31mlocator[39m[2m).[22mtoBeVisible[2m()[22m
+
+    Locator: getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first()
+    Expected: visible
+    Received: <element(s) not found>
+    Call log:
+    [2m  - expect.toBeVisible with timeout 20000ms[22m
+    [2m  - waiting for getByRole('region', { name: '兴趣记忆' }).locator('.memory-card').filter({ has: getByRole('button', { name: '确认这张卡片', exact: true }) }).first()[22m
+
+
+       99 |     await panel.getByRole('button', { name: '整理我的兴趣', exact: true }).click();
+      100 |     const card = panel.locator('.memory-card').filter({ has: page.getByRole('button', { name: '确认这张卡片', exact: true }) }).first();
+    > 101 |     await (0, test_1.expect)(card).toBeVisible();
+          |                                    ^
+      102 |     await card.getByRole('button', { name: '编辑', exact: true }).click();
+      103 |     await card.getByLabel('分类标题').fill('读招与变化');
+      104 |     await card.getByLabel('兴趣描述').fill('我享受观察敌人、把握弹反时机的战斗，也希望构筑能带来变化。');
+        at /workspace/scratch/fced74019bc6/work/GameReach/frontend/tests/workbench.e2e.cjs:101:36
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    Error Context: test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/error-context.md
+
+    attachment #3: trace (application/zip) ─────────────────────────────────────────────────────────
+    test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/trace.zip
+    Usage:
+
+        npx playwright show-trace test-results/workbench.e2e.cjs-Interest-793d9-attachments-preserve-prompt-mobile/trace.zip
+
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+  14 failed
+    [desktop] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo 
+    [desktop] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence 
+    [desktop] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls 
+    [desktop] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history 
+    [desktop] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation 
+    [desktop] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result ─
+    [desktop] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt 
+    [mobile] › tests/player.e2e.cjs:4:16 › Library selection, preference draft, explicit confirmation and undo 
+    [mobile] › tests/player.e2e.cjs:29:16 › File imports give actionable errors and recommendations show readable evidence 
+    [mobile] › tests/tags.e2e.cjs:4:16 › Keyboard priority changes rerank frozen evidence without calls 
+    [mobile] › tests/workbench.e2e.cjs:5:16 › Tag research, full review evidence, export and history 
+    [mobile] › tests/workbench.e2e.cjs:30:16 › New composer has no DNA ratings or search before interpretation 
+    [mobile] › tests/workbench.e2e.cjs:69:16 › Source rate limit remains an honest partial result ──
+    [mobile] › tests/workbench.e2e.cjs:93:16 › Interest card classification and attachments preserve prompt 
+  10 passed (4.9m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

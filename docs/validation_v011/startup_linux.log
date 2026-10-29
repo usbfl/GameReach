@@ -1,0 +1,19 @@
+Uninstalled 7 packages in 6ms
+ - iniconfig==2.3.1
+ - packaging==26.3
+ - pluggy==1.7.0
+ - pytest==8.3.5
+ - pytest-asyncio==0.26.0
+ - respx==0.22.0
+ - ruff==0.11.13
+GameReach: http://127.0.0.1:8000  (Ctrl+C to stop)
+INFO:     Started server process [7]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     127.0.0.1:55958 - "GET /healthz HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55970 - "GET / HTTP/1.1" 200 OK
+INFO:     Shutting down
+INFO:     Waiting for application shutdown.
+INFO:     Application shutdown complete.
+INFO:     Finished server process [7]

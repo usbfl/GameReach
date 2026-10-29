@@ -1,0 +1,14 @@
+services:
+  gamereach:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      DATA_MODE: fixtures
+      LLM_MODE: mock
+      DATABASE_URL: sqlite:////app/data/gamereach.db
+    volumes:
+      - gamereach-data:/app/data
+    restart: unless-stopped
+volumes:
+  gamereach-data:

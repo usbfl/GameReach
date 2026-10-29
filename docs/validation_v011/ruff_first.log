@@ -1,0 +1,74 @@
+app/tags/strategy.py:56:12: E701 Multiple statements on one line (colon)
+   |
+54 |     need_support = not row["supporting_reviews"]
+55 |     reasons = []
+56 |     if gaps: reasons.append("主要需求未知或存在相反观点")
+   |            ^ E701
+57 |     if missing_intro: reasons.append("缺少有来源的玩法介绍")
+58 |     if need_support: reasons.append("尚无偏好支持")
+   |
+
+app/tags/strategy.py:57:21: E701 Multiple statements on one line (colon)
+   |
+55 |     reasons = []
+56 |     if gaps: reasons.append("主要需求未知或存在相反观点")
+57 |     if missing_intro: reasons.append("缺少有来源的玩法介绍")
+   |                     ^ E701
+58 |     if need_support: reasons.append("尚无偏好支持")
+59 |     if weak: reasons.append("仅有一位独立玩家")
+   |
+
+app/tags/strategy.py:58:20: E701 Multiple statements on one line (colon)
+   |
+56 |     if gaps: reasons.append("主要需求未知或存在相反观点")
+57 |     if missing_intro: reasons.append("缺少有来源的玩法介绍")
+58 |     if need_support: reasons.append("尚无偏好支持")
+   |                    ^ E701
+59 |     if weak: reasons.append("仅有一位独立玩家")
+60 |     if negative_pending and not negative_read: reasons.append("尚未读取已有差评样本")
+   |
+
+app/tags/strategy.py:59:12: E701 Multiple statements on one line (colon)
+   |
+57 |     if missing_intro: reasons.append("缺少有来源的玩法介绍")
+58 |     if need_support: reasons.append("尚无偏好支持")
+59 |     if weak: reasons.append("仅有一位独立玩家")
+   |            ^ E701
+60 |     if negative_pending and not negative_read: reasons.append("尚未读取已有差评样本")
+61 |     return {"needed": bool(reasons), "reason": "；".join(reasons) or "卡片及主要证据已足够，保留次要未知项", "intents": gaps or relevan                  …
+   |
+
+app/tags/strategy.py:60:46: E701 Multiple statements on one line (colon)
+   |
+58 |     if need_support: reasons.append("尚无偏好支持")
+59 |     if weak: reasons.append("仅有一位独立玩家")
+60 |     if negative_pending and not negative_read: reasons.append("尚未读取已有差评样本")
+   |                                              ^ E701
+61 |     return {"needed": bool(reasons), "reason": "；".join(reasons) or "卡片及主要证据已足够，保留次要未知项", "intents": gaps or relevan                  …
+62 |             "needs_intro": missing_intro, "needs_support": need_support,
+   |
+
+app/tags/workflow.py:7:51: F401 [*] `.catalog.recall_action` imported but unused
+  |
+5 | import time
+6 | from sqlalchemy import select
+7 | from .catalog import VERSION, TAGS, mapping_plan, recall_action, catalog_matches, catalog_priority, recall_branches
+  |                                                   ^^^^^^^^^^^^^ F401
+8 | from .intent import demo_interpret, ground_interpretation, confirmed_interpretation
+9 | from .llm import TagLLM, PROTOCOL
+  |
+  = help: Remove unused import
+
+app/tags/workflow.py:7:66: F401 [*] `.catalog.catalog_matches` imported but unused
+  |
+5 | import time
+6 | from sqlalchemy import select
+7 | from .catalog import VERSION, TAGS, mapping_plan, recall_action, catalog_matches, catalog_priority, recall_branches
+  |                                                                  ^^^^^^^^^^^^^^^ F401
+8 | from .intent import demo_interpret, ground_interpretation, confirmed_interpretation
+9 | from .llm import TagLLM, PROTOCOL
+  |
+  = help: Remove unused import
+
+Found 7 errors.
+[*] 2 fixable with the `--fix` option.

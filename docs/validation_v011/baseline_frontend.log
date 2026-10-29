@@ -1,0 +1,18 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> gamereach-workbench@0.10.2 test
+> vitest run tests/format.test.ts tests/tag-results.test.tsx tests/interest-cards.test.tsx tests/research-strategy.test.tsx
+
+
+ RUN  v3.2.2 /workspace/scratch/fced74019bc6/work/GameReach/frontend
+
+ ✓ tests/format.test.ts (1 test) 3ms
+ ✓ tests/interest-cards.test.tsx (2 tests) 7ms
+ ✓ tests/research-strategy.test.tsx (2 tests) 43ms
+ ✓ tests/tag-results.test.tsx (2 tests) 14ms
+
+ Test Files  4 passed (4)
+      Tests  7 passed (7)
+   Start at  22:27:15
+   Duration  840ms (transform 459ms, setup 0ms, collect 951ms, tests 67ms, environment 1ms, prepare 535ms)
+

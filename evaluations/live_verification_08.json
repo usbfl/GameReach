@@ -1,0 +1,1411 @@
+{
+  "version": "0.8.0",
+  "tested_at": "2026-10-20",
+  "configuration": "用户提供的 .env(2)，只替换测试数据库地址；未改调用预算或密钥。",
+  "cases": [
+    {
+      "checked_at": "2026-10-20T14:04:45.591333+00:00",
+      "real_calls": true,
+      "model": "deepseek-flash",
+      "config_overrides": [
+        "DATABASE_URL（仅隔离验证数据）"
+      ],
+      "setup_budget": {
+        "tool_calls": 1,
+        "external_requests": 2,
+        "llm_calls": 0,
+        "planning_rounds": 0,
+        "active_seconds": 0
+      },
+      "task_id": "task-ed00aad791c4487e",
+      "status": "completed",
+      "budget": {
+        "tool_calls": 2,
+        "external_requests": 8,
+        "llm_calls": 3,
+        "planning_rounds": 1,
+        "active_seconds": 62.66867545900823
+      },
+      "errors": [],
+      "query": "喜欢回合制战斗和牌组构筑，想了解具体玩法和体验取舍",
+      "stores": [
+        "steam"
+      ],
+      "candidates": 1,
+      "withheld": [],
+      "policy": {
+        "version": "complete-card-1",
+        "synthetic": false,
+        "min_reviews": 20,
+        "min_cited_reviews": 3,
+        "min_known_mechanics": 3,
+        "review_sample_limit": 120,
+        "review_context_limit": 60
+      },
+      "model_usage": [
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 8947,
+            "completion_tokens": 368,
+            "total_tokens": 9315,
+            "prompt_tokens_details": {
+              "cached_tokens": 256
+            },
+            "prompt_cache_hit_tokens": 256,
+            "prompt_cache_miss_tokens": 8691
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "planner"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 40714,
+            "completion_tokens": 2356,
+            "total_tokens": 43070,
+            "prompt_tokens_details": {
+              "cached_tokens": 384
+            },
+            "prompt_cache_hit_tokens": 384,
+            "prompt_cache_miss_tokens": 40330
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 19128,
+            "completion_tokens": 1773,
+            "total_tokens": 20901,
+            "prompt_tokens_details": {
+              "cached_tokens": 128
+            },
+            "prompt_cache_hit_tokens": 128,
+            "prompt_cache_miss_tokens": 19000
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "verifier"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "igdb-40477",
+          "name": "Slay the Spire",
+          "source_url": "https://www.igdb.com/games/slay-the-spire",
+          "store_links": {
+            "steam": "https://store.steampowered.com/app/646570/",
+            "gog": "https://www.gog.com/game/slay_the_spire"
+          },
+          "counts": {
+            "stage": "researched",
+            "message": "已经读到部分玩法依据；没有提及的机制仍保留空白。",
+            "documents": 121,
+            "reviews": 119,
+            "reviews_read": 60,
+            "reused_reviews": 0,
+            "cited_reviews": 7,
+            "claims": 12,
+            "verified_claims": 11,
+            "known_mechanics": 6
+          },
+          "intro": "玩家反复做的事：打一场遭遇战→从奖励里挑一张牌加进牌组→在战斗间收集遗物并选择路线，逐步把牌组磨成能过关的构筑；爽点在于构筑逐渐成型，代价是每次选牌都可能把牌组弄得更差。",
+          "strengths": [
+            "该评论认为优点是上手简单但越学越深，每局随机化让结果无法预测，成功时成就感更强。",
+            "该评论认为优点是每局像解新难题：卡牌、遗物、药水、路线与敌人配置交织，靠取舍与规划而非纯运气把牌组磨成杀招，四个角色节奏各异带来高重玩性。"
+          ],
+          "tradeoffs": [
+            "该评论认为取舍在于牌组真正“顺起来”的爽感大约十局才出现一次，很多局被糟糕的卡牌或遗物选择毁掉，且除特殊构筑模式外没有重掷或随机性缓解手段。",
+            "该评论认为取舍在于随机性双刃：策略虽占主导，但极端坏种子下拿不到关键牌、精英连塞诅咒、商店全垃圾，打得再稳也难逃慢性死亡，高难度下运气权重更高。"
+          ],
+          "portrait": [
+            "轮流思考",
+            "多层系统互动与复杂规划",
+            "多流派改变打法",
+            "每局核心构筑受随机选择驱动",
+            "有牌组构筑",
+            "分支路线"
+          ],
+          "story": {
+            "headline": "有这些合拍之处",
+            "fits": [
+              "轮流思考",
+              "有牌组构筑"
+            ],
+            "tradeoffs": [],
+            "unknowns": [],
+            "summary": "你在意的 轮流思考、有牌组构筑 有依据支持。"
+          },
+          "citations": [
+            {
+              "id": "ev-2e20f0dcede96560af37",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561199858141792/recommended/646570/"
+            },
+            {
+              "id": "ev-47345ced582567b6adbf",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198042277590/recommended/646570/"
+            },
+            {
+              "id": "ev-4985809fd65fcd3fd062",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198304015947/recommended/646570/"
+            },
+            {
+              "id": "ev-8261a6757c0e567d6338",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561197969734436/recommended/646570/"
+            },
+            {
+              "id": "ev-2831bf6f890a9ad632e7",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198021886235/recommended/646570/"
+            },
+            {
+              "id": "ev-919a05cc925e2c66ad44",
+              "locatable": true,
+              "provider": "igdb",
+              "url": "https://www.igdb.com/games/slay-the-spire"
+            },
+            {
+              "id": "ev-0e4ec188f20f78575423",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198016513905/recommended/646570/"
+            },
+            {
+              "id": "ev-19eb89206cf694e574ac",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198304015947/recommended/646570/"
+            },
+            {
+              "id": "ev-1ac2ff528ce005d815c4",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198167281875/recommended/646570/"
+            },
+            {
+              "id": "ev-fbd2b6d0681551bb0d27",
+              "locatable": true,
+              "provider": "igdb",
+              "url": "https://www.igdb.com/games/slay-the-spire"
+            },
+            {
+              "id": "ev-a6bc2f5d52bbefde6209",
+              "locatable": true,
+              "provider": "igdb",
+              "url": "https://www.igdb.com/games/slay-the-spire"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "citation_locations": "passed",
+        "only_complete_cards": "passed",
+        "same_query_rerank": "passed",
+        "contradictory_constraints_exclude_all": "passed",
+        "real_recommendations_produced": true
+      },
+      "case": "Steam 指定真实游戏"
+    },
+    {
+      "checked_at": "2026-10-20T14:18:44.316828+00:00",
+      "real_calls": true,
+      "model": "deepseek-flash",
+      "config_overrides": [
+        "DATABASE_URL（仅隔离验证数据）"
+      ],
+      "task_id": "task-91636971114340a1",
+      "status": "partial",
+      "budget": {
+        "tool_calls": 6,
+        "external_requests": 25,
+        "llm_calls": 12,
+        "planning_rounds": 2,
+        "active_seconds": 177.04576487800296
+      },
+      "errors": [
+        "external_requests 预算耗尽"
+      ],
+      "query": "喜欢回合制战斗和牌组构筑，想了解具体玩法和体验取舍",
+      "stores": [
+        "steam",
+        "gog"
+      ],
+      "candidates": 20,
+      "withheld": [
+        {
+          "game_id": "igdb-102420",
+          "name": "Dicey Dungeons",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-111717",
+          "name": "One Step From Eden",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-119249",
+          "name": "Roguebook",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-119285",
+          "name": "Lost in Random",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-131645",
+          "name": "Knock on the Coffin Lid",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-132422",
+          "name": "Fights in Tight Spaces",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-146424",
+          "name": "Tainted Grail: Conquest",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-194504",
+          "name": "Backpack Hero",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-208533",
+          "name": "Shogun Showdown",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-253659",
+          "name": "Backpack Battles",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-27530",
+          "name": "Children of Zodiarcs",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-328347",
+          "name": "Death Howl",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-332273",
+          "name": "Monster Train 2",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-37057",
+          "name": "Griftlands",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-378229",
+          "name": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-51736",
+          "name": "Nowhere Prophet",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-129483",
+          "name": "Monster Train",
+          "reasons": [
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-19474",
+          "name": "Gwent: The Witcher Card Game",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        },
+        {
+          "game_id": "igdb-288741",
+          "name": "9 Kings",
+          "reasons": [
+            {
+              "code": "constraints",
+              "message": "必要条件未全部通过"
+            },
+            {
+              "code": "preference_unknown",
+              "message": "仍有未查清的兴趣条件"
+            },
+            {
+              "code": "intro",
+              "message": "缺少有依据的玩法介绍"
+            },
+            {
+              "code": "strengths",
+              "message": "缺少核验通过的具体优点"
+            },
+            {
+              "code": "tradeoffs",
+              "message": "缺少核验通过的具体取舍"
+            },
+            {
+              "code": "reviews",
+              "message": "实际阅读的有效评论不足"
+            },
+            {
+              "code": "citations",
+              "message": "独立评论引用不足"
+            },
+            {
+              "code": "mechanics",
+              "message": "可确认的机制画像不足"
+            },
+            {
+              "code": "evidence_link",
+              "message": "引用缺少来源链接"
+            },
+            {
+              "code": "source_diversity",
+              "message": "尚未交叉参考目录说明与玩家评论"
+            }
+          ]
+        }
+      ],
+      "policy": {
+        "version": "complete-card-1",
+        "synthetic": false,
+        "min_reviews": 20,
+        "min_cited_reviews": 3,
+        "min_known_mechanics": 3,
+        "review_sample_limit": 120,
+        "review_context_limit": 60,
+        "unresolved_requirements": []
+      },
+      "model_usage": [
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 8389,
+            "completion_tokens": 350,
+            "total_tokens": 8739,
+            "prompt_tokens_details": {
+              "cached_tokens": 8192
+            },
+            "prompt_cache_hit_tokens": 8192,
+            "prompt_cache_miss_tokens": 197
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "planner"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 11099,
+            "completion_tokens": 489,
+            "total_tokens": 11588,
+            "prompt_tokens_details": {
+              "cached_tokens": 8832
+            },
+            "prompt_cache_hit_tokens": 8832,
+            "prompt_cache_miss_tokens": 2267
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "planner"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 40790,
+            "completion_tokens": 2260,
+            "total_tokens": 43050,
+            "prompt_tokens_details": {
+              "cached_tokens": 8576
+            },
+            "prompt_cache_hit_tokens": 8576,
+            "prompt_cache_miss_tokens": 32214
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 40814,
+            "completion_tokens": 2720,
+            "total_tokens": 43534,
+            "prompt_tokens_details": {
+              "cached_tokens": 40576
+            },
+            "prompt_cache_hit_tokens": 40576,
+            "prompt_cache_miss_tokens": 238
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 18130,
+            "completion_tokens": 1472,
+            "total_tokens": 19602,
+            "prompt_tokens_details": {
+              "cached_tokens": 8320
+            },
+            "prompt_cache_hit_tokens": 8320,
+            "prompt_cache_miss_tokens": 9810
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "verifier"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 44382,
+            "completion_tokens": 2286,
+            "total_tokens": 46668,
+            "prompt_tokens_details": {
+              "cached_tokens": 8576
+            },
+            "prompt_cache_hit_tokens": 8576,
+            "prompt_cache_miss_tokens": 35806
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 16711,
+            "completion_tokens": 1293,
+            "total_tokens": 18004,
+            "prompt_tokens_details": {
+              "cached_tokens": 8320
+            },
+            "prompt_cache_hit_tokens": 8320,
+            "prompt_cache_miss_tokens": 8391
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "verifier"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 40921,
+            "completion_tokens": 2132,
+            "total_tokens": 43053,
+            "prompt_tokens_details": {
+              "cached_tokens": 8576
+            },
+            "prompt_cache_hit_tokens": 8576,
+            "prompt_cache_miss_tokens": 32345
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 18775,
+            "completion_tokens": 1916,
+            "total_tokens": 20691,
+            "prompt_tokens_details": {
+              "cached_tokens": 8320
+            },
+            "prompt_cache_hit_tokens": 8320,
+            "prompt_cache_miss_tokens": 10455
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "verifier"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 45004,
+            "completion_tokens": 2309,
+            "total_tokens": 47313,
+            "prompt_tokens_details": {
+              "cached_tokens": 9600
+            },
+            "prompt_cache_hit_tokens": 9600,
+            "prompt_cache_miss_tokens": 35404
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        },
+        {
+          "model": "deepseek-flash",
+          "usage": {
+            "prompt_tokens": 45028,
+            "completion_tokens": 1783,
+            "total_tokens": 46811,
+            "prompt_tokens_details": {
+              "cached_tokens": 44800
+            },
+            "prompt_cache_hit_tokens": 44800,
+            "prompt_cache_miss_tokens": 228
+          },
+          "prompt_version": "gamereach-complete-5",
+          "role": "researcher"
+        }
+      ],
+      "recommendations": [
+        {
+          "id": "igdb-40477",
+          "name": "Slay the Spire",
+          "source_url": "https://www.igdb.com/games/slay-the-spire",
+          "store_links": {
+            "steam": "https://store.steampowered.com/app/646570/",
+            "gog": "https://www.gog.com/game/slay_the_spire"
+          },
+          "counts": {
+            "stage": "researched",
+            "message": "已经读到部分玩法依据；没有提及的机制仍保留空白。",
+            "documents": 121,
+            "reviews": 119,
+            "reviews_read": 60,
+            "reused_reviews": 0,
+            "cited_reviews": 7,
+            "claims": 20,
+            "verified_claims": 12,
+            "known_mechanics": 5
+          },
+          "intro": "玩家反复做的事：打一场怪、从奖励里挑一张卡、把牌组调好或调坏，再继续往上爬；评论把这一循环概括为“打怪—拿卡—发现牌组变差—重复”。",
+          "strengths": [
+            "优点：该评论认为上手意外简单但深入后极深，每局随机化让结果无法预测，成功时更有成就感。",
+            "该评论认为优点是上手门槛低但深度足：规则容易理解，深入后极深，每局随机化让结果不可预测，成功时更有成就感。",
+            "该评论认为优点是每局都像解新题：卡牌、遗物、药水、路线与敌人配置交织，靠取舍与规划把牌组磨成杀招，四个角色节奏差异明显，重玩性高。"
+          ],
+          "tradeoffs": [
+            "该评论认为取舍在于随机性：极端坏种子下拿不到关键牌、精英连续塞诅咒卡、商店全是垃圾，打得再稳也难逃慢性死亡，高难度下运气权重进一步上升。"
+          ],
+          "portrait": [
+            "轮流思考",
+            "长期资源与战术协同",
+            "多流派改变打法",
+            "每局核心构筑受随机选择驱动",
+            "有牌组构筑"
+          ],
+          "story": {
+            "headline": "有这些合拍之处",
+            "fits": [
+              "轮流思考",
+              "有牌组构筑"
+            ],
+            "tradeoffs": [],
+            "unknowns": [],
+            "summary": "你在意的 轮流思考、有牌组构筑 有依据支持。"
+          },
+          "citations": [
+            {
+              "id": "ev-19eb89206cf694e574ac",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198304015947/recommended/646570/"
+            },
+            {
+              "id": "ev-82c9a5568bf267100319",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198299680535/recommended/646570/"
+            },
+            {
+              "id": "ev-47345ced582567b6adbf",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198042277590/recommended/646570/"
+            },
+            {
+              "id": "ev-fbd2b6d0681551bb0d27",
+              "locatable": true,
+              "provider": "igdb",
+              "url": "https://www.igdb.com/games/slay-the-spire"
+            },
+            {
+              "id": "ev-e3e5970a35697457db5d",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198167281875/recommended/646570/"
+            },
+            {
+              "id": "ev-e88cfa42def6bf98106e",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198021886235/recommended/646570/"
+            },
+            {
+              "id": "ev-919a05cc925e2c66ad44",
+              "locatable": true,
+              "provider": "igdb",
+              "url": "https://www.igdb.com/games/slay-the-spire"
+            },
+            {
+              "id": "ev-0e4ec188f20f78575423",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198016513905/recommended/646570/"
+            },
+            {
+              "id": "ev-4985809fd65fcd3fd062",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561198304015947/recommended/646570/"
+            },
+            {
+              "id": "ev-2e20f0dcede96560af37",
+              "locatable": true,
+              "provider": "steam_reviews",
+              "url": "https://steamcommunity.com/profiles/76561199858141792/recommended/646570/"
+            }
+          ]
+        }
+      ],
+      "checks": {
+        "citation_locations": "passed",
+        "only_complete_cards": "passed",
+        "same_query_rerank": "passed",
+        "contradictory_constraints_exclude_all": "passed",
+        "real_recommendations_produced": true
+      },
+      "case": "Steam + GOG 偏好搜索"
+    }
+  ],
+  "source_page_samples": [
+    {
+      "url": "https://www.igdb.com/games/slay-the-spire",
+      "status": 404
+    },
+    {
+      "url": "https://store.steampowered.com/app/646570/",
+      "status": 200
+    },
+    {
+      "url": "https://steamcommunity.com/profiles/76561199858141792/recommended/646570/",
+      "status": 200
+    }
+  ],
+  "ui": {
+    "desktop": "passed",
+    "mobile": "passed",
+    "evidence_drawer": "passed",
+    "console_errors": 0
+  },
+  "notes": [
+    "报告不含密钥、私人游戏库、完整原始评论或测试数据库。",
+    "真实模型输出存在波动，样本结果不是全市场准确率。",
+    "开发排查期间另有真实诊断调用，以下记录最终验收案例而非账户账单总额。"
+  ]
+}

@@ -1,0 +1,660 @@
+[
+  {
+    "id": "text-01",
+    "text": "喜欢弹反",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-02",
+    "text": "偏好招架",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-03",
+    "text": "不要弹反",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "parry",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-04",
+    "text": "喜欢闪避",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "dodge",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-05",
+    "text": "没有闪避",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "dodge",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-06",
+    "text": "喜欢体力管理",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "stamina_management",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-07",
+    "text": "不要体力管理",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "stamina_management",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-08",
+    "text": "喜欢卡牌构筑",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "deckbuilding",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-09",
+    "text": "不想要牌组构筑",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "deckbuilding",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-10",
+    "text": "喜欢局中保存",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "mid_run_save",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-11",
+    "text": "不需要中途保存",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "mid_run_save",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-12",
+    "text": "喜欢死亡回收",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "corpse_recovery",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-13",
+    "text": "不喜欢捡尸",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "corpse_recovery",
+          "target": false
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-14",
+    "text": "战斗技巧",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "mechanical_difficulty",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-15",
+    "text": "少刷装备",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "grind_requirement",
+          "target": 1,
+          "operator": "lte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-16",
+    "text": "不需要大量刷装备",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "grind_requirement",
+          "target": 1,
+          "operator": "lte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-17",
+    "text": "喜欢策略",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "strategic_depth",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-18",
+    "text": "喜欢丰富构筑",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "build_diversity",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-19",
+    "text": "低跑图惩罚",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "runback_penalty",
+          "target": 1,
+          "operator": "lte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-20",
+    "text": "喜欢永久成长",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "meta_progression_strength",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-21",
+    "text": "重视操作挑战",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "mechanical_difficulty",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-22",
+    "text": "低操作要求",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "mechanical_difficulty",
+          "target": 1,
+          "operator": "lte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-23",
+    "text": "喜欢随机构筑",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "build_randomness",
+          "target": 3,
+          "operator": "gte"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-24",
+    "text": "必须弹反",
+    "expected": {
+      "must": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-25",
+    "text": "必须局中保存",
+    "expected": {
+      "must": [
+        {
+          "feature_key": "mid_run_save",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-26",
+    "text": "必须体力管理",
+    "expected": {
+      "must": [
+        {
+          "feature_key": "stamina_management",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-27",
+    "text": "必须没有死亡回收",
+    "expected": {
+      "must_not": [
+        {
+          "feature_key": "corpse_recovery",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-28",
+    "text": "绝不能有捡尸",
+    "expected": {
+      "must_not": [
+        {
+          "feature_key": "corpse_recovery",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-29",
+    "text": "必须不要弹反",
+    "expected": {
+      "must_not": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-30",
+    "text": "回合制游戏",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "combat_mode",
+          "target": "turn_based"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-31",
+    "text": "没有战斗",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "combat_mode",
+          "target": "none"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-32",
+    "text": "开放探索",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "exploration_structure",
+          "target": "open"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-33",
+    "text": "线性探索",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "exploration_structure",
+          "target": "linear"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-34",
+    "text": "分支探索",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "exploration_structure",
+          "target": "branching"
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-35",
+    "text": "半小时一局",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "session_length_minutes",
+          "target": [
+            0,
+            30
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "text-36",
+    "text": "一局 15–40 分钟",
+    "expected": {
+      "soft_preferences": [
+        {
+          "feature_key": "session_length_minutes",
+          "target": [
+            15,
+            40
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "ambiguous-36",
+    "text": "不是不喜欢弹反",
+    "unparsed": true
+  },
+  {
+    "id": "ambiguous-37",
+    "text": "如果有弹反就不要闪避",
+    "unparsed": true
+  },
+  {
+    "id": "ambiguous-38",
+    "text": "要么卡牌构筑或者策略",
+    "unparsed": true
+  },
+  {
+    "id": "ambiguous-39",
+    "text": "像某个没有收录的游戏那样",
+    "unparsed": true
+  },
+  {
+    "id": "invalid-01",
+    "query": {
+      "must": [
+        {
+          "feature_key": "parry",
+          "target": true
+        },
+        {
+          "feature_key": "parry",
+          "target": false
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-02",
+    "query": {
+      "must": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ],
+      "must_not": [
+        {
+          "feature_key": "parry",
+          "target": true
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-03",
+    "query": {
+      "must": [
+        {
+          "feature_key": "parry",
+          "target": 1
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-04",
+    "query": {
+      "must": [
+        {
+          "feature_key": "grind_requirement",
+          "target": true
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-05",
+    "query": {
+      "must": [
+        {
+          "feature_key": "grind_requirement",
+          "target": 5
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-06",
+    "query": {
+      "must": [
+        {
+          "feature_key": "combat_mode",
+          "target": "invented"
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-07",
+    "query": {
+      "must": [
+        {
+          "feature_key": "missing",
+          "target": true
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-08",
+    "query": {
+      "must": [
+        {
+          "feature_key": "session_length_minutes",
+          "target": [
+            60,
+            20
+          ]
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-09",
+    "query": {
+      "must": [
+        {
+          "feature_key": "dodge",
+          "target": null
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-10",
+    "query": {
+      "must": [
+        {
+          "feature_key": "grind_requirement",
+          "target": 3,
+          "operator": "gte"
+        },
+        {
+          "feature_key": "grind_requirement",
+          "target": 1,
+          "operator": "lte"
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-11",
+    "query": {
+      "must": [
+        {
+          "kind": "not",
+          "children": []
+        }
+      ]
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-12",
+    "query": {
+      "ontology_version": "dna-1"
+    },
+    "invalid": true
+  },
+  {
+    "id": "invalid-13",
+    "query": {
+      "discovery_scope": {
+        "stores": [
+          "unknown"
+        ]
+      }
+    },
+    "invalid": true
+  },
+  {
+    "id": "dedup",
+    "query": {
+      "soft_preferences": [
+        {
+          "condition": {
+            "feature_key": "parry",
+            "target": true
+          }
+        },
+        {
+          "condition": {
+            "feature_key": "parry",
+            "target": true,
+            "origin": "text"
+          }
+        }
+      ]
+    },
+    "count": 1
+  }
+]

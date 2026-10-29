@@ -1,0 +1,41 @@
+{
+  "health": {
+    "status": "ok",
+    "version": "0.9.1"
+  },
+  "frontend_http": 200,
+  "tags": 64,
+  "real_browser_test": false,
+  "runs": [
+    {
+      "fault": "none",
+      "status": "completed",
+      "diagnostics": {
+        "recalled": 20,
+        "selected": 3,
+        "with_reviews": 2,
+        "full_read": 2,
+        "with_findings": 2,
+        "verified": 2,
+        "with_matches": 2
+      },
+      "first_game": "烬刃回响",
+      "first_diagnosis": "matched"
+    },
+    {
+      "fault": "rate_limited",
+      "status": "partial",
+      "diagnostics": {
+        "recalled": 20,
+        "selected": 3,
+        "with_reviews": 0,
+        "full_read": 0,
+        "with_findings": 0,
+        "verified": 0,
+        "with_matches": 0
+      },
+      "first_game": "烬刃回响",
+      "first_diagnosis": "source_failed"
+    }
+  ]
+}

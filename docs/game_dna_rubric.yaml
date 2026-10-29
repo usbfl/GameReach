@@ -1,0 +1,640 @@
+{
+  "ontology_version": "dna-2",
+  "rubric_version": "2.1",
+  "features": {
+    "combat_mode": {
+      "key": "combat_mode",
+      "label": "战斗节奏",
+      "english_name": "Combat mode",
+      "aliases": [
+        "combat_mode",
+        "战斗节奏",
+        "combat mode",
+        "战斗模式",
+        "回合制",
+        "turn-based",
+        "没有战斗",
+        "无战斗",
+        "实时战斗"
+      ],
+      "category": "节奏",
+      "type": "enum",
+      "values": [
+        "realtime",
+        "turn_based",
+        "hybrid",
+        "none"
+      ],
+      "anchors": [
+        "实时交锋",
+        "轮流思考",
+        "实时与回合结合",
+        "没有战斗"
+      ],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "正文明确描述本作回合制/实时制等战斗节奏可支持类型解读；玩家正文中的明确分类可采用，目录 genres/tags 单独不足。无需提供全部战斗规则。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "等级不是客观测量；喜好与事实分开。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "dodge": {
+      "key": "dodge",
+      "label": "闪避",
+      "english_name": "Dodge",
+      "aliases": [
+        "dodge",
+        "闪避",
+        "回避"
+      ],
+      "category": "操作",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "存在实际闪避动作或等价回避机制；纯位移不自动等于闪避。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "存在实际闪避动作或等价回避机制；纯位移不自动等于闪避。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "parry": {
+      "key": "parry",
+      "label": "弹反",
+      "english_name": "Parry",
+      "aliases": [
+        "parry",
+        "弹反",
+        "招架"
+      ],
+      "category": "操作",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "时机驱动的招架/弹反；仅有防御不成立。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "时机驱动的招架/弹反；仅有防御不成立。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "mechanical_difficulty": {
+      "key": "mechanical_difficulty",
+      "label": "操作要求",
+      "english_name": "Mechanical difficulty",
+      "aliases": [
+        "mechanical_difficulty",
+        "操作要求",
+        "mechanical difficulty",
+        "操作挑战",
+        "高难",
+        "读招",
+        "战斗技巧",
+        "技巧",
+        "难度"
+      ],
+      "category": "操作",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "无需即时操作",
+        "宽松反应窗口",
+        "需要一般实时反应、走位或瞄准操作",
+        "需要较精准时机或较复杂组合输入",
+        "高压读招与严格时机"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "按明确的实时输入、反应和走位描述解释等级。等级2可以由需要即时反应、移动躲避或瞄准攻击的具体描述支持；等级3才需要精准时机、复杂输入或更严格操作的依据，等级4需要高压或严格容错的说明。无需实测毫秒数字。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "策略思考困难不是即时操作难度。对攻击不公平、无预警的批评仍可能说明需要实时反应；负面态度不能否定已描述的操作需求。不能要求等级2也有等级3/4的严格窗口。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.1"
+    },
+    "strategic_depth": {
+      "key": "strategic_depth",
+      "label": "策略深度",
+      "english_name": "Strategic depth",
+      "aliases": [
+        "strategic_depth",
+        "策略深度",
+        "strategic depth",
+        "策略",
+        "战术",
+        "动脑"
+      ],
+      "category": "思考",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "少量决策",
+        "单步选择",
+        "多步骤权衡",
+        "长期资源与战术协同",
+        "多层系统互动与复杂规划"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "逐字引用实际机制并按等级锚点解释；类型标签不能作为机制事实。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "等级不是客观测量；喜好与事实分开。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "build_diversity": {
+      "key": "build_diversity",
+      "label": "构筑多样性",
+      "english_name": "Build diversity",
+      "aliases": [
+        "build_diversity",
+        "构筑多样性",
+        "build diversity",
+        "构筑",
+        "流派"
+      ],
+      "category": "变化",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "固定玩法",
+        "少量参数变化",
+        "武器、技能或道具能形成几种不同打法",
+        "多流派改变打法",
+        "多系统组合带来显著差异"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "按可改变打法的选项与组合解释等级。明确不同武器、道具或技能组合改变攻击方式，足以支持等级2；多个系统联动并显著改变打法可支持3，更复杂多系统交互才支持4。无需原文使用“流派”一词。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "单纯数值强化不是不同打法；道具覆盖某类攻击与存在多种组合可以同时成立，不能仅因评论褒贬不同判为机制矛盾。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.1"
+    },
+    "build_randomness": {
+      "key": "build_randomness",
+      "label": "构筑随机性",
+      "english_name": "Build randomness",
+      "aliases": [
+        "build_randomness",
+        "构筑随机性",
+        "build randomness",
+        "随机构筑"
+      ],
+      "category": "变化",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "无随机构筑",
+        "轻微随机参数",
+        "部分随机选项",
+        "流派路径显著随机",
+        "每局核心构筑受随机选择驱动"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "逐字引用实际机制并按等级锚点解释；类型标签不能作为机制事实。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "等级不是客观测量；喜好与事实分开。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "grind_requirement": {
+      "key": "grind_requirement",
+      "label": "重复刷取",
+      "english_name": "Grind requirement",
+      "aliases": [
+        "grind_requirement",
+        "重复刷取",
+        "grind requirement",
+        "刷装备",
+        "刷资源",
+        "刷取",
+        "grind"
+      ],
+      "category": "负担",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "推进无需重复刷取",
+        "可选刷取，正常推进不依赖",
+        "推进偶尔需要重复刷取资源",
+        "推进经常需要重复刷取资源",
+        "推进必须大量重复刷取装备或资源"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "衡量推进是否需要为装备、数值或资源反复刷相同内容。0需要明确无需刷取的依据，1为可选少量，2为偶尔重复获取，3为经常重复，4必须明确大量重复获取资源/装备是推进门槛。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "Roguelike新一局、练习Boss、重新挑战、重复通关解锁故事本身不等于刷装备/资源。只说“grind/肝/重复”但未说明刷取对象与推进必要性，不能定为3或4；也不能反向当作0。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.1"
+    },
+    "runback_penalty": {
+      "key": "runback_penalty",
+      "label": "跑图惩罚",
+      "english_name": "Runback penalty",
+      "aliases": [
+        "runback_penalty",
+        "跑图惩罚",
+        "runback penalty",
+        "跑图",
+        "重走",
+        "runback"
+      ],
+      "category": "负担",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "就地或近点重试",
+        "短距离返回",
+        "中等长度重走",
+        "较长重走和重复战斗",
+        "漫长重走打断尝试"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "逐字引用实际机制并按等级锚点解释；类型标签不能作为机制事实。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "等级不是客观测量；喜好与事实分开。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "meta_progression_strength": {
+      "key": "meta_progression_strength",
+      "label": "局外成长",
+      "english_name": "Meta progression",
+      "aliases": [
+        "meta_progression_strength",
+        "局外成长",
+        "meta progression",
+        "永久成长"
+      ],
+      "category": "变化",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "无永久成长",
+        "主要解锁选择",
+        "有限永久数值",
+        "明显永久强化",
+        "永久强化显著影响通关"
+      ],
+      "bounds": [
+        0,
+        4
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "逐字引用实际机制并按等级锚点解释；类型标签不能作为机制事实。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "等级不是客观测量；喜好与事实分开。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "session_length_minutes": {
+      "key": "session_length_minutes",
+      "label": "单局时长",
+      "english_name": "Session length",
+      "aliases": [
+        "session_length_minutes",
+        "单局时长",
+        "session length",
+        "半小时",
+        "短局",
+        "单局",
+        "一局",
+        "分钟"
+      ],
+      "category": "节奏",
+      "type": "range",
+      "values": [],
+      "anchors": [],
+      "bounds": [
+        0,
+        1440
+      ],
+      "operators": [
+        "eq",
+        "ne",
+        "overlap"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "明确一局或一次任务的时间对象和两个端点；不是全流程时长。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "明确一局或一次任务的时间对象和两个端点；不是全流程时长。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "stamina_management": {
+      "key": "stamina_management",
+      "label": "体力管理",
+      "english_name": "Stamina management",
+      "aliases": [
+        "stamina_management",
+        "体力管理",
+        "stamina management",
+        "耐力管理"
+      ],
+      "category": "操作",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "体力资源实际约束关键行动选择；仅出现耐力字样不足。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "体力资源实际约束关键行动选择；仅出现耐力字样不足。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "corpse_recovery": {
+      "key": "corpse_recovery",
+      "label": "死亡回收",
+      "english_name": "Corpse recovery",
+      "aliases": [
+        "corpse_recovery",
+        "死亡回收",
+        "corpse recovery",
+        "死亡后回收",
+        "捡尸",
+        "跑尸",
+        "死亡回收机制"
+      ],
+      "category": "负担",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "死亡后返回地点取回损失资源；不是重走距离。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "死亡后返回地点取回损失资源；不是重走距离。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "deckbuilding": {
+      "key": "deckbuilding",
+      "label": "牌组构筑",
+      "english_name": "Deckbuilding",
+      "aliases": [
+        "deckbuilding",
+        "牌组构筑",
+        "卡牌构筑"
+      ],
+      "category": "思考",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "构造或调整牌组显著改变玩法；卡牌外观不成立。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "构造或调整牌组显著改变玩法；卡牌外观不成立。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "exploration_structure": {
+      "key": "exploration_structure",
+      "label": "探索结构",
+      "english_name": "Exploration structure",
+      "aliases": [
+        "exploration_structure",
+        "探索结构",
+        "exploration structure",
+        "开放探索",
+        "线性探索",
+        "分支探索"
+      ],
+      "category": "探索",
+      "type": "enum",
+      "values": [
+        "linear",
+        "branching",
+        "open",
+        "hybrid"
+      ],
+      "anchors": [
+        "线性旅程",
+        "分支路线",
+        "开放探索",
+        "混合结构"
+      ],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "按主流程判断路线结构；支线地图不能直接代表主流程。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "按主流程判断路线结构；支线地图不能直接代表主流程。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "mid_run_save": {
+      "key": "mid_run_save",
+      "label": "局中保存",
+      "english_name": "Mid-run save",
+      "aliases": [
+        "mid_run_save",
+        "局中保存",
+        "mid-run save",
+        "中途保存",
+        "随时暂停后继续",
+        "中途存档",
+        "中途退出"
+      ],
+      "category": "节奏",
+      "type": "bool",
+      "values": [],
+      "anchors": [],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "在指定一局/任务中保存退出并能续玩；一般自动存档不成立。",
+      "negative_evidence": "需要明确否定该机制或适用范围内的完整规则说明；未提及不等于不存在。",
+      "confusions": "在指定一局/任务中保存退出并能续玩；一般自动存档不成立。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.0"
+    },
+    "death_penalty": {
+      "key": "death_penalty",
+      "label": "死亡损失",
+      "english_name": "Death penalty",
+      "aliases": [
+        "death_penalty",
+        "死亡惩罚",
+        "死亡损失",
+        "death penalty"
+      ],
+      "category": "代价",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "失败后立即重试，无持久损失",
+        "少量可恢复损失或很短的进度损失",
+        "可恢复的积累资源损失，需要承担回收风险",
+        "明显进度或资源损失，失败成本较高",
+        "永久死亡或大量不可恢复损失"
+      ],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "依据死亡后资源、进度和恢复风险的具体描述解释；低等级需要明确说明实际损失，不凭评论未提及死亡判断。",
+      "negative_evidence": "需要明确适用范围的描述；没有提及不等于没有损失或负担。",
+      "confusions": "不是跑回Boss的距离，也不等于是否有捡尸；有捡尸不自动意味着高惩罚。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.1"
+    },
+    "navigation_complexity": {
+      "key": "navigation_complexity",
+      "label": "寻路负担",
+      "english_name": "Navigation complexity",
+      "aliases": [
+        "navigation_complexity",
+        "寻路负担",
+        "跑图简单",
+        "地图简单",
+        "路线清晰",
+        "不迷路",
+        "地图不绕",
+        "navigation complexity"
+      ],
+      "category": "探索",
+      "type": "ordinal",
+      "values": [],
+      "anchors": [
+        "路线直接，几乎无需寻找方向",
+        "路线清晰，少量可选分支",
+        "需要一定探索与方向判断",
+        "分支交错或经常需要辨路",
+        "复杂迷宫与反复寻路是主要负担"
+      ],
+      "bounds": null,
+      "operators": [
+        "eq",
+        "ne",
+        "gte",
+        "lte",
+        "in"
+      ],
+      "scope": "主流程、标准模式；若资料限定平台/难度/补丁，必须另存作用域。",
+      "positive_evidence": "依据主流程指引、路线结构与迷路负担的实际描述解释；线性标签本身不能证明低负担。",
+      "negative_evidence": "需要明确适用范围的描述；没有提及不等于没有损失或负担。",
+      "confusions": "不是死亡后的重走距离；开放地图不自动意味着难寻路，分支也不自动意味着复杂。",
+      "ontology_version": "dna-2",
+      "rubric_version": "2.1"
+    }
+  },
+  "extension_version": "0.8.1"
+}

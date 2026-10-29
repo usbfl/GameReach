@@ -1,0 +1,46 @@
+{
+  "checked_at": "2026-10-21T14:01:19.804048+00:00",
+  "appid": "1245620",
+  "status": "passed",
+  "fetched": 20,
+  "complete": 20,
+  "rating": {
+    "positive": 777111,
+    "negative": 56984,
+    "provider": "steam_reviews",
+    "scope": "Steam purchases; all languages; off-topic filtered",
+    "fetched_at": "2026-10-21T14:01:18.577142+00:00",
+    "purchase_type": 0,
+    "source_url": "https://store.steampowered.com/app/1245620/#app_reviews_hash"
+  },
+  "sampling": {
+    "sample_size": 20,
+    "limit": 20,
+    "filter": "stratified_positive_negative_recent",
+    "strata": [
+      {
+        "stratum": "recent",
+        "received": 6,
+        "day_range_used": null
+      },
+      {
+        "stratum": "positive_helpful",
+        "received": 7,
+        "day_range_used": 365
+      },
+      {
+        "stratum": "negative_helpful",
+        "received": 7,
+        "day_range_used": 365
+      }
+    ],
+    "languages": [
+      "all"
+    ],
+    "after": null,
+    "representative": false,
+    "errors": []
+  },
+  "requests": 3,
+  "scope": "Anonymous source check only. No IGDB or LLM quality validation."
+}

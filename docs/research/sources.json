@@ -1,0 +1,381 @@
+{
+  "accessed_at": "2026-10-21",
+  "sources": [
+    {
+      "id": "S01",
+      "platform": "Reddit",
+      "title": "Hades: how is this fun?",
+      "url": "https://www.reddit.com/r/patientgamers/comments/s3xtcd/hades_how_is_this_fun/",
+      "observation": "同一循环有人视为磨耗，有人享受每局武器和祝福变化。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S02",
+      "platform": "Reddit",
+      "title": "Hades: repetitiveness and builds",
+      "url": "https://www.reddit.com/r/patientgamers/comments/1antgbz/hades_a_good_game_whose_repetitiveness_holds_it/",
+      "observation": "临场构筑、闪避和风险收益受到赞赏，但该作者也质疑地图重复、数值换皮与强势套路。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S03",
+      "platform": "Steam Community",
+      "title": "Nioh 2: Is worth to grind?",
+      "url": "https://steamcommunity.com/app/1325200/discussions/0/5760637065632031377/",
+      "observation": "讨论对早期刷级和多周目追装备有不同回答，必须保留阶段与个人判断。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S04",
+      "platform": "机核",
+      "title": "动作深奥，画面有瑕：仁王2玩家评测",
+      "url": "https://www.gcores.com/articles/188414",
+      "observation": "作者讨论残心、架势、技能衔接、研究成本和视觉可读性；属于个人投稿。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S05",
+      "platform": "Reddit",
+      "title": "Into the Breach: tactics and randomness",
+      "url": "https://www.reddit.com/r/patientgamers/comments/w8ubse/into_the_breach_is_one_of_the_finest_tactics/",
+      "observation": "评论区区分局面生成随机性与行动结果随机性，提到位移、状态和解题感。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S06",
+      "platform": "机核",
+      "title": "杀戮尖塔卡组构筑玩法系统分析",
+      "url": "https://www.gcores.com/articles/212672",
+      "observation": "用户投稿以路线、过渡牌、遗物联动和未来敌人解释构筑取舍。",
+      "kind": "player_analysis",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S07",
+      "platform": "Reddit",
+      "title": "Outer Wilds: knowledge as progression",
+      "url": "https://www.reddit.com/r/patientgamers/comments/1gpjf3h/outer_wilds_what_does_knowledge_is_the_only/",
+      "observation": "知识进展与数值成长不同；提问者仍不喜欢失败后的重走过程。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S08",
+      "platform": "Reddit",
+      "title": "What am I missing with Disco Elysium?",
+      "url": "https://www.reddit.com/r/patientgamers/comments/15ujpcv/what_am_i_missing_with_disco_elysium/",
+      "observation": "有人肯定对白但难以长时间阅读，叙事质量与阅读负担应分开。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S09",
+      "platform": "Reddit",
+      "title": "Am I missing something about Stardew Valley?",
+      "url": "https://www.reddit.com/r/patientgamers/comments/eyaamp/am_i_missing_something_about_stardew_valley/",
+      "observation": "可爱画面与经营压力可以并存，日夜和体力机制会使部分玩家焦虑。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S10",
+      "platform": "Steam Community",
+      "title": "Tomatoshadow: Silksong review",
+      "url": "https://steamcommunity.com/id/tomatoshadow/recommended/1030300/",
+      "observation": "好评同时提到长跑尸、反复练习、移动操作和探索惊喜；喜欢与代价并不互斥。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S11",
+      "platform": "GOG",
+      "title": "Agarest: Generations of War user reviews",
+      "url": "https://www.gog.com/en/game/agarest_generations_of_war",
+      "observation": "可见差评讨论重复战斗升级、材料链和推进节奏；只是该评论观点。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S12",
+      "platform": "GOG Forum",
+      "title": "How do you score/rate games?",
+      "url": "https://www.gog.com/forum/general/how_do_you_scorerate_games/page1",
+      "observation": "玩家区分响应速度、清晰度、重复跑腿和个人评分尺度。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S13",
+      "platform": "itch.io",
+      "title": "Baba Is You Jam Build comments",
+      "url": "https://hempuli.itch.io/baba-is-you/comments?after=0",
+      "observation": "玩家提及逻辑解谜、创意与过难；Jam版反馈不能当正式版证据。",
+      "kind": "comments",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S14",
+      "platform": "TapTap",
+      "title": "二重螺旋玩家评价",
+      "url": "https://www.taptap.cn/app/388717/review",
+      "observation": "同一评价可肯定角色和探索、反感固定副本与随机碎片；免费获得不等于低时间成本。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S15",
+      "platform": "TapTap",
+      "title": "幻塔玩家评价",
+      "url": "https://www.taptap.cn/app/192675/review",
+      "observation": "玩家喜欢闲逛景观但批评任务引导与寻路，开放世界不等于易导航。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S16",
+      "platform": "TapTap",
+      "title": "洛伊的移动要塞玩家评价",
+      "url": "https://www.taptap.cn/app/739892/review",
+      "observation": "可见更新评价从初期兴奋转为后期资源停滞，必须保留评论修订与进度。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S17",
+      "platform": "TapTap",
+      "title": "无名江湖玩家评价",
+      "url": "https://www.taptap.cn/app/235106/review",
+      "observation": "短日常、配队与长期数值、抽取概率可并存；有反讽五星评价，星级不能决定句子含义。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S18",
+      "platform": "Steam Community",
+      "title": "Factorio: what should I automate?",
+      "url": "https://steamcommunity.com/app/427520/discussions/0/604161119746127162/",
+      "observation": "讨论将重复手工制作改成生产自动化，区分自动化经营与无操作挂机。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S19",
+      "platform": "Reddit",
+      "title": "Slay the Spire: give me the real tips",
+      "url": "https://www.reddit.com/r/slaythespire/comments/1ja39hd/give_me_the_real_tips/",
+      "observation": "讨论围绕下一场挑战而选牌，构筑不只指预设最终流派。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S20",
+      "platform": "Reddit",
+      "title": "Into the Breach: an amazing indie",
+      "url": "https://www.reddit.com/r/patientgamers/comments/g9ng51/into_the_breach_an_amazing_indie/",
+      "observation": "检索发现有人把确定性当优点也当缺少惊喜的代价；仅作待验证扩展线索。",
+      "kind": "search_lead",
+      "access": "search_snippet_only",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S21",
+      "platform": "Steam Community",
+      "title": "Deep Rock Galactic: Worth playing solo?",
+      "url": "https://steamcommunity.com/app/548430/discussions/1/3203746811791854833/",
+      "observation": "单人机器人协助、职业合作、无需语音与路人社交风险分开记录；有人觉得单人无聊，也有人喜欢。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S22",
+      "platform": "Steam Community",
+      "title": "Subnautica: how scary is the game?",
+      "url": "https://steamcommunity.com/app/264710/discussions/0/5154944131320023232/",
+      "observation": "深水未知引发的紧张与突发惊吓不同；相同环境有人放松、有人恐惧，需保留主观分歧。",
+      "kind": "discussion",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S23",
+      "platform": "GOG",
+      "title": "RimWorld user reviews",
+      "url": "https://www.gog.com/en/game/rimworld",
+      "observation": "玩家从殖民者关系、灾难和模组谈系统涌现叙事；一条评价明确自Steam转载，跨站不能重复计票。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "S24",
+      "platform": "Reddit",
+      "title": "Alien Isolation: disappointing slog but beautiful",
+      "url": "https://www.reddit.com/r/patientgamers/comments/1806zsq/alien_isolation_is_a_disappointing_slogbut_its_so/",
+      "observation": "同一评论赞美美术、声音与控制，批评躲藏等待和重复；还提到修改弹药，不能泛化到默认难度。",
+      "kind": "review",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P12",
+      "platform": "Steam",
+      "title": "Deep Rock Galactic tags",
+      "url": "https://store.steampowered.com/app/548430/Deep_Rock_Galactic/",
+      "observation": "核对Co-op、PvE、Class-Based、Shooter；Single-player是功能字段。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P13",
+      "platform": "Steam",
+      "title": "Subnautica tags",
+      "url": "https://store.steampowered.com/app/264710/Subnautica/",
+      "observation": "核对Survival、Crafting、Base Building、Horror；玩家标签含Multiplayer而功能标单人，反映标签不能直接证明功能。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P01",
+      "platform": "Steamworks",
+      "title": "Steam Tags",
+      "url": "https://partner.steamgames.com/doc/store/tags",
+      "observation": "平台标签用于可见性和召回，不能替代体验证据。",
+      "kind": "official",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P02",
+      "platform": "Steamworks",
+      "title": "IUserReviewsService",
+      "url": "https://partner.steamgames.com/doc/webapi/IUserReviewsService",
+      "observation": "完整review字段；query_summary评分仅在首个all类型请求返回。",
+      "kind": "official",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P03",
+      "platform": "Epic",
+      "title": "Ratings and Polls",
+      "url": "https://store.epicgames.com/en-US/news/the-epic-games-store-ratings-and-polls-update",
+      "observation": "官方说明评分和玩家投票标签；不是自由文本评价。",
+      "kind": "official",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P04",
+      "platform": "itch.io",
+      "title": "Content creator quality guidelines",
+      "url": "https://itch.io/docs/creators/quality-guidelines",
+      "observation": "优先建议标签，避免同义重复；元数据分类与标签不同。",
+      "kind": "official",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P05",
+      "platform": "Steam",
+      "title": "Hades store tags",
+      "url": "https://store.steampowered.com/app/1145360/Hades/",
+      "observation": "核对Action Roguelike、Roguelite、Hack and Slash等标签。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P06",
+      "platform": "Steam",
+      "title": "Slay the Spire store tags",
+      "url": "https://store.steampowered.com/app/646570/Slay_the_Spire/",
+      "observation": "核对Deckbuilding、Turn-Based、Strategy、Roguelike Deckbuilder等。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P07",
+      "platform": "Steam",
+      "title": "Hollow Knight store tags",
+      "url": "https://store.steampowered.com/app/367520/Hollow_Knight/",
+      "observation": "核对Souls-like、Metroidvania、Platformer、Exploration等。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P08",
+      "platform": "GOG",
+      "title": "Hollow Knight store tags",
+      "url": "https://www.gog.com/en/game/hollow_knight",
+      "observation": "核对Action、Difficult、Exploration、Platformer、Souls-like等。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P09",
+      "platform": "Epic",
+      "title": "Hades genres and features",
+      "url": "https://store.epicgames.com/en-US/p/hades",
+      "observation": "核对Action、Rogue-Lite、RPG；Single Player属于features。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P10",
+      "platform": "itch.io",
+      "title": "Top tags: genres",
+      "url": "https://itch.io/tags/genres",
+      "observation": "核对Action、Adventure、Role Playing、Visual Novel等分类。",
+      "kind": "catalog",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    },
+    {
+      "id": "P11",
+      "platform": "IGDB",
+      "title": "API reference",
+      "url": "https://api-docs.igdb.com/",
+      "observation": "目录的genres、keywords、platforms和商店链接用于召回。",
+      "kind": "official",
+      "access": "page_body_available",
+      "accessed_at": "2026-10-21"
+    }
+  ],
+  "limitations": [
+    "No Rest for the Wicked Steam讨论遇到内容提示，未把搜索摘要作为完整证据。",
+    "部分Reddit帖子无法打开；未计入完整正文。",
+    "豆瓣等定向检索未取得可靠正文，未宣称覆盖。",
+    "TapTap部分短评可能模板化；只归纳词义与反例，不作为游戏整体口碑。"
+  ]
+}

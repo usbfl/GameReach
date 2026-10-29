@@ -1,0 +1,54 @@
+npm warn Unknown env config "http-proxy". This will stop working in the next major version of npm.
+
+> gamereach-workbench@0.11.0 test:e2e
+> node run-e2e.cjs
+
+[2m[WebServer] [22mInstalled 7 packages in 15ms
+[2m[WebServer] [22mINFO:     Started server process [95]
+[2m[WebServer] [22mINFO:     Waiting for application startup.
+[2m[WebServer] [22mINFO:     Application startup complete.
+[2m[WebServer] [22mINFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+
+Running 30 tests using 1 worker
+
+(node:96) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  1 [desktop] › tests/player.e2e.cjs:5:16 › Library selection, preference draft, explicit confirmation and undo (1.3s)
+  ✓  2 [desktop] › tests/player.e2e.cjs:30:16 › File imports give actionable errors and recommendations show readable evidence (5.6s)
+  ✓  3 [desktop] › tests/player.e2e.cjs:46:16 › Steam import shows inline progress, failure and empty-library success (774ms)
+  ✓  4 [desktop] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (3.8s)
+  ✓  5 [desktop] › tests/tags.e2e.cjs:5:16 › Keyboard priority changes rerank frozen evidence without calls (5.4s)
+  ✓  6 [desktop] › tests/v011.e2e.cjs:5:16 › v0.11 editable final conditions persist, partial matches and local reorder (3.4s)
+  ✓  7 [desktop] › tests/v011.e2e.cjs:36:16 › v0.11 overlap cards permit actual member editing and persist confirmation (1.2s)
+  ✓  8 [desktop] › tests/v011.e2e.cjs:69:16 › v0.11 custom hard expression stays unknown and cannot qualify a candidate (5.0s)
+  ✓  9 [desktop] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history (6.2s)
+  ✓  10 [desktop] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation (5.1s)
+  ✓  11 [desktop] › tests/workbench.e2e.cjs:55:16 › Human verifier decisions persist without blanket acceptance (4.6s)
+  ✓  12 [desktop] › tests/workbench.e2e.cjs:70:16 › Source rate limit remains an honest partial result (4.6s)
+  ✓  13 [desktop] › tests/workbench.e2e.cjs:81:16 › Interest shortlist still supports local add and remove (700ms)
+  ✓  14 [desktop] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt (1.1s)
+  ✓  15 [desktop] › tests/workbench.e2e.cjs:122:16 › Home layout has no overflow or browser errors (634ms)
+(node:349) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ✓  16 [mobile] › tests/player.e2e.cjs:5:16 › Library selection, preference draft, explicit confirmation and undo (1.4s)
+  ✓  17 [mobile] › tests/player.e2e.cjs:30:16 › File imports give actionable errors and recommendations show readable evidence (5.1s)
+  ✓  18 [mobile] › tests/player.e2e.cjs:46:16 › Steam import shows inline progress, failure and empty-library success (637ms)
+  ✓  19 [mobile] › tests/query-errors.e2e.cjs:4:16 › An interrupted investigation explains failure without claiming no matching games (2.9s)
+  ✓  20 [mobile] › tests/tags.e2e.cjs:5:16 › Keyboard priority changes rerank frozen evidence without calls (5.2s)
+  ✓  21 [mobile] › tests/v011.e2e.cjs:5:16 › v0.11 editable final conditions persist, partial matches and local reorder (3.6s)
+  ✓  22 [mobile] › tests/v011.e2e.cjs:36:16 › v0.11 overlap cards permit actual member editing and persist confirmation (1.5s)
+  ✓  23 [mobile] › tests/v011.e2e.cjs:69:16 › v0.11 custom hard expression stays unknown and cannot qualify a candidate (5.0s)
+  ✓  24 [mobile] › tests/workbench.e2e.cjs:6:16 › Tag research, full review evidence, export and history (6.2s)
+  ✓  25 [mobile] › tests/workbench.e2e.cjs:31:16 › New composer has no DNA ratings or search before interpretation (5.3s)
+  ✓  26 [mobile] › tests/workbench.e2e.cjs:55:16 › Human verifier decisions persist without blanket acceptance (5.8s)
+  ✓  27 [mobile] › tests/workbench.e2e.cjs:70:16 › Source rate limit remains an honest partial result (4.7s)
+  ✓  28 [mobile] › tests/workbench.e2e.cjs:81:16 › Interest shortlist still supports local add and remove (760ms)
+  ✓  29 [mobile] › tests/workbench.e2e.cjs:94:16 › Interest card classification and attachments preserve prompt (1.4s)
+  ✓  30 [mobile] › tests/workbench.e2e.cjs:122:16 › Home layout has no overflow or browser errors (455ms)
+
+  30 passed (1.7m)
+
+To open last HTML report run:
+[36m[39m
+[36m  npx playwright show-report[39m
+[36m[39m

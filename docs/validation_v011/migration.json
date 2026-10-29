@@ -1,0 +1,18 @@
+{
+  "baseline_version": "0.10.2",
+  "schema_change": false,
+  "checks": {
+    "confirmed_card_exact": true,
+    "profile_exact": true,
+    "profile_api_all_original_fields": true,
+    "imports_exact": true,
+    "report_exact": true,
+    "old_card_editable": true,
+    "new_task_runs": true,
+    "rollback_counts_equal": true
+  },
+  "passed": 8,
+  "failed": 0,
+  "initial_attempt": "API profile response contains additional presentation fields; exact stored profile and each original API field now checked separately. No stored data changed.",
+  "note": "实际原版源码创建数据库后，用新版读取/编辑/运行；合成资料，非用户真实数据库。"
+}

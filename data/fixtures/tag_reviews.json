@@ -1,0 +1,780 @@
+[
+  {
+    "game_id": "fx-01",
+    "provider": "fixture",
+    "external_id": "fx-01-tag-review-1",
+    "title": "烬刃回响 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-01-1。我体验了《烬刃回响》。敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。 我分别试了格挡反击和远程异常流，两套搭配改变了交战方式。 通关需要的装备都在正常流程中拿到了，我没有重复刷装备或材料。 倒下后就在首领门前重来，重新挑战很快。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-01-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。",
+        "quote": "敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "我分别试了格挡反击和远程异常流，两套搭配改变了交战方式。",
+        "quote": "我分别试了格挡反击和远程异常流，两套搭配改变了交战方式。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "通关需要的装备都在正常流程中拿到了，我没有重复刷装备或材料。",
+        "quote": "通关需要的装备都在正常流程中拿到了，我没有重复刷装备或材料。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "quick_retry",
+        "tag_polarity": "present",
+        "claim_text": "倒下后就在首领门前重来，重新挑战很快。",
+        "quote": "倒下后就在首领门前重来，重新挑战很快。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-01",
+    "provider": "fixture",
+    "external_id": "fx-01-tag-review-2",
+    "title": "烬刃回响 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-01-2。我体验了《烬刃回响》。我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。 不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。 我没有重复刷关拿装备材料，正常推进就够用了。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-01-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "quote": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "quote": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-01",
+    "provider": "fixture",
+    "external_id": "fx-01-tag-review-3",
+    "title": "烬刃回响 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-01-3。我体验了《烬刃回响》。敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-01-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。",
+        "quote": "敌人的抬手动作能看清，记住出招节奏后再出手，比盲按更有效。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-02",
+    "provider": "fixture",
+    "external_id": "fx-02-tag-review-1",
+    "title": "星图议会 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-02-1。我体验了《星图议会》。每回合先看敌人行动，再决定部队如何移动和攻击。 我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。 完成主线即可解锁单位，我没有为材料重复打关卡。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-02-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "turn_based_tactics",
+        "tag_polarity": "present",
+        "claim_text": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "quote": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+        "quote": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "完成主线即可解锁单位，我没有为材料重复打关卡。",
+        "quote": "完成主线即可解锁单位，我没有为材料重复打关卡。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-02",
+    "provider": "fixture",
+    "external_id": "fx-02-tag-review-2",
+    "title": "星图议会 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-02-2。我体验了《星图议会》。每回合先看敌人行动，再决定部队如何移动和攻击。 不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。 我没有重复刷关拿装备材料，正常推进就够用了。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-02-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "turn_based_tactics",
+        "tag_polarity": "present",
+        "claim_text": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "quote": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "quote": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-02",
+    "provider": "fixture",
+    "external_id": "fx-02-tag-review-3",
+    "title": "星图议会 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-02-3。我体验了《星图议会》。每回合先看敌人行动，再决定部队如何移动和攻击。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-02-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "turn_based_tactics",
+        "tag_polarity": "present",
+        "claim_text": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "quote": "每回合先看敌人行动，再决定部队如何移动和攻击。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-03",
+    "provider": "fixture",
+    "external_id": "fx-03-tag-review-1",
+    "title": "雾钟旅人 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-03-1。我体验了《雾钟旅人》。我靠观察敌人的攻击前摇和停顿找到反击时机。 可调整的装备很少，换装备没有形成新的打法。 每次倒下都要从远处篝火跑回首领房。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-03-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我靠观察敌人的攻击前摇和停顿找到反击时机。",
+        "quote": "我靠观察敌人的攻击前摇和停顿找到反击时机。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "absent",
+        "claim_text": "可调整的装备很少，换装备没有形成新的打法。",
+        "quote": "可调整的装备很少，换装备没有形成新的打法。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "runback",
+        "tag_polarity": "present",
+        "claim_text": "每次倒下都要从远处篝火跑回首领房。",
+        "quote": "每次倒下都要从远处篝火跑回首领房。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-03",
+    "provider": "fixture",
+    "external_id": "fx-03-tag-review-2",
+    "title": "雾钟旅人 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-03-2。我体验了《雾钟旅人》。我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。 几乎没有可更换的构筑方向，配装改变不了战斗方式。 每次倒下都要从远处篝火跑回首领房。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-03-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "quote": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "absent",
+        "claim_text": "几乎没有可更换的构筑方向，配装改变不了战斗方式。",
+        "quote": "几乎没有可更换的构筑方向，配装改变不了战斗方式。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "runback",
+        "tag_polarity": "present",
+        "claim_text": "每次倒下都要从远处篝火跑回首领房。",
+        "quote": "每次倒下都要从远处篝火跑回首领房。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-03",
+    "provider": "fixture",
+    "external_id": "fx-03-tag-review-3",
+    "title": "雾钟旅人 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-03-3。我体验了《雾钟旅人》。我靠观察敌人的攻击前摇和停顿找到反击时机。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-03-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我靠观察敌人的攻击前摇和停顿找到反击时机。",
+        "quote": "我靠观察敌人的攻击前摇和停顿找到反击时机。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-07",
+    "provider": "fixture",
+    "external_id": "fx-07-tag-review-1",
+    "title": "无声剑谱 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-07-1。我体验了《无声剑谱》。逐步认出首领的连招后，我才稳定打出了反击。 格挡必须按在攻击命中的瞬间，成功后能马上反击。 没有刷装备的循环，推进只需要学会战斗。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-07-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "逐步认出首领的连招后，我才稳定打出了反击。",
+        "quote": "逐步认出首领的连招后，我才稳定打出了反击。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "parry_counter",
+        "tag_polarity": "present",
+        "claim_text": "格挡必须按在攻击命中的瞬间，成功后能马上反击。",
+        "quote": "格挡必须按在攻击命中的瞬间，成功后能马上反击。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "没有刷装备的循环，推进只需要学会战斗。",
+        "quote": "没有刷装备的循环，推进只需要学会战斗。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-07",
+    "provider": "fixture",
+    "external_id": "fx-07-tag-review-2",
+    "title": "无声剑谱 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-07-2。我体验了《无声剑谱》。我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。 格挡必须按在攻击命中的瞬间，成功后能马上反击。 我没有重复刷关拿装备材料，正常推进就够用了。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-07-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "quote": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "parry_counter",
+        "tag_polarity": "present",
+        "claim_text": "格挡必须按在攻击命中的瞬间，成功后能马上反击。",
+        "quote": "格挡必须按在攻击命中的瞬间，成功后能马上反击。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "absent",
+        "claim_text": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "quote": "我没有重复刷关拿装备材料，正常推进就够用了。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-07",
+    "provider": "fixture",
+    "external_id": "fx-07-tag-review-3",
+    "title": "无声剑谱 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-07-3。我体验了《无声剑谱》。逐步认出首领的连招后，我才稳定打出了反击。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-07-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "逐步认出首领的连招后，我才稳定打出了反击。",
+        "quote": "逐步认出首领的连招后，我才稳定打出了反击。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-08",
+    "provider": "fixture",
+    "external_id": "fx-08-tag-review-1",
+    "title": "暮潮航线 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-08-1。我体验了《暮潮航线》。卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。 遗物和卡牌能连成触发循环，单张牌的效果不算突出。 失败就需要重新开始这一整趟航行。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-08-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "deckbuilding",
+        "tag_polarity": "present",
+        "claim_text": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "quote": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "synergy",
+        "tag_polarity": "present",
+        "claim_text": "遗物和卡牌能连成触发循环，单张牌的效果不算突出。",
+        "quote": "遗物和卡牌能连成触发循环，单张牌的效果不算突出。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "run_restart",
+        "tag_polarity": "present",
+        "claim_text": "失败就需要重新开始这一整趟航行。",
+        "quote": "失败就需要重新开始这一整趟航行。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-08",
+    "provider": "fixture",
+    "external_id": "fx-08-tag-review-2",
+    "title": "暮潮航线 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-08-2。我体验了《暮潮航线》。卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。 遗物和卡牌能连成触发循环，单张牌的效果不算突出。 失败就需要重新开始这一整趟航行。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-08-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "deckbuilding",
+        "tag_polarity": "present",
+        "claim_text": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "quote": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "synergy",
+        "tag_polarity": "present",
+        "claim_text": "遗物和卡牌能连成触发循环，单张牌的效果不算突出。",
+        "quote": "遗物和卡牌能连成触发循环，单张牌的效果不算突出。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "run_restart",
+        "tag_polarity": "present",
+        "claim_text": "失败就需要重新开始这一整趟航行。",
+        "quote": "失败就需要重新开始这一整趟航行。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-08",
+    "provider": "fixture",
+    "external_id": "fx-08-tag-review-3",
+    "title": "暮潮航线 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-08-3。我体验了《暮潮航线》。卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-08-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "deckbuilding",
+        "tag_polarity": "present",
+        "claim_text": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "quote": "卡组在探索中逐步组成，每次加入或移除卡牌都会影响后面的战斗。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-09",
+    "provider": "fixture",
+    "external_id": "fx-09-tag-review-1",
+    "title": "机核矿脉 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-09-1。我体验了《机核矿脉》。武器插件可以组成持续灼烧或护盾反伤等不同流派。 我为了升级插件，必须反复刷同一张矿洞地图获取材料。 想要的武器词条是随机掉落的，十次探索也可能一件都没有。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-09-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "武器插件可以组成持续灼烧或护盾反伤等不同流派。",
+        "quote": "武器插件可以组成持续灼烧或护盾反伤等不同流派。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "present",
+        "claim_text": "我为了升级插件，必须反复刷同一张矿洞地图获取材料。",
+        "quote": "我为了升级插件，必须反复刷同一张矿洞地图获取材料。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "loot_rng",
+        "tag_polarity": "present",
+        "claim_text": "想要的武器词条是随机掉落的，十次探索也可能一件都没有。",
+        "quote": "想要的武器词条是随机掉落的，十次探索也可能一件都没有。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-09",
+    "provider": "fixture",
+    "external_id": "fx-09-tag-review-2",
+    "title": "机核矿脉 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-09-2。我体验了《机核矿脉》。不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。 为升级装备，我重复打了很多次旧关卡收集资源。 想要的武器词条是随机掉落的，十次探索也可能一件都没有。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-09-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "present",
+        "claim_text": "为升级装备，我重复打了很多次旧关卡收集资源。",
+        "quote": "为升级装备，我重复打了很多次旧关卡收集资源。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "loot_rng",
+        "tag_polarity": "present",
+        "claim_text": "想要的武器词条是随机掉落的，十次探索也可能一件都没有。",
+        "quote": "想要的武器词条是随机掉落的，十次探索也可能一件都没有。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-09",
+    "provider": "fixture",
+    "external_id": "fx-09-tag-review-3",
+    "title": "机核矿脉 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-09-3。我体验了《机核矿脉》。武器插件可以组成持续灼烧或护盾反伤等不同流派。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-09-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "武器插件可以组成持续灼烧或护盾反伤等不同流派。",
+        "quote": "武器插件可以组成持续灼烧或护盾反伤等不同流派。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-18",
+    "provider": "fixture",
+    "external_id": "fx-18-tag-review-1",
+    "title": "电弧旅团 · 完整合成评价 1",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-18-1。我体验了《电弧旅团》。学会看敌人的动作再闪避，胜率比提高面板攻击更明显。 技能和武器的组合允许我试近战连击或远程控制。 中段解锁装备需要反复清几张旧地图，我觉得重复。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-18-tag-review-1",
+    "sampling_stratum": "positive_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "学会看敌人的动作再闪避，胜率比提高面板攻击更明显。",
+        "quote": "学会看敌人的动作再闪避，胜率比提高面板攻击更明显。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "技能和武器的组合允许我试近战连击或远程控制。",
+        "quote": "技能和武器的组合允许我试近战连击或远程控制。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "present",
+        "claim_text": "中段解锁装备需要反复清几张旧地图，我觉得重复。",
+        "quote": "中段解锁装备需要反复清几张旧地图，我觉得重复。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-18",
+    "provider": "fixture",
+    "external_id": "fx-18-tag-review-2",
+    "title": "电弧旅团 · 完整合成评价 2",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-18-2。我体验了《电弧旅团》。我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。 不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。 为升级装备，我重复打了很多次旧关卡收集资源。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-18-tag-review-2",
+    "sampling_stratum": "negative_helpful",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "quote": "我反复练习看攻击前摇和出手间隔，熟悉招式后更容易过关。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "build_variety",
+        "tag_polarity": "present",
+        "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+        "scope": {}
+      },
+      {
+        "aspect": "tag",
+        "tag_id": "resource_grind",
+        "tag_polarity": "present",
+        "claim_text": "为升级装备，我重复打了很多次旧关卡收集资源。",
+        "quote": "为升级装备，我重复打了很多次旧关卡收集资源。",
+        "scope": {}
+      }
+    ]
+  },
+  {
+    "game_id": "fx-18",
+    "provider": "fixture",
+    "external_id": "fx-18-tag-review-3",
+    "title": "电弧旅团 · 完整合成评价 3",
+    "text": "【虚构玩家评价 · 离线功能演示，非真实用户】样本作者 fx-18-3。我体验了《电弧旅团》。学会看敌人的动作再闪避，胜率比提高面板攻击更明显。 我对画面的偏好可能与你不同，这份感受仅供演示。",
+    "kind": "reviews",
+    "dataset_id": "synthetic-v1",
+    "provenance_type": "synthetic",
+    "url": null,
+    "published_at": "2026-10-01T00:00:00+00:00",
+    "language": "zh-CN",
+    "complete": true,
+    "author_key": "fx-18-tag-review-3",
+    "sampling_stratum": "recent",
+    "annotations": [
+      {
+        "aspect": "tag",
+        "tag_id": "read_patterns",
+        "tag_polarity": "present",
+        "claim_text": "学会看敌人的动作再闪避，胜率比提高面板攻击更明显。",
+        "quote": "学会看敌人的动作再闪避，胜率比提高面板攻击更明显。",
+        "scope": {}
+      }
+    ]
+  }
+]

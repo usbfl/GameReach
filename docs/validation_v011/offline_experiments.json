@@ -1,0 +1,949 @@
+{
+  "label": "OFFLINE SYNTHETIC RULE EXPERIMENT — NOT LIVE MODEL VALIDATION",
+  "case1_overlap": {
+    "cards": [
+      {
+        "title": "练习攻克Boss",
+        "text": "这组游戏的共同线索是“练习攻克Boss”。依据为目录标签、用户分类或已有核验资料；目录线索尚未经过评论核验。可继续了解这个主题，时长和收藏只表示关注程度，不证明喜欢其中全部玩法。",
+        "source_ids": [
+          "import-032ebdb98cc0438c:entry-4",
+          "import-032ebdb98cc0438c:entry-3",
+          "import-032ebdb98cc0438c:entry-0"
+        ],
+        "theme_ids": [
+          "boss_practice"
+        ],
+        "game_keys": [
+          "name:v0.11合成游戏e",
+          "name:v0.11合成游戏d",
+          "name:v0.11合成游戏a"
+        ],
+        "sources": [
+          {
+            "id": "import-032ebdb98cc0438c:entry-4",
+            "label": "游戏资料 · v0.11合成游戏E"
+          },
+          {
+            "id": "import-032ebdb98cc0438c:entry-3",
+            "label": "游戏资料 · v0.11合成游戏D"
+          },
+          {
+            "id": "import-032ebdb98cc0438c:entry-0",
+            "label": "游戏资料 · v0.11合成游戏A"
+          }
+        ],
+        "related_games": [
+          {
+            "key": "name:v0.11合成游戏e",
+            "name": "v0.11合成游戏E",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-4"
+            ],
+            "attention": {
+              "tier": "liked",
+              "weight": 2.0699,
+              "time_bonus": 0.0699,
+              "reason": "明确喜欢；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "boss_practice",
+                "label": "练习攻克Boss",
+                "basis": "user_collection",
+                "reason": "用户分类：反复挑战"
+              }
+            ]
+          },
+          {
+            "key": "name:v0.11合成游戏d",
+            "name": "v0.11合成游戏D",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-3"
+            ],
+            "attention": {
+              "tier": "library",
+              "weight": 1.0699,
+              "time_bonus": 0.0699,
+              "reason": "资料入库，尚未推断喜欢；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "boss_practice",
+                "label": "练习攻克Boss",
+                "basis": "user_collection",
+                "reason": "用户分类：反复挑战"
+              }
+            ]
+          },
+          {
+            "key": "name:v0.11合成游戏a",
+            "name": "v0.11合成游戏A",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-0"
+            ],
+            "attention": {
+              "tier": "library",
+              "weight": 1.0,
+              "time_bonus": 0.0,
+              "reason": "资料入库，尚未推断喜欢；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "boss_practice",
+                "label": "练习攻克Boss",
+                "basis": "user_collection",
+                "reason": "用户分类：反复挑战"
+              }
+            ]
+          }
+        ],
+        "card_format": "game_group_v2",
+        "id": "interest-5e15539795a64a9a",
+        "dataset_id": "synthetic-v1",
+        "version": 1,
+        "status": "draft",
+        "generator": "rules",
+        "created_at": "2026-10-23T14:08:59.083586+00:00"
+      },
+      {
+        "title": "构筑改变打法",
+        "text": "这组游戏的共同线索是“构筑改变打法”。依据为目录标签、用户分类或已有核验资料；目录线索尚未经过评论核验。可继续了解这个主题，时长和收藏只表示关注程度，不证明喜欢其中全部玩法。",
+        "source_ids": [
+          "import-032ebdb98cc0438c:entry-1",
+          "import-032ebdb98cc0438c:entry-0",
+          "import-032ebdb98cc0438c:entry-2"
+        ],
+        "theme_ids": [
+          "build_variety"
+        ],
+        "game_keys": [
+          "name:v0.11合成游戏b",
+          "name:v0.11合成游戏a",
+          "name:v0.11合成游戏c"
+        ],
+        "sources": [
+          {
+            "id": "import-032ebdb98cc0438c:entry-1",
+            "label": "游戏资料 · v0.11合成游戏B"
+          },
+          {
+            "id": "import-032ebdb98cc0438c:entry-0",
+            "label": "游戏资料 · v0.11合成游戏A"
+          },
+          {
+            "id": "import-032ebdb98cc0438c:entry-2",
+            "label": "游戏资料 · v0.11合成游戏C"
+          }
+        ],
+        "related_games": [
+          {
+            "key": "name:v0.11合成游戏b",
+            "name": "v0.11合成游戏B",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-1"
+            ],
+            "attention": {
+              "tier": "saved",
+              "weight": 1.5699,
+              "time_bonus": 0.0699,
+              "reason": "收藏/关注表示想了解；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "build_variety",
+                "label": "构筑改变打法",
+                "basis": "user_collection",
+                "reason": "用户分类：构筑"
+              }
+            ]
+          },
+          {
+            "key": "name:v0.11合成游戏a",
+            "name": "v0.11合成游戏A",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-0"
+            ],
+            "attention": {
+              "tier": "library",
+              "weight": 1.0,
+              "time_bonus": 0.0,
+              "reason": "资料入库，尚未推断喜欢；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "build_variety",
+                "label": "构筑改变打法",
+                "basis": "user_collection",
+                "reason": "用户分类：构筑"
+              }
+            ]
+          },
+          {
+            "key": "name:v0.11合成游戏c",
+            "name": "v0.11合成游戏C",
+            "game_id": null,
+            "platforms": [
+              "manual"
+            ],
+            "source_ids": [
+              "import-032ebdb98cc0438c:entry-2"
+            ],
+            "attention": {
+              "tier": "library",
+              "weight": 1.0,
+              "time_bonus": 0.0,
+              "reason": "资料入库，尚未推断喜欢；时长只增加最多0.25的关注权重"
+            },
+            "membership_reasons": [
+              {
+                "id": "build_variety",
+                "label": "构筑改变打法",
+                "basis": "user_collection",
+                "reason": "用户分类：构筑"
+              }
+            ]
+          }
+        ],
+        "card_format": "game_group_v2",
+        "id": "interest-af92711406104cf4",
+        "dataset_id": "synthetic-v1",
+        "version": 1,
+        "status": "draft",
+        "generator": "rules",
+        "created_at": "2026-10-23T14:08:59.085407+00:00"
+      }
+    ],
+    "unassigned_games": [],
+    "cache": {
+      "hit": true,
+      "reused_cards": 2,
+      "processed_games": 0
+    },
+    "budget": {
+      "tool_calls": 0,
+      "external_requests": 0,
+      "llm_calls": 0,
+      "planning_rounds": 0,
+      "active_seconds": 0.002036707002844196
+    },
+    "comparison": {
+      "old_theme_cards": 1,
+      "new_theme_cards": 2,
+      "old_game_theme_memberships": 3,
+      "new_game_theme_memberships": 6
+    }
+  },
+  "case2_focus": {
+    "baseline_score": 79.17,
+    "with_20_unrelated_unknowns": 79.17,
+    "partial": {
+      "game": {
+        "id": "fx-02",
+        "name": "星图议会",
+        "subtitle": "在星际棋盘上重写战局",
+        "tags": [
+          "策略",
+          "回合制",
+          "构筑"
+        ],
+        "platforms": [
+          "PC"
+        ],
+        "released": true,
+        "languages": [
+          "zh-CN"
+        ],
+        "price": null,
+        "kind": "base",
+        "parent_id": null,
+        "external_ids": {},
+        "dataset_id": "synthetic-v1",
+        "provenance_type": "synthetic",
+        "summary": "在星际棋盘上重写战局",
+        "unrelated_unknowns": {
+          "mechanism-0": null,
+          "mechanism-1": null,
+          "mechanism-2": null,
+          "mechanism-3": null,
+          "mechanism-4": null,
+          "mechanism-5": null,
+          "mechanism-6": null,
+          "mechanism-7": null,
+          "mechanism-8": null,
+          "mechanism-9": null,
+          "mechanism-10": null,
+          "mechanism-11": null,
+          "mechanism-12": null,
+          "mechanism-13": null,
+          "mechanism-14": null,
+          "mechanism-15": null,
+          "mechanism-16": null,
+          "mechanism-17": null,
+          "mechanism-18": null,
+          "mechanism-19": null
+        }
+      },
+      "card": {
+        "introduction": [
+          {
+            "aspect": "core_loop",
+            "tag_id": null,
+            "tag_polarity": "present",
+            "game_id": "fx-02",
+            "document_id": "synthetic-v1:fx-02:fixture:fx-02-dna2-details:fd755b0ad88d:a1cf244f372b",
+            "feature_key": null,
+            "quote": "虚构演示：以下规则仅属于该合成游戏的标准主流程。",
+            "claim_text": "虚构演示：以下规则仅属于该合成游戏的标准主流程。",
+            "scope": {},
+            "id": "cl-689b20d25dda908543f0",
+            "evidence_ids": [
+              "ev-f7f21aa6e133b52dc2ed"
+            ],
+            "evidence_status": "supported",
+            "schema_version": 2,
+            "assessed_at": "2026-10-23T14:08:59.231171+00:00",
+            "support": [
+              "ev-f7f21aa6e133b52dc2ed"
+            ],
+            "oppose": [],
+            "provenance_type": "synthetic",
+            "applicable_at": "2026-10-18T00:00:00+00:00",
+            "verification": {
+              "version": "verdict-2",
+              "verdict": "supported",
+              "reason": "虚构演示：与独立编写的完整评论注释一致",
+              "evidence_ids": [
+                "ev-f7f21aa6e133b52dc2ed"
+              ]
+            }
+          }
+        ],
+        "strengths": [
+          {
+            "aspect": "tag",
+            "tag_id": "build_variety",
+            "tag_polarity": "present",
+            "claim_text": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+            "quote": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+            "scope": {},
+            "game_id": "fx-02",
+            "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-1:2fd29a57a3c6:f9a512202099",
+            "feature_key": null,
+            "id": "cl-10179c9a904c372a4fbc",
+            "evidence_ids": [
+              "ev-3d7cdc70c6a798609abc"
+            ],
+            "evidence_status": "supported",
+            "schema_version": 2,
+            "assessed_at": "2026-10-23T14:08:59.234034+00:00",
+            "support": [
+              "ev-3d7cdc70c6a798609abc"
+            ],
+            "oppose": [],
+            "provenance_type": "synthetic",
+            "applicable_at": "2026-10-01T00:00:00+00:00",
+            "verification": {
+              "version": "verdict-2",
+              "verdict": "supported",
+              "reason": "虚构演示：与独立编写的完整评论注释一致",
+              "evidence_ids": [
+                "ev-3d7cdc70c6a798609abc"
+              ]
+            }
+          },
+          {
+            "aspect": "tag",
+            "tag_id": "build_variety",
+            "tag_polarity": "present",
+            "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+            "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+            "scope": {},
+            "game_id": "fx-02",
+            "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-2:f5c8e338cf0e:f9a512202099",
+            "feature_key": null,
+            "id": "cl-7fed30782e5f455761be",
+            "evidence_ids": [
+              "ev-4ed85bc89de701dcd1f5"
+            ],
+            "evidence_status": "supported",
+            "schema_version": 2,
+            "assessed_at": "2026-10-23T14:08:59.235162+00:00",
+            "support": [
+              "ev-4ed85bc89de701dcd1f5"
+            ],
+            "oppose": [],
+            "provenance_type": "synthetic",
+            "applicable_at": "2026-10-01T00:00:00+00:00",
+            "verification": {
+              "version": "verdict-2",
+              "verdict": "supported",
+              "reason": "虚构演示：与独立编写的完整评论注释一致",
+              "evidence_ids": [
+                "ev-4ed85bc89de701dcd1f5"
+              ]
+            }
+          }
+        ],
+        "tradeoffs": [],
+        "complete": true,
+        "missing": [],
+        "additional_strengths": [],
+        "additional_tradeoffs": [],
+        "limitations": [
+          "当前样本尚未核验出明确取舍，不代表没有缺点",
+          "快速重试：尚待证实"
+        ]
+      },
+      "group": "recommended",
+      "rank_score": 79.17,
+      "match": 1.0,
+      "coverage": 0.75,
+      "quantity": 0.6667,
+      "rating": null,
+      "rating_missing_neutral_prior": true,
+      "supporting_reviews": 2,
+      "opposing_reviews": 0,
+      "tags": [
+        {
+          "tag_id": "build_variety",
+          "polarity": "want",
+          "priority": 3,
+          "source_id": "current",
+          "source_quote": "合成实验最终条件",
+          "scope": {},
+          "explicit_redline": false,
+          "label": "构筑改变打法",
+          "support": [
+            {
+              "aspect": "tag",
+              "tag_id": "build_variety",
+              "tag_polarity": "present",
+              "claim_text": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+              "quote": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+              "scope": {},
+              "game_id": "fx-02",
+              "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-1:2fd29a57a3c6:f9a512202099",
+              "feature_key": null,
+              "id": "cl-10179c9a904c372a4fbc",
+              "evidence_ids": [
+                "ev-3d7cdc70c6a798609abc"
+              ],
+              "evidence_status": "supported",
+              "schema_version": 2,
+              "assessed_at": "2026-10-23T14:08:59.234034+00:00",
+              "support": [
+                "ev-3d7cdc70c6a798609abc"
+              ],
+              "oppose": [],
+              "provenance_type": "synthetic",
+              "applicable_at": "2026-10-01T00:00:00+00:00",
+              "verification": {
+                "version": "verdict-2",
+                "verdict": "supported",
+                "reason": "虚构演示：与独立编写的完整评论注释一致",
+                "evidence_ids": [
+                  "ev-3d7cdc70c6a798609abc"
+                ]
+              }
+            },
+            {
+              "aspect": "tag",
+              "tag_id": "build_variety",
+              "tag_polarity": "present",
+              "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+              "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+              "scope": {},
+              "game_id": "fx-02",
+              "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-2:f5c8e338cf0e:f9a512202099",
+              "feature_key": null,
+              "id": "cl-7fed30782e5f455761be",
+              "evidence_ids": [
+                "ev-4ed85bc89de701dcd1f5"
+              ],
+              "evidence_status": "supported",
+              "schema_version": 2,
+              "assessed_at": "2026-10-23T14:08:59.235162+00:00",
+              "support": [
+                "ev-4ed85bc89de701dcd1f5"
+              ],
+              "oppose": [],
+              "provenance_type": "synthetic",
+              "applicable_at": "2026-10-01T00:00:00+00:00",
+              "verification": {
+                "version": "verdict-2",
+                "verdict": "supported",
+                "reason": "虚构演示：与独立编写的完整评论注释一致",
+                "evidence_ids": [
+                  "ev-4ed85bc89de701dcd1f5"
+                ]
+              }
+            }
+          ],
+          "oppose": [],
+          "contextual": [],
+          "support_count": 2,
+          "oppose_count": 0,
+          "match": 1.0
+        },
+        {
+          "tag_id": "quick_retry",
+          "polarity": "want",
+          "priority": 1,
+          "source_id": "current",
+          "source_quote": "合成实验最终条件",
+          "scope": {},
+          "explicit_redline": false,
+          "label": "快速重试",
+          "support": [],
+          "oppose": [],
+          "contextual": [],
+          "support_count": 0,
+          "oppose_count": 0,
+          "match": null
+        }
+      ],
+      "checks": [
+        {
+          "constraint": "正式发售",
+          "status": "pass"
+        },
+        {
+          "constraint": "游戏本体",
+          "status": "pass"
+        },
+        {
+          "constraint": "未玩过",
+          "status": "pass"
+        }
+      ],
+      "hard_constraint_status": "pass",
+      "partial_match": true,
+      "focus_diagnostics": {
+        "verified_dimensions": 1,
+        "unknown_dimensions": 1,
+        "verified_weight": 3,
+        "requested_weight": 4,
+        "conflict_weight": 0.0
+      },
+      "critical_unknowns": [],
+      "claims": [
+        {
+          "aspect": "tag",
+          "tag_id": "build_variety",
+          "tag_polarity": "present",
+          "claim_text": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+          "quote": "我可以组炮击队，也可以用控制和护盾队，两种编队玩法不同。",
+          "scope": {},
+          "game_id": "fx-02",
+          "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-1:2fd29a57a3c6:f9a512202099",
+          "feature_key": null,
+          "id": "cl-10179c9a904c372a4fbc",
+          "evidence_ids": [
+            "ev-3d7cdc70c6a798609abc"
+          ],
+          "evidence_status": "supported",
+          "schema_version": 2,
+          "assessed_at": "2026-10-23T14:08:59.234034+00:00",
+          "support": [
+            "ev-3d7cdc70c6a798609abc"
+          ],
+          "oppose": [],
+          "provenance_type": "synthetic",
+          "applicable_at": "2026-10-01T00:00:00+00:00",
+          "verification": {
+            "version": "verdict-2",
+            "verdict": "supported",
+            "reason": "虚构演示：与独立编写的完整评论注释一致",
+            "evidence_ids": [
+              "ev-3d7cdc70c6a798609abc"
+            ]
+          }
+        },
+        {
+          "aspect": "core_loop",
+          "tag_id": null,
+          "tag_polarity": "present",
+          "game_id": "fx-02",
+          "document_id": "synthetic-v1:fx-02:fixture:fx-02-dna2-details:fd755b0ad88d:a1cf244f372b",
+          "feature_key": null,
+          "quote": "虚构演示：以下规则仅属于该合成游戏的标准主流程。",
+          "claim_text": "虚构演示：以下规则仅属于该合成游戏的标准主流程。",
+          "scope": {},
+          "id": "cl-689b20d25dda908543f0",
+          "evidence_ids": [
+            "ev-f7f21aa6e133b52dc2ed"
+          ],
+          "evidence_status": "supported",
+          "schema_version": 2,
+          "assessed_at": "2026-10-23T14:08:59.231171+00:00",
+          "support": [
+            "ev-f7f21aa6e133b52dc2ed"
+          ],
+          "oppose": [],
+          "provenance_type": "synthetic",
+          "applicable_at": "2026-10-18T00:00:00+00:00",
+          "verification": {
+            "version": "verdict-2",
+            "verdict": "supported",
+            "reason": "虚构演示：与独立编写的完整评论注释一致",
+            "evidence_ids": [
+              "ev-f7f21aa6e133b52dc2ed"
+            ]
+          }
+        },
+        {
+          "aspect": "tag",
+          "tag_id": "build_variety",
+          "tag_polarity": "present",
+          "claim_text": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+          "quote": "不同装备搭配能形成不同的战斗流派，我换了一套打法后体验明显变化。",
+          "scope": {},
+          "game_id": "fx-02",
+          "document_id": "synthetic-v1:fx-02:fixture:fx-02-tag-review-2:f5c8e338cf0e:f9a512202099",
+          "feature_key": null,
+          "id": "cl-7fed30782e5f455761be",
+          "evidence_ids": [
+            "ev-4ed85bc89de701dcd1f5"
+          ],
+          "evidence_status": "supported",
+          "schema_version": 2,
+          "assessed_at": "2026-10-23T14:08:59.235162+00:00",
+          "support": [
+            "ev-4ed85bc89de701dcd1f5"
+          ],
+          "oppose": [],
+          "provenance_type": "synthetic",
+          "applicable_at": "2026-10-01T00:00:00+00:00",
+          "verification": {
+            "version": "verdict-2",
+            "verdict": "supported",
+            "reason": "虚构演示：与独立编写的完整评论注释一致",
+            "evidence_ids": [
+              "ev-4ed85bc89de701dcd1f5"
+            ]
+          }
+        }
+      ],
+      "diagnosis": {
+        "code": "matched",
+        "label": "已形成可追溯的标签证据",
+        "next_step": "可展开支持与反对意见，查看完整评价和适用场景。",
+        "stage": "finished",
+        "selected": true,
+        "extracted": 3,
+        "verified": 3,
+        "rejected": 0,
+        "insufficient": 0,
+        "contextual": 0,
+        "errors": [],
+        "stop_reason": null,
+        "extraction_rejections": [],
+        "source_warnings": [],
+        "review_fetch": {
+          "status": "available",
+          "error_code": null,
+          "from_cache": false
+        },
+        "allocation_reason": "卡片及主要证据已足够，保留次要未知项",
+        "reused_batches": 0
+      },
+      "reading": {
+        "fetched": 3,
+        "full_read": 3,
+        "deferred": 0,
+        "sampling": {
+          "filter": "synthetic authored complete reviews",
+          "sample_size": 3,
+          "representative": false
+        }
+      },
+      "unknowns": [
+        "快速重试"
+      ],
+      "excluded_reasons": []
+    },
+    "comparison": {
+      "old_score_before": 84.17,
+      "old_score_irrelevant": 84.17,
+      "old_score_soft_unknown": 65.0,
+      "new_score_soft_unknown": 79.17,
+      "old_irrelevant_downgrades": 0,
+      "new_irrelevant_downgrades": 0
+    }
+  },
+  "case3_hard_constraints": {
+    "language_states": [
+      {
+        "languages": null,
+        "expected": "unknown",
+        "actual": "unknown",
+        "group": "provisional",
+        "checks": [
+          {
+            "constraint": "正式发售",
+            "status": "pass"
+          },
+          {
+            "constraint": "游戏本体",
+            "status": "pass"
+          },
+          {
+            "constraint": "未玩过",
+            "status": "pass"
+          },
+          {
+            "constraint": "语言 zh-CN",
+            "status": "unknown"
+          }
+        ]
+      },
+      {
+        "languages": [
+          "en"
+        ],
+        "expected": "fail",
+        "actual": "fail",
+        "group": "excluded",
+        "checks": [
+          {
+            "constraint": "正式发售",
+            "status": "pass"
+          },
+          {
+            "constraint": "游戏本体",
+            "status": "pass"
+          },
+          {
+            "constraint": "未玩过",
+            "status": "pass"
+          },
+          {
+            "constraint": "语言 zh-CN",
+            "status": "fail"
+          }
+        ]
+      },
+      {
+        "languages": [
+          "zh-CN"
+        ],
+        "expected": "pass",
+        "actual": "pass",
+        "group": "recommended",
+        "checks": [
+          {
+            "constraint": "正式发售",
+            "status": "pass"
+          },
+          {
+            "constraint": "游戏本体",
+            "status": "pass"
+          },
+          {
+            "constraint": "未玩过",
+            "status": "pass"
+          },
+          {
+            "constraint": "语言 zh-CN",
+            "status": "pass"
+          }
+        ]
+      }
+    ],
+    "old_hard_violations": 0,
+    "new_hard_violations": 0
+  },
+  "comparison": {
+    "old": {
+      "recommendation_count": 3,
+      "order": [
+        "fx-01",
+        "fx-02",
+        "fx-09"
+      ],
+      "scores": {
+        "fx-01": 84.17,
+        "fx-02": 84.17,
+        "fx-09": 58.5
+      },
+      "reason_count": 11,
+      "traceable_reason_count": 11,
+      "model_calls_in_snapshot_ranking": 0,
+      "tool_calls_in_snapshot_ranking": 0
+    },
+    "new": {
+      "recommendation_count": 3,
+      "order": [
+        "fx-01",
+        "fx-02",
+        "fx-09"
+      ],
+      "scores": {
+        "fx-01": 89.17,
+        "fx-02": 89.17,
+        "fx-09": 39.83
+      },
+      "reason_count": 11,
+      "traceable_reason_count": 11,
+      "model_calls_in_snapshot_ranking": 0,
+      "tool_calls_in_snapshot_ranking": 0
+    },
+    "pipeline_budget": {
+      "tool_calls": 6,
+      "external_requests": 0,
+      "llm_calls": 0,
+      "planning_rounds": 0,
+      "active_seconds": 0.3571850700027426
+    },
+    "note": "同一固定证据快照比较确定性分组和排序；两种排序本身都不调用模型或工具。不是在线模型质量或节省比例实验。"
+  },
+  "repeat_budget": {
+    "tool_calls": 6,
+    "external_requests": 0,
+    "llm_calls": 0,
+    "planning_rounds": 0,
+    "active_seconds": 0.22802110699558398
+  },
+  "reuse": {
+    "source_cache_hits": 6,
+    "verified_batches_reused": 3,
+    "reused_documents": 9
+  },
+  "migration": {
+    "source": "temporary/demo.db",
+    "destination": "temporary/backup.db",
+    "integrity": "ok",
+    "table_counts": {
+      "records": 41,
+      "tasks": 3,
+      "documents": 14,
+      "watches": 0,
+      "feature_assessments": 0,
+      "dna_snapshots": 0,
+      "events": 44,
+      "spans": 16,
+      "claims": 35,
+      "reports": 3,
+      "human_actions": 0,
+      "document_index": 14,
+      "document_chunks": 14,
+      "memory_index": 0,
+      "chunk_fts": 14,
+      "chunk_fts_data": 16,
+      "chunk_fts_idx": 14,
+      "chunk_fts_content": 14,
+      "chunk_fts_docsize": 14,
+      "chunk_fts_config": 1,
+      "memory_fts": 0,
+      "memory_fts_data": 2,
+      "memory_fts_idx": 0,
+      "memory_fts_content": 0,
+      "memory_fts_docsize": 0,
+      "memory_fts_config": 1
+    },
+    "schema_migration": "none; additive JSON fields only",
+    "rewritten_user_records": 0
+  },
+  "assertions": [
+    {
+      "name": "导入固定演示数据",
+      "passed": true
+    },
+    {
+      "name": "两个不同主题卡片",
+      "passed": true
+    },
+    {
+      "name": "A跨主题共享",
+      "passed": true
+    },
+    {
+      "name": "高时长排除F不重返正向画像",
+      "passed": true
+    },
+    {
+      "name": "重复整理复用两张卡片",
+      "passed": true
+    },
+    {
+      "name": "20项无关未知不改变得分",
+      "passed": true
+    },
+    {
+      "name": "不为无关未知追加调查",
+      "passed": true
+    },
+    {
+      "name": "普通软偏好未知仍可推荐",
+      "passed": true
+    },
+    {
+      "name": "普通未知不直接扣分",
+      "passed": true
+    },
+    {
+      "name": "未知未虚构成支持",
+      "passed": true
+    },
+    {
+      "name": "语言硬约束_unknown",
+      "passed": true
+    },
+    {
+      "name": "非通过不混入推荐_unknown",
+      "passed": true
+    },
+    {
+      "name": "语言硬约束_fail",
+      "passed": true
+    },
+    {
+      "name": "非通过不混入推荐_fail",
+      "passed": true
+    },
+    {
+      "name": "语言硬约束_pass",
+      "passed": true
+    },
+    {
+      "name": "非通过不混入推荐_pass",
+      "passed": true
+    },
+    {
+      "name": "历史报告快照未改写",
+      "passed": true
+    },
+    {
+      "name": "再次研究复用核验结果",
+      "passed": true
+    },
+    {
+      "name": "升级备份和回退各表数量一致",
+      "passed": true
+    }
+  ],
+  "passed": 19,
+  "failed": 0,
+  "live_services": "not_run",
+  "evidence_semantics": "synthetic authored annotations; not a human relevance evaluation"
+}
